@@ -2,8 +2,8 @@
 title: Observation
 weight: 2
 math: true
-prev: ../getting-started
-next: ./night-sky
+prev: /guide/getting-started
+next: /guide/observation/night-sky
 sidebar:
   open: true
 ---

@@ -1,5 +1,7 @@
 ---
 title: Introduction
+cascade:
+  type: docs
 ---
 
 Hello! Welcome to the my site!
