@@ -6,7 +6,7 @@ theme: hextra
 menu:
   main:
     - name: Guide
-      pageRef: /docs
+      pageRef: /guide
       weight: 1
     - name: About
       pageRef: /about
