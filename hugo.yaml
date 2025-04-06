@@ -1,0 +1,90 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: AO Guide
+theme: hextra
+
+menu:
+  main:
+    - name: Guide
+      pageRef: /docs
+      weight: 1
+    - name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/"
+      params:
+        icon: github
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)'], ['$', '$']]
+        enable: true
+  highlight:
+    noClasses: false
+
+params:
+  description: Comprehensive guide for astronomy olympiads
+
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  navbar:
+    displayTitle: true
+    # displayLogo: true
+    # logo:
+    #   path: images/logo.svg
+    #   dark: images/logo-dark.svg
+    #   # width: 40
+    #   # height: 20
+    #   # link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: false
+    displayPoweredBy: false
+    width: normal
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+
+    article:
+      displayPagination: true
