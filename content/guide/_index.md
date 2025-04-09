@@ -1,10 +1,10 @@
 ---
-title: Introduction
+title: Guide
 cascade:
   type: docs
 ---
 
-Hello! Welcome to the my site!
+Hello!
 
 ## Next
 

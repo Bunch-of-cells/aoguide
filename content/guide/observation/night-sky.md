@@ -1,6 +1,5 @@
 ---
 title: The Night Sky
-weight: 3
 prev: /guide/observation/
 ---
 

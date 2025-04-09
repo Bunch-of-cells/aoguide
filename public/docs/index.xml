@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AO Guide – Introduction</title>
+    <title>AO Guide – Guide</title>
     <link>http://localhost:1313/docs/</link>
-    <description>Recent content in Introduction on AO Guide</description>
+    <description>Recent content in Guide on AO Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -51,20 +51,6 @@ Astronomy olympiads are typically organized at national and international levels
 &lt;/ul&gt;
 &lt;h2&gt;What to do while reading this guide?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-to-do-while-reading-this-guide&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#what-to-do-while-reading-this-guide&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Enjoy!&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>The Night Sky</title>
-      <link>http://localhost:1313/docs/observation/night-sky/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/docs/observation/night-sky/</guid>
-      <description>
-        
-        
-        &lt;p&gt;The Night Sky is a fascinating and ever-changing canvas that has captivated humanity for centuries. From the twinkling stars to the majestic planets, the night sky offers a glimpse into the vastness of the universe. In this section, we will explore various aspects of the night sky, including celestial objects, constellations, and astronomical phenomena.&lt;/p&gt;
 
       </description>
     </item>

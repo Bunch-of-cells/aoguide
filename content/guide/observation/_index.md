@@ -1,6 +1,5 @@
 ---
 title: Observation
-weight: 2
 math: true
 prev: /guide/getting-started
 next: /guide/observation/night-sky
@@ -35,7 +34,7 @@ fn main() {
 This is an inline $a^*=x-b^*$ equation. $\Large{y_n = \frac{1}{1 + \frac{1}{x_n}}}$
 
 > [!NOTE]
-> Useful information that users should know, even when skimming content.
+> $\large \Braket{ ϕ | \frac{∂^2}{∂ t^2} | ψ }$
 
 > [!TIP]
 > Helpful advice for doing things better or more easily.
@@ -54,6 +53,8 @@ These are block equations:
 $$n \in \mathbb{X}$$
 
 $$\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$$
+
+$\Large \oiiint (\nabla \cdot \mathbf{F}) dV = \iint \mathbf{F} \cdot d\mathbf{A}$
 
 $$
 \begin{aligned}

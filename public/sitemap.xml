@@ -4,18 +4,22 @@
   <url>
     <loc>http://localhost:1313/guide/getting-started/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/observation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/guide/observation/night-sky/</loc>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/guide/stellar/lane-emden/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/observation/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/stellar/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/observation/night-sky/</loc>
   </url>
 </urlset>
