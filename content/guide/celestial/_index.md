@@ -1,5 +1,5 @@
 ---
-title: Celestial Mechanics
+title: Celestial Mechanics and Astrodynamics
 next: /guide/celestial/shape
-weight: 2
+weight: 4
 ---

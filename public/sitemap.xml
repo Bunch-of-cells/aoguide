@@ -4,17 +4,27 @@
   <url>
     <loc>http://localhost:1313/guide/getting-started/</loc>
   </url><url>
+    <loc>http://localhost:1313/constants/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/positional/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/radiometry/</loc>
+  </url><url>
     <loc>http://localhost:1313/guide/celestial/</loc>
   </url><url>
-    <loc>http://localhost:1313/constants/</loc>
+    <loc>http://localhost:1313/guide/optics/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/stellar/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/observation/</loc>
+    <loc>http://localhost:1313/guide/galactic/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/cosmology/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/physics/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/</loc>
   </url><url>
@@ -25,7 +35,5 @@
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-  </url><url>
-    <loc>http://localhost:1313/guide/observation/night-sky/</loc>
   </url>
 </urlset>
