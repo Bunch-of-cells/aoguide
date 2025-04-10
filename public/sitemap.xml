@@ -4,6 +4,14 @@
   <url>
     <loc>http://localhost:1313/guide/getting-started/</loc>
   </url><url>
+    <loc>http://localhost:1313/guide/celestial/</loc>
+  </url><url>
+    <loc>http://localhost:1313/constants/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/stellar/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/observation/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -12,9 +20,7 @@
   </url><url>
     <loc>http://localhost:1313/guide/stellar/lane-emden/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/observation/</loc>
-  </url><url>
-    <loc>http://localhost:1313/guide/stellar/</loc>
+    <loc>http://localhost:1313/guide/celestial/shape/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

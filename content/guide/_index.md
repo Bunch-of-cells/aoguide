@@ -2,6 +2,8 @@
 title: Guide
 cascade:
   type: docs
+  sidebar:
+    open: true
 ---
 
 Hello!

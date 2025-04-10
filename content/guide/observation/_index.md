@@ -1,10 +1,7 @@
 ---
 title: Observation
-math: true
-prev: /guide/getting-started
 next: /guide/observation/night-sky
-sidebar:
-  open: true
+weight: 4
 ---
 
 ## Grrrrrrrrr

@@ -1,7 +1,6 @@
 ---
 title: Lane-Emden Equation
 prev: /guide/stellar
-math: true
 ---
 
 The Lane–Emden equation is a dimensionless equation that describes a Newtonian self-gravitating, spherically symmetric, polytropic fluid. It is named after astrophysicists Jonathan Homer Lane and Robert Emden. The equation reads:
@@ -12,7 +11,7 @@ where $\xi$ is a dimensionless radius and $\theta$ is related to the density, an
 
 $$P = K \rho^{1 + \frac{1}{n}}$$
 
-where $P$ and $\rho$ are the pressure and density, respectively, and $K$ is a constant of proportionality. The standard boundary conditions are $\theta(0) = 1$ and $\theta'(0) = 0$. Solutions thus describe the run of pressure and density with radius and are known as polytropes of index $n$.
+where $P$ and $\rho$ are the pressure and density, respectively, and $K$ is a constant of proportionality. The standard boundary conditions are $\theta(0) = 1$ and $\theta'(0) = 0$. Solutions thus describe the pressure and density profile with radius and are known as polytropes of index $n$. These are commonly used to model stars.
 
 ## Derivation
 
@@ -51,9 +50,9 @@ $$ \frac{1}{\xi^2} \frac{d}{d\xi^2} \left( \xi^2 \frac{d \theta}{d \xi} \right) 
 The boundary conditions are:
 
 - $\theta(0) = 1$: The density at the center of the star is $\rho_c$.
-- $\theta'(0) = 0$: The density gradient at the center of the star is zero.
+- $\theta'(0) = 0$: The density gradient at the center is zero, avoiding any discontinuity.
 
-The surface of the star is defined by the condition $\theta(\xi_R) = 0$, where $\xi_R$ is the radius of the star. Only solutions with $n < 5$ have a surface. All polytropes with $n \geq 5$ have infinite radii.
+The surface of the fluid is defined by the condition $\theta(\xi_R) = 0$, where $\xi_R$ is the radius of the fluid. Only solutions with $n < 5$ have a surface. All polytropes with $n \geq 5$ have infinite radii.
 
 ## Solutions
 
@@ -63,7 +62,7 @@ The Lane-Emden equation becomes $\frac{1}{\xi^2} \frac{d}{d\xi^2} \left( \xi^2 \
 
 $$ \theta(\xi) = 1 - \frac{\xi^2}{6} $$
 
-This gives the radius of the star to be at $\xi_R = \sqrt{6}$. This solution corresponds to an incompressible fluid star, which has the same density everywhere.
+This gives the surface to be at $\xi_R = \sqrt{6}$. This solution corresponds to an incompressible fluid star, which has the same density everywhere.
 
 ### $n = 1$
 
@@ -71,7 +70,7 @@ The solution for $n = 1$ is
 
 $$ \theta(\xi) = \frac{\sin(\xi)}{\xi} $$
 
-This extender to infinity, hence the star has infinite radius, unless truncated artificially. We truncate the star at the first root, where $\xi_R = \pi$.
+This extends to infinity, hence has infinite radius, unless truncated artificially. We truncate the star at the first root, where $\xi_R = \pi$.
 
 ### $n = 5$
 
@@ -79,13 +78,15 @@ The solution for $n = 5$ is
 
 $$ \theta(\xi) = \left( 1 + \frac{\xi^2}{3} \right)^{-1/2} $$
 
+This solution has no surface, as it extends to infinity.
+
 ### $n = 1.5,\, 3$
 
 The solution corresponding to $n = 1.5$ is of an adiabatic star supported by pressure of non relativistic gas, or a white dwarf.
 
 The solution corresponding to $n = 3$ is of an adiabatic star supported by pressure of ultra-relativistic gas, or a neutron star.
 
-## Stellar Properties
+## Physical Properties
 
 The stellar radius is
 
@@ -107,6 +108,6 @@ The average density of the star is
 
 $$ \rho_{av} = \frac{3M}{4 \pi R^3} = \frac{3}{\xi_R^3} \left[ -\xi^2 \frac{d \theta}{d \xi} \right]_{\xi_R} \rho_c$$
 
-The gravitational potential energy of the star is
+The gravitational potential energy is
 
 $$ \Omega = - \int_0^M \frac{GM_r dM_r}{r^2} = \frac{3}{5-n} \frac{GM^2}{R} $$

@@ -1,6 +1,5 @@
 ---
 title: Getting Started
-next: /guide/observation/
 prev: /guide/
 weight: 1
 ---

@@ -11,15 +11,13 @@ menu:
     - name: About
       pageRef: /about
       weight: 3
-    - name: Search
+    - name: Constants
+      pageRef: /constants
       weight: 4
+    - name: Search
+      weight: 5
       params:
         type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/"
-      params:
-        icon: github
 
 markup:
   goldmark:
