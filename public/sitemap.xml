@@ -4,19 +4,33 @@
   <url>
     <loc>http://localhost:1313/guide/getting-started/</loc>
   </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/keplers-laws/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/bound-orbits/</loc>
+  </url><url>
     <loc>http://localhost:1313/constants/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/positional/</loc>
+    <loc>http://localhost:1313/guide/positional-astronomy/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/radiometry/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/celestial/</loc>
+    <loc>http://localhost:1313/guide/celestial-mechanics/unbound-orbits/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/orbital-elements/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/binary/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/optics/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/stellar/</loc>
+    <loc>http://localhost:1313/guide/stellar-astrophysics/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/galactic/</loc>
+    <loc>http://localhost:1313/guide/celestial-mechanics/three-body-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/galactic-astrophysics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guide/celestial-mechanics/orbital-transfer/</loc>
   </url><url>
     <loc>http://localhost:1313/guide/cosmology/</loc>
   </url><url>
@@ -28,9 +42,7 @@
   </url><url>
     <loc>http://localhost:1313/guide/</loc>
   </url><url>
-    <loc>http://localhost:1313/guide/celestial/kepler/</loc>
-  </url><url>
-    <loc>http://localhost:1313/guide/stellar/lane-emden/</loc>
+    <loc>http://localhost:1313/guide/stellar-astrophysics/lane-emden/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>

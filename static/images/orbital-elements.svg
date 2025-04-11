@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="555" height="500" version="1.1">
+  <defs>
+    <path id="arrow" d="m 0 0 l -14 5 v -10 z"/>
+  </defs>
+  <path fill="#f0f0a0" stroke-width="1.89794801" d="M 117.42233 110.48971 A 300.46670 147.47556          -45.49000 0 0 238.53786 399.38818" fill-opacity="0.6" stroke="#000000"/>
+  <ellipse rx="300.46670" fill="#d2d2d2" ry="147.47556" cx="177.98010" cy="254.93894" stroke="none"/>
+  <line y2="270.17398" stroke-width="1.15914595" x1="177.98010" x2="497.70418" stroke="#ff2020" y1="254.93894"/>
+  <path d="m 0 0 l -14 5 v -10 z" transform="matrix(0.9988666436916291, 0.04759651374018923, -0.04759651374018923, 0.9988666436916291, 497.7041931152344, 270.1739807128906)" fill="#ff2020"/>
+  <path fill="none" stroke-width="2.48823" d="M 206.45629 256.29585 A 28.61008 14.04245 0.0 1 0          183.74633 268.69323" stroke="#17ab34"/>
+  <path d="m 0 0 l -14 5 v -10 z" transform="matrix(0.9993908270190958, 0.03489949670250097, -0.03489949670250097, 0.9993908270190958, 183.74632263183594, 268.6932373046875)" fill="#17ab34"/>
+  <path fill="#f0f0a0" stroke-width="1.89794801" d="M 117.42233 110.48971 A 300.46670 147.47556          -45.49000 0 1 238.53786 399.38818" fill-opacity="0.6" stroke="#000000"/>
+  <line y2="47.87766" stroke-width="1.15914595" x1="177.98010" x2="395.03658" y1="254.93894" stroke="#3a20ff"/>
+  <line y2="254.93894" stroke-width="1.15914595" x1="244.89699" x2="177.98010" stroke="#ff2020" y1="33.12704"/>
+  <path fill="none" d="M 189.71775 282.93691 A 58.23816 28.58455 -45.49000 0 0 220.05122          214.80515" stroke-width="2.62202" stroke="#6028ff"/>
+  <path d="m 0 0 l -14 5 v -10 z" transform="matrix(-0.27563735581699916, -0.9612616959383189, 0.9612616959383189, -0.27563735581699916, 220.0512237548828, 214.80514526367188)" fill="#6028ff"/>
+  <path fill="none" d="M 220.05122 214.80515 A 58.23816 28.58455 -45.49000 0 0 190.95031          211.94610" stroke-width="2.4" stroke="#c20a0a"/>
+  <path d="m 0 0 l -14 5 v -10 z" transform="matrix(-0.9563047559630354, 0.29237170472273677, -0.29237170472273677, -0.9563047559630354, 190.9503173828125, 211.94610595703125)" fill="#c20a0a"/>
+  <path fill="none" d="M 297.82634 390.17533 A 60 60 0 0 0 282.70429 358.77627" stroke-width="2.10753798" stroke="#007d00"/>
+  <path d="m 0 0 l -14 5 v -10 z" transform="matrix(-0.5446390350150271, -0.838670567945424, 0.838670567945424, -0.5446390350150271, 282.70428466796875, 358.7762756347656)" fill="#007d00"/>
+  <circle r="7.96189" cx="244.89699" cy="33.12704"/>
+  <g font-family="Lucida Sans Unicode">
+    <g font-size="18">
+      <text x="17.318008" fill="#17ab34" y="307.79498" id="trsvg17" style="white-space: pre;"><tspan id="trsvg1">Longitude of ascending node</tspan></text>
+      <text x="254.02448" fill="#6028ff" y="214.59079" id="trsvg18" style="white-space: pre;"><tspan id="trsvg2">Argument of periapsis</tspan></text>
+      <text x="69.09743" fill="#c20a0a" y="185.21548" id="trsvg19" style="white-space: pre;"><tspan id="trsvg3">True anomaly</tspan></text>
+      <text x="283.70532" fill="#007d00" y="412.6334" id="trsvg20" style="white-space: pre;"><tspan id="trsvg4">Inclination</tspan></text>
+      <text x="209.34987" fill="#ec4040" y="450.1905" id="trsvg21" style="white-space: pre;"><tspan id="trsvg5">Ascending node</tspan></text>
+      <text id="trsvg22" style="fill: rgb(0, 212, 255); text-anchor: middle; white-space: pre;" x="9.212" y="-4.913"><tspan x="510.415" y="302.106" style="font-size: 18px; word-spacing: 0px;">Reference</tspan><tspan x="510.415" dy="24" style="font-size: 18px; word-spacing: 0px;">direction</tspan></text>
+      <text id="trsvg23" style="fill: rgb(255, 144, 0); white-space: pre;" x="109.412" y="29.7429">Celestial body</text>
+      <text x="67.46901" y="368.44458" transform="matrix(0.9890034 0.14789264 -0.14789264 0.9890034                 9.937065 -2.5154736)" id="trsvg24" style="white-space: pre;"><tspan id="trsvg9">Plane of reference</tspan></text>
+      <text transform="matrix(0.93274015 -0.36054942 0.36054942                 0.93274015 56.016125 -9.603659)" id="trsvg25" style="white-space: pre;" x="-144.32684" y="464.2918"><tspan id="trsvg10">Orbit</tspan></text>
+      <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="487.98" y="310.83"> </text>
+    </g>
+    <g font-size="25">
+      <text x="120.31801" fill="#17ab34" y="261.79498" id="trsvg26" style="white-space: pre;"><tspan id="trsvg11">Ω</tspan></text>
+      <text x="234.02448" fill="#6028ff" y="239.59079" id="trsvg27" style="white-space: pre;"><tspan id="trsvg12">ω</tspan></text>
+      <text x="209.09743" fill="#c20a0a" y="195.24765" id="trsvg28" style="white-space: pre;"><tspan id="trsvg13">ν</tspan></text>
+      <text font-style="italic" x="271.4589" fill="#007d00" y="389.5631" id="trsvg29" style="white-space: pre;"><tspan id="trsvg14">i</tspan></text>
+      <text x="233.34987" fill="#ec4040" y="426.1905" id="trsvg30" style="white-space: pre;"><tspan id="trsvg15">☊</tspan></text>
+      <text id="trsvg31" style="fill: rgb(0, 212, 255); white-space: pre;" x="503.203" y="281.019">♈︎</text>
+    </g>
+  </g>
+</svg>

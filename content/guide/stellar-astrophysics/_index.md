@@ -1,6 +1,5 @@
 ---
 title: Stellar Astrophysics
-next: /guide/stellar/lane-emden
+next: /guide/stellar-astrophysics/lane-emden
 weight: 6
 ---
-

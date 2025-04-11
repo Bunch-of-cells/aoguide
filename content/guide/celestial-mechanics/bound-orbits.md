@@ -1,11 +1,11 @@
 ---
 title: Bound Orbits
-prev: /guide/celestial/kepler
-next: /guide/celestial/unbound
+# prev: /guide/celestial/keplers-laws
+# next: /guide/celestial/unbound-orbits
 weight: 2
 ---
 
-As proved in section 3.1, all bound orbits are elliptical. Consider an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$. The semi-major axis is the longest chord of the ellipse, while the semi-minor axis is the shortest chord. The semi-minor and semi-major axis are related by
+As proved in section 3.1, all bound orbits are elliptical. Consider an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$. The semi-major axis is half the length of longest chord of the ellipse, while the semi-minor axis is half the length of the shortest chord. The semi-minor and semi-major axis are related by
 
 $$ b^2 = a^2 (1 - e^2) $$
 
@@ -71,9 +71,13 @@ $$ P = 2 \pi \sqrt{\frac{a^3}{\mu}} $$
 
 ## Kepler's Equation
 
-Let the instant in time when the body was at periapsis be $t = \tau$. We define the mean anamoly $M$ as the angular distance from the periapsis which a fictitious body would have if it moved in a circular orbit, with constant speed, with the same orbital period as the actual body in its elliptical orbit. At any instant in time $t$, it is given by
+Let the instant in time when the body was at periapsis be $t = \tau$. The mean motion $n$ is defined as
 
-$$\tag{3.2.6} M = \frac{2 \pi}{P} (t - \tau) $$
+$$n = \frac{2 \pi}{P}$$
+
+We define the mean anamoly $M$ as the angular distance from the periapsis which a fictitious body would have if it moved in a circular orbit, with constant speed, with the same orbital period as the actual body in its elliptical orbit. At any instant in time $t$, it is given by
+
+$$\tag{3.2.6} M = n (t - \tau) $$
 
 We defined the eccentric anamoly $E$ as the eccentric angle of the smaller body in its elliptical orbit. In cartesian coordinates with the center of the ellipse being at origin, the equation of the ellipse becomes
 
@@ -112,7 +116,7 @@ $$
 
 ## Radial Elliptic trajectory
 
-A radial elliptic trajectory is a degenerate case of an elliptical trajectory, where the eccentricity $e$ is equal to 1. The trajectory is a straight line, and the two bodies are moving directly towards each other. It is still classified as an elliptic trajectory since the total energy of the system is negative.
+A radial elliptic trajectory is a degenerate case of an elliptical trajectory, where the eccentricity $e$ is equal to 1 and the angular momentum of the system is zero. The trajectory is a straight line, and the two bodies collide with each other at some point in the trajectory. It is still classified as an elliptic trajectory since the total energy of the system is negative.
 
 ## Problems
 
@@ -134,7 +138,7 @@ A radial elliptic trajectory is a degenerate case of an elliptical trajectory, w
 
     $$P^2 = a^3 = 16^3 = 4096 \implies \boxed{P = 64 \mathrm{\,years}}$$
 
-    The eccentricity and semi latus rectum can be found using
+    The eccentricity and semi-latus rectum can be found using
 
     $$e = \frac{r_a - r_p}{r_a + r_p} = \frac{31.5 - 0.5}{31.5 + 0.5} = \frac{31}{32}$$
 
@@ -156,7 +160,7 @@ A radial elliptic trajectory is a degenerate case of an elliptical trajectory, w
     {{< /tab >}}
 
     {{< tab >}}
-    A man can jump to a heigh $h \approx 50 \mathrm{\,cm}$. This gives the man's jump velocity to be $v_\text{jump} = \sqrt{2g_\oplus h}$. Equating it to the escape velocity of the planet, we get
+    A man can jump to a height $h \approx 50 \mathrm{\,cm}$ on Earth. This gives the man's jump velocity to be $v_\text{jump} = \sqrt{2g_\oplus h}$. Equating it to the escape velocity of the planet, we get
 
     $$\sqrt{2g_\oplus h} = \sqrt{\frac{2GM}{R}} \implies \sqrt{2\frac{G}{R_\oplus^2} \frac{4 \pi \rho_\oplus R_\oplus^3}{3} h} = \sqrt{\frac{2G}{R} \frac{4 \pi \rho R^3}{3}}$$
 

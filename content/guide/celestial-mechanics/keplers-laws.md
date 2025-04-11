@@ -1,7 +1,6 @@
 ---
 title: Kepler's Laws
-prev: /guide/celestial/
-next: /guide/celestial/bound
+prev: /guide/celestial-mechanics/
 weight: 1
 ---
 
@@ -33,10 +32,10 @@ In the limit $m_1 \gg m_2$, we get that
 
 - $M = m_1$
 - $m = m_2$
-- $\vec{r_1} = 0$
+- $\vec{r_1} = \vec{0}$
 - $\vec{r_2} = \vec{r}$
 
-We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest.
+We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest. The separation vector $\vec{r}$ also gives the trajectory of one of the bodies when viewed in the frame of the other body.
 
 ## Constants of Motion
 
@@ -97,7 +96,7 @@ $$ \vec{r} \cdot \vec{e} = r e \cos \theta = \vec{r} \cdot \left( -\frac{\vec{h}
 
 $$\tag{3.1.4} \implies \boxed{r = \frac{h^2 / \mu}{1 + e \cos \theta}} $$
 
-This, if one may recognize, is the equation of a conic section in polar coordinates, with the focus being at origin and length of the semi latus rectum being $p = \frac{h^2}{\mu}$, which gives the relation
+This, if one may recognize, is the equation of a conic section in polar coordinates, with the focus being at origin and length of the semi-latus rectum being $p = \frac{h^2}{\mu}$, which gives the relation
 
 $$\tag{3.1.5} h = \sqrt{\mu p}$$
 
@@ -117,7 +116,7 @@ $$ r_1 = \frac{m_2}{M} \frac{h^2 / \mu}{1 + e \cos \theta} \,, \qquad \qquad r_2
 
 The trajectories of the two bodies however will be oriented opposite to each other, with an angle of $\pi$ radian between them, keeping the center of mass fixed.
 
-The energy of the system can thus be determined by just the eccentricity $e$ and length of semi latus rectum $p$ of the trajectory. The total energy of the system is given by
+The energy of the system can thus be determined by just the eccentricity $e$ and length of semi-latus rectum $p$ of the trajectory. The total energy of the system is given by
 
 $$e^2 = 1 + \frac{2h \varepsilon}{\mu^2} \implies \varepsilon = \frac{1}{2} \left( e^2 - 1 \right) \frac{\mu^2}{h^2}$$
 
@@ -149,7 +148,7 @@ Consider two bodies moving in bound elliptical orbits, with the semi-major axis 
 
 $$ e^2 = 1 - \frac{b^2}{a^2} $$
 
-The area of an ellipse is $\pi a b = \pi a^2 \sqrt{1 - e^2}$. Moreover, the length of the semi latus rectum is $p = \frac{b^2}{a} = a (1 - e^2)$, hence $h = \sqrt{\mu a (1 - e^2)}$
+The area of an ellipse is $\pi a b = \pi a^2 \sqrt{1 - e^2}$. Moreover, the length of the semi-latus rectum is $p = \frac{b^2}{a} = a (1 - e^2)$, hence $h = \sqrt{\mu a (1 - e^2)}$
 
 Integrating the equation of areal velocity, we have
 
