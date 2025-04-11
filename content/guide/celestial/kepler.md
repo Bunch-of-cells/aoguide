@@ -105,8 +105,9 @@ The magnitude of $\vec{e}$ determines the shape of the trajectory:
 
 - $e = 0$: Circle
 - $0 \leq e < 1$: Ellipse
-- $e = 1$: Parabola
+- $e = 1,\, h \neq 0$: Parabola
 - $e > 1$: Hyperbola
+- $e = 1,\, h = 0$: Straight line (degenerate conic section)
 
 where the focus of the conic section lies at the center of mass of the system.
 
@@ -115,12 +116,6 @@ The individual trajectories of the two bodies in the center of mass frame is the
 $$ r_1 = \frac{m_2}{M} \frac{h^2 / \mu}{1 + e \cos \theta} \,, \qquad \qquad r_2 = \frac{m_1}{M} \frac{h^2 / \mu}{1 + e \cos \theta} $$
 
 The trajectories of the two bodies however will be oriented opposite to each other, with an angle of $\pi$ radian between them, keeping the center of mass fixed.
-
-Another trajectory is possible, which is a straight line. This is the case where $\vec{h} = \vec{0}$, and the bodies are moving directly towards each other. The eccentricity of such a trajectory is $1$. However, depending on the total energy of the system, the trajectory can be classified as:
-
-- $\varepsilon < 0$: radial elliptic trajectory
-- $\varepsilon = 0$: radial parabolic trajectory
-- $\varepsilon > 0$: radial hyperbolic trajectory
 
 The energy of the system can thus be determined by just the eccentricity $e$ and length of semi latus rectum $p$ of the trajectory. The total energy of the system is given by
 
@@ -170,7 +165,7 @@ Rearranging, we get
 
 $$\tag{3.1.8} \boxed{P^2 = \frac{4 \pi^2}{\mu} a^3} $$
 
-This is known as Newton's form of the third law. If we work in the units of AU, sidereal years, and solar masses, we have $G M_\odot = 4 \pi$. Hence the equation simplifies to
+This is known as Newton's form of the third law. If we work in the units of AU, sidereal years, and solar masses, we have $G M_\odot = 4 \pi^2$. Hence the equation simplifies to
 
 $$\tag{3.1.9} \boxed{a^3 = M P^2} $$
 

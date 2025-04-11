@@ -46,6 +46,7 @@ $$
 \text{AU} \qquad & 1.495979 & \times 10^{11} \quad & \mathrm{m} \quad & \text{Astronomical Unit} \\
 \text{ly} \qquad & 9.460730 & \times 10^{15} \quad & \mathrm{m} \quad & \text{Light year} \\
 \text{pc} \qquad & 3.085678 & \times 10^{16} \quad & \mathrm{m} \quad & \text{Parsec} \\
+\text{yr} \qquad & 365.2563 & & \mathrm{days} \quad & \text{Sidereal year} \\
 M_\odot \qquad & 1.988416 & \times 10^{30} \quad & \mathrm{kg} \quad & \text{Solar mass} \\
 R_\odot \qquad & 6.957 & \times 10^{8} \quad & \mathrm{m} \quad & \text{Solar radius} \\
 L_\odot \qquad & 3.828 & \times 10^{26} \quad & \mathrm{W} \quad & \text{Solar luminosity} \\
@@ -54,6 +55,7 @@ M_{\odot,\text{ V}} \qquad & 4.83 & & & \text{Solar magnitude} \\
 M_{\odot,\text{ bol}} \qquad & 4.75 &&&\\
 m_{\odot,\text{ V}} \qquad & -26.832 &&&\\
 \alpha_\odot \qquad & 32' & & & \text{Size of solar disc} \\
+\mu_\odot \qquad & 4 \pi^2 & & \mathrm{AU^3\,yr^{-2}} \quad & \text{Solar gravitational parameter} \\
 M_\oplus \qquad & 5.9722 & \times 10^{24} \quad & \mathrm{kg} \quad & \text{Earth mass} \\
 R_\oplus \qquad & 6.3781 & \times 10^{6} \quad & \mathrm{m} \quad & \text{Earth radius} \\
 e_\oplus \qquad & 0.016709 & & & \text{Earth eccentricity} \\

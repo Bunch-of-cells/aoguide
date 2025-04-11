@@ -35,7 +35,7 @@ $$
 \end{align*}
 $$
 
-From hereon, we consider the case when $m_2 \gg m_1$. Although the math is the same without the assumption too, it just gets easier to visualize.
+From hereon, we consider the case when $m_2 \gg m_1$.
 
 ## Orbital Velocity
 
@@ -118,7 +118,7 @@ A radial elliptic trajectory is a degenerate case of an elliptical trajectory, w
 
 {{< tabs items="Problem,Hint,Solution" >}}
     {{< tab >}}
-    $\text{(IOAA 2007)}$ A Sun-orbiting periodic comet is the farthest at 31.5 AU and the closest at 0.5 AU. What is the orbital period of this comet? What is the area (in square AU per year) swept by the line joining the comet and the Sun?
+    $\text{(IOAA 2007)}$ A Sun-orbiting periodic comet is the farthest at $31.5 \mathrm{\,AU}$ and the closest at $0.5 \mathrm{\,AU}$. What is the orbital period of this comet? What is the area (in $\mathrm{AU^2/yr}$) swept by the line joining the comet and the Sun?
     {{< /tab >}}
 
     {{< tab >}} 
@@ -138,11 +138,30 @@ A radial elliptic trajectory is a degenerate case of an elliptical trajectory, w
 
     $$e = \frac{r_a - r_p}{r_a + r_p} = \frac{31.5 - 0.5}{31.5 + 0.5} = \frac{31}{32}$$
 
-    $$p = a(1 - e^2) = 16 \left( 1 - \frac{31^2}{32^2} \right) = 16 \left( \frac{63}{1024} \right) = 0.9375 \mathrm{\,AU}$$
+    $$p = a(1 - e^2) = 16 \left( 1 - \frac{31^2}{32^2} \right) = 16 \left( \frac{63}{1024} \right) = 0.98 \mathrm{\,AU}$$
 
     Therefore the rate of area swept is
 
-    $$\frac{dA}{dt} = \frac{h}{2} = \frac{\sqrt{\mu p}}{2} = \frac{\sqrt{4 \pi p}}{2} = \sqrt{\pi p} = \sqrt{\pi \cdot 0.9375} = \boxed{1.732 \mathrm{\, AU^2/yr}}$$
+    $$\frac{dA}{dt} = \frac{h}{2} = \frac{\sqrt{\mu p}}{2} = \frac{\sqrt{4 \pi^2 p}}{2} = \pi \sqrt{p} = \pi \cdot \sqrt{0.98} = \boxed{3.1 \mathrm{\, AU^2/yr}}$$
+    {{< /tab >}}
+{{< /tabs >}}
 
+{{< tabs items="Problem,Hint,Solution" >}}
+    {{< tab >}}
+    $\text{(IOAA 2009)}$ Estimate the radius of a planet that a man can escape its gravitation by jumping vertically. Assume density of the planet and the Earth are the same.
+    {{< /tab >}}
+
+    {{< tab >}} 
+    Find the velocity of the man, and equate it to the escape velocity.
+    {{< /tab >}}
+
+    {{< tab >}}
+    A man can jump to a heigh $h \approx 50 \mathrm{\,cm}$. This gives the man's jump velocity to be $v_\text{jump} = \sqrt{2g_\oplus h}$. Equating it to the escape velocity of the planet, we get
+
+    $$\sqrt{2g_\oplus h} = \sqrt{\frac{2GM}{R}} \implies \sqrt{2\frac{G}{R_\oplus^2} \frac{4 \pi \rho_\oplus R_\oplus^3}{3} h} = \sqrt{\frac{2G}{R} \frac{4 \pi \rho R^3}{3}}$$
+
+    Since $\rho = \rho_\oplus$, we have
+
+    $$ R = \sqrt{R_\oplus h} \approx \boxed{1.79 \times 10^3 \mathrm{\,m}}  $$
     {{< /tab >}}
 {{< /tabs >}}
