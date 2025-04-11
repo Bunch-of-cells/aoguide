@@ -3,7 +3,7 @@ title: Unbound Orbits
 weight: 3
 ---
 
-As proved in section 3.1, hyperbolic and parabolic trajectories having total energy greater than or equal to 0 are unbound.
+As proved in section 3.1, hyperbolic and parabolic trajectories having total energy greater than or equal to zero are unbound.
 
 ## Parabolic trajectory
 

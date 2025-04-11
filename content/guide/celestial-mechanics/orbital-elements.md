@@ -3,10 +3,7 @@ title: Orbital Elements
 weight: 4
 ---
 
-<figure class="ma0 w-75">
-  <img src="/images/orbital-elements.svg" alt="Orbital Elements" />
-  <figcaption>Orbital Elements (source: Wikipedia)</figcaption>
-</figure>
+{{< svg "images/orbital-elements.svg" "Euler angle illustration" "Orbital Elements (source: Wikipedia)" >}}
 
 Orbital elements are the parameters required to uniquely identify a specific orbit. When viewed from an inertial frame, two orbiting bodies trace out distinct trajectories. Each of these trajectories has its focus at the common center of mass. When viewed from a non-inertial frame centered on one of the bodies, only the trajectory of the opposite body is apparent; Keplerian elements describe these non-inertial trajectories. In general, six parameters are used to describe the orbit.
 
@@ -35,10 +32,7 @@ Another element commonly used is
 
 ## Eulerian Angles
 
-<figure class="ma0 w-75">
-  <img src="/images/euler-angles.svg" alt="Euler angles" />
-  <figcaption>Euler Angles</figcaption>
-</figure>
+{{< svg "images/euler-angles.svg" "Euler angle illustration" "Euler Angles" >}}
 
 The Euler angles are three angles used to describe the orientation of a coordinate system with respect to another fixed coordinate system. The angles $\Omega$, $i$, $\omega$ are the Euler angles characterizing the orientation of the coordinate system. Let ${\mathbf{\hat{X}}}$, $\mathbf{\hat{Y}}$ and $\mathbf{\hat{Z}}$ define the coordinate system of the reference plane, and ${\mathbf{\hat{x}}}$, $\mathbf{\hat{y}}$ and $\mathbf{\hat{z}}$ define the coordinate system of the orbital plane. N in the figure denotes the direction of the ascending node.
 
@@ -53,8 +47,8 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos I & -\sin I \\
-0 & \sin I & \cos I
+0 & \cos i & -\sin i \\
+0 & \sin i & \cos i
 \end{bmatrix}
 \begin{bmatrix}
 \cos\omega & -\sin\omega & 0 \\
@@ -63,6 +57,8 @@ $$
 \end{bmatrix}
 \begin{bmatrix} x \\ y \\ z \end{bmatrix}
 $$
+
+$$\tag{3.4.1}$$ <br />
 
 and
 
@@ -75,8 +71,8 @@ $$
 \end{bmatrix}
 \begin{bmatrix}
 1 & 0 & 0 \\
-0 & \cos I & \sin I \\
-0 & -\sin I & \cos I
+0 & \cos i & \sin i \\
+0 & -\sin i & \cos i
 \end{bmatrix}
 \begin{bmatrix}
 \cos\omega & \sin\omega & 0 \\
@@ -86,19 +82,21 @@ $$
 \begin{bmatrix} X \\ Y \\ Z \end{bmatrix}
 $$
 
+$$\tag{3.4.2}$$  <br />
+
 If the orbiting body is at a distance $r$, having true anamoly $\theta$, its coordinates are $x = r \cos \theta$, $y = r \sin \theta$ and $z = 0$. Therefore, the coordinates of the orbiting body in the reference frame are given by
 
 $$
-\begin{align*}
-X &= r \left( \cos\Omega \cos(\omega + \theta) - \sin\Omega \sin(\omega + \theta) \cos I \right) \\
-Y &= r \left( \sin\Omega \cos(\omega + \theta) + \cos\Omega \sin(\omega + \theta) \cos I \right) \\
-Z &= r \sin(\omega + \theta) \sin I
-\end{align*}
+\begin{align}
+\tag{3.4.3} X &= r \left( \cos\Omega \cos(\omega + \theta) - \sin\Omega \sin(\omega + \theta) \cos i \right) \\
+\tag{3.4.4} Y &= r \left( \sin\Omega \cos(\omega + \theta) + \cos\Omega \sin(\omega + \theta) \cos i \right) \\
+\tag{3.4.5} Z &= r \sin(\omega + \theta) \sin i
+\end{align}
 $$
 
 If the reference frame is the ecliplic, the (heliocentric) ecliptic coordinates of the orbiting body are given by
 
-$$ \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{\sqrt{X^2 + Y^2}} $$
+$$\tag{3.4.6} \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{\sqrt{X^2 + Y^2}} $$
 
 ## Problems
 
@@ -114,10 +112,92 @@ $$ \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{\sqrt{X^2 +
     {{< /tab >}}
 
     {{< tab >}} 
-    Coming Soon!
+    Use equations 3.4.3 to 3.4.5 to find the cartesian coordinates of the satellite at a later time. Use the 3D distance formula to find the distance from Earth, and eq 3.4.6 to find the ecliptic coordinates, which can be converted to equatorial coordinates.
     {{< /tab >}}
 
     {{< tab >}}
-    Coming Soon!
+    We are given that
+
+    - $a = 0.6 \mathrm{\, AU}$
+    - $i = 20^\circ$
+    - $\Omega = 130^\circ$
+
+    Note that since there is no periapsis (the orbit is circular), we can't determine $\omega$. Instead, we use the ascending node as a reference point, and set $\omega = M = \tau = 0$ there. The orbital period of the satellite is $P = a^{3/2} = 0.465 \mathrm{\,yr}$, which gives the mean motion $n = 0.03701 \mathrm{\,day^{-1}}$. Writing eqn 3.4.3 to 3.4.5 at a later time when the mean anamoly (which is equal to the true anamoly) is $M$,
+
+    $$
+    \begin{aligned}
+    X &= r \left( \cos\Omega \cos M - \sin\Omega \sin M \cos i \right) \\
+    Y &= r \left( \sin\Omega \cos M + \cos\Omega \sin M \cos i \right) \\
+    Z &= r \sin M \sin i
+    \end{aligned}
+    $$
+
+    1. The position of Earth at the same time is given by
+
+    $$
+    \begin{aligned}
+    X_\oplus &= a \cos (M + \Omega) \\
+    Y_\oplus &= a \sin (M + \Omega) \\
+    Z_\oplus &= 0
+    \end{aligned}
+    $$
+
+    where a = $1 \mathrm{\,AU}$.
+
+    At $t = 65 \mathrm{\,days}$, $M = nt = 2.406 = 137.8^\circ$. Putting this into the equations, we get
+
+    $$
+    \begin{aligned}
+    X &= -0.004 \mathrm{\, AU} \\
+    Y &= -0.584 \mathrm{\, AU} \\
+    Z &= 0.138 \mathrm{\, AU}
+    \end{aligned}
+    $$
+
+    $$
+    \begin{aligned}
+    X_\oplus &= -0.038 \mathrm{\, AU} \\
+    Y_\oplus &= -0.999 \mathrm{\, AU} \\
+    Z_\oplus &= 0
+    \end{aligned}
+    $$
+
+    The distance between Earth and the satellite is, therefore,
+
+    $$d = \sqrt{(X - X_\oplus)^2 + (Y - Y_\oplus)^2 + (Z - Z_\oplus)^2} = \boxed{0.439 \mathrm{\, AU}}$$
+
+    2. The mean anamoly after 140 days is $M = nt = 5.182 = 296.9^\circ$. The position of the satellite at this time is given by
+
+    $$
+    \begin{aligned}
+    X &= 0.211 \mathrm{\, AU} \\
+    Y &= 0.531 \mathrm{\, AU} \\
+    Z &= -0.183 \mathrm{\, AU}
+    \end{aligned}
+    $$
+
+    Now, using eq 3.4.6, we can find the ecliptic coordinates of the satellite.
+
+    $$
+    \begin{aligned}
+    \tan \lambda &= \frac{Y}{X} = 2.517 \implies \lambda = 68.3^\circ \\
+    \sin \beta &= \frac{Z}{\sqrt{X^2 + Y^2}} = -0.320 \implies \beta = -18.7^\circ
+    \end{aligned}
+    $$
+
+    To get the equatorial coordinates from this, we use the following equations
+
+    $$
+    \begin{aligned}
+    \sin \alpha \cos \delta &= -\sin \beta \sin \epsilon + \cos \beta \cos \epsilon \sin \lambda \\
+    \cos \alpha \cos \delta &= \cos \lambda \cos \beta \\
+    \sin \delta &= \sin \beta \cos \epsilon + \cos \beta \sin \epsilon \sin \lambda
+    \end{aligned}
+    $$
+
+    Substituing the values for $\beta$, $\lambda$ and $\epsilon$, we get
+
+    $$\boxed{ \alpha = 69.46^\circ\,, \quad \delta = 3.26^\circ }$$
+
     {{< /tab >}}
 {{< /tabs >}}

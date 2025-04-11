@@ -4,38 +4,38 @@ prev: /guide/celestial-mechanics/
 weight: 1
 ---
 
-Newton's law of universal gravitation describes gravity as a force by stating that every particle attracts every other particle in the universe with a force that is proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass. Consider two bodies of masses $m_1$ and $m_2$, with position vectors $\vec{r_1}$ and $\vec{r_2}$. The force exerted on body 2 due to body 1 is
+Newton's law of universal gravitation describes gravity as a force by stating that every particle attracts every other particle in the universe with a force that is proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass. Consider two bodies of masses $m_1$ and $m_2$, with position vectors $\mathbf{r_1}$ and $\mathbf{r_2}$. The force exerted on body 2 due to body 1 is
 
-$$ \vec{F} = -\frac{G m_1 m_2}{|\vec{r_2} - \vec{r_1}|^3} (\vec{r_2} - \vec{r_1}) $$
+$$ \mathbf{F} = -\frac{G m_1 m_2}{|\mathbf{r_2} - \mathbf{r_1}|^3} (\mathbf{r_2} - \mathbf{r_1}) $$
 
 We define the following:
 
-- Separation vector: $ \vec{r} = \vec{r_2} - \vec{r_1} $
+- Separation vector: $ \mathbf{r} = \mathbf{r_2} - \mathbf{r_1} $
 - Total mass: $M = m_1 + m_2$
 - Reduced mass: $m = \frac{m_1 m_2}{m_1 + m_2}$
 - Gravitational parameter: $\mu = GM$
 
 Here G is the gravitational constant, equal to $6.67430 \times 10^{-11} \: \mathrm{m^3\,kg^{-1}\,s^{-2}}$
-. From hereon, we will study the trajectory of the separation vector $\vec{r}$. Using Newton's second law $\vec{F} = m \vec{a}$, we can write
+. From hereon, we will study the trajectory of the separation vector $\mathbf{r}$. Using Newton's second law $\mathbf{F} = m \mathbf{a}$, we can write
 
-$$ \ddot{\vec{r}} = -\mu \frac{\vec{r}}{r^3} $$
+$$ \ddot{\mathbf{r}} = -\mu \frac{\mathbf{r}}{r^3} $$
 
 Working in the center of mass frame, we have
 
-$$ m_1 \vec{r_1} + m_2 \vec{r_2} = \vec{0} $$
+$$ m_1 \mathbf{r_1} + m_2 \mathbf{r_2} = \mathbf{0} $$
 
 Hence the individual position vectors can be expressed as
 
-$$ \vec{r_1} = \frac{-m_2}{M} \vec{r} \,, \qquad \qquad \vec{r_2} = \frac{m_1}{M} \vec{r} $$
+$$ \mathbf{r_1} = \frac{-m_2}{M} \mathbf{r} \,, \qquad \qquad \mathbf{r_2} = \frac{m_1}{M} \mathbf{r} $$
 
 In the limit $m_1 \gg m_2$, we get that
 
 - $M = m_1$
 - $m = m_2$
-- $\vec{r_1} = \vec{0}$
-- $\vec{r_2} = \vec{r}$
+- $\mathbf{r_1} = \mathbf{0}$
+- $\mathbf{r_2} = \mathbf{r}$
 
-We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest. The separation vector $\vec{r}$ also gives the trajectory of one of the bodies when viewed in the frame of the other body.
+We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest. The separation vector $\mathbf{r}$ also gives the trajectory of one of the bodies when viewed in the frame of the other body.
 
 ## Constants of Motion
 
@@ -43,16 +43,16 @@ The total orbital angular momentum is given by
 
 $$
 \begin{align*}
-\vec{L} &= m_1 \vec{r_1} \times \vec{v_1} + m_2 \vec{r_2} \times \vec{v_2}\\
-        &= m \vec{r} \times \vec{v}
+\mathbf{L} &= m_1 \mathbf{r_1} \times \mathbf{v_1} + m_2 \mathbf{r_2} \times \mathbf{v_2}\\
+        &= m \mathbf{r} \times \mathbf{v}
 \end{align*}
 $$
 
-where $\vec{v} = \dot{\vec{r}}$. The total energy of the system is given by
+where $\mathbf{v} = \dot{\mathbf{r}}$. The total energy of the system is given by
 
 $$
 \begin{align*}
-E &= \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 - \frac{G m_1 m_2}{|\vec{r_1} - \vec{r_2}|^2} \\
+E &= \frac{1}{2} m_1 v_1^2 + \frac{1}{2} m_2 v_2^2 - \frac{G m_1 m_2}{|\mathbf{r_1} - \mathbf{r_2}|^2} \\
   &= \frac{1}{2} m v^2 - \mu \frac{m}{r^2}
 \end{align*}
 $$
@@ -61,30 +61,30 @@ We define the specific angular momentum and specific energy as
 
 $$
 \begin{align*}
-\vec{h} &= \frac{\vec{L}}{m} = \vec{r} \times \dot{\vec{r}}\\
+\mathbf{h} &= \frac{\mathbf{L}}{m} = \mathbf{r} \times \dot{\mathbf{r}}\\
 \tag{3.1.1} \varepsilon &= \frac{E}{m} = \frac{1}{2} v^2 - \frac{\mu}{r}
 \end{align*}
 $$
 
-Since gravitation is a central force, the angular momentum is conserved. Moreover since it is conservative, the total energy is also conserved. Hence $\vec{h}$ and $\varepsilon$ are constants of motion.
+Since gravitation is a central force, the angular momentum is conserved. Moreover since it is conservative, the total energy is also conserved. Hence $\mathbf{h}$ and $\varepsilon$ are constants of motion.
 
-Since $\vec{h} \cdot \vec{r} = 0$, $\vec{h}$ lies perpendicular to the plane of motion, and hence defines the plane of motion. We have
+Since $\mathbf{h} \cdot \mathbf{r} = 0$, $\mathbf{h}$ lies perpendicular to the plane of motion, and hence defines the plane of motion. We have
 
 $$
 \begin{align*}
-\frac{d}{dt} (\vec{h} \times \dot{\vec{r}}) = \vec{h} \times \ddot{\vec{r}} &= (\vec{r} \times \dot{\vec{r}}) \times \left( -\mu \frac{\vec{r}}{r^3} \right) \\
-&= -\mu \frac{1}{r^3} \left[(\vec{r} \cdot \vec{r}) \dot{\vec{r}} - (\vec{r} \cdot \dot{\vec{r}}) \times \vec{r} \right] \\
-&= -\mu (\frac{\dot{\vec{r}}}{r} - \vec{r} \frac{\dot{r}}{r^2}) = \frac{d}{dt} \left(-\mu \frac{\vec{r}}{r} \right)
+\frac{d}{dt} (\mathbf{h} \times \dot{\mathbf{r}}) = \mathbf{h} \times \ddot{\mathbf{r}} &= (\mathbf{r} \times \dot{\mathbf{r}}) \times \left( -\mu \frac{\mathbf{r}}{r^3} \right) \\
+&= -\mu \frac{1}{r^3} \left[(\mathbf{r} \cdot \mathbf{r}) \dot{\mathbf{r}} - (\mathbf{r} \cdot \dot{\mathbf{r}}) \times \mathbf{r} \right] \\
+&= -\mu (\frac{\dot{\mathbf{r}}}{r} - \mathbf{r} \frac{\dot{r}}{r^2}) = \frac{d}{dt} \left(-\mu \frac{\mathbf{r}}{r} \right)
 \end{align*}
 $$
 
-$$ \implies \frac{d}{dt} \left( \vec{h} \times \dot{\vec{r}} + \mu \frac{\vec{r}}{r} \right) = \vec{0} $$
+$$ \implies \frac{d}{dt} \left( \mathbf{h} \times \dot{\mathbf{r}} + \mu \frac{\mathbf{r}}{r} \right) = \mathbf{0} $$
 
 Hence we define the eccentricity vector as
 
-$$\tag{3.1.2} \vec{e} = -\frac{\vec{h} \times \dot{\vec{r}}}{\mu} - \frac{\vec{r}}{r} $$
+$$\tag{3.1.2} \mathbf{e} = -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} $$
 
-This is another constant of motion. It lies in the plane of motion, hence $\vec{h} \cdot \vec{e} = 0$. It points in the direction of the periapsis. The mangnitude of the eccentricity vector is
+This is another constant of motion. It lies in the plane of motion, hence $\mathbf{h} \cdot \mathbf{e} = 0$. It points in the direction of the periapsis. The mangnitude of the eccentricity vector is
 
 $$\tag{3.1.3} e = \sqrt{1 + \frac{2 \varepsilon h^2}{\mu^2}} $$
 
@@ -92,7 +92,7 @@ $$\tag{3.1.3} e = \sqrt{1 + \frac{2 \varepsilon h^2}{\mu^2}} $$
 
 The angle between the eccentricity vector and the position vector is called the mean anamoly $\theta$
 
-$$ \vec{r} \cdot \vec{e} = r e \cos \theta = \vec{r} \cdot \left( -\frac{\vec{h} \times \dot{\vec{r}}}{\mu} - \frac{\vec{r}}{r} \right) = \frac{h^2}{\mu} - r$$
+$$ \mathbf{r} \cdot \mathbf{e} = r e \cos \theta = \mathbf{r} \cdot \left( -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} \right) = \frac{h^2}{\mu} - r$$
 
 $$\tag{3.1.4} \implies \boxed{r = \frac{h^2 / \mu}{1 + e \cos \theta}} $$
 
@@ -100,7 +100,7 @@ This, if one may recognize, is the equation of a conic section in polar coordina
 
 $$\tag{3.1.5} h = \sqrt{\mu p}$$
 
-The magnitude of $\vec{e}$ determines the shape of the trajectory:
+The magnitude of $\mathbf{e}$ determines the shape of the trajectory:
 
 - $e = 0$: Circle
 - $0 \leq e < 1$: Ellipse
@@ -134,9 +134,9 @@ For our solar system, the sun is much more massive than any of the planets, henc
 
 ## Second Law
 
-The cross product of two vectors gives the area of a parallelogram possessing sides of those vectors, hence the triangular area $dA$ swept out in a short period of time is given by half the cross product of the $\vec{r}$ and $\vec{dx}$ vectors, for some short piece of the orbit, $dx$.
+The cross product of two vectors gives the area of a parallelogram possessing sides of those vectors, hence the triangular area $dA$ swept out in a short period of time is given by half the cross product of the $\mathbf{r}$ and $\mathbf{dx}$ vectors, for some short piece of the orbit, $dx$.
 
-$$ dA = \frac{1}{2}|\vec{r} \times \vec{dx}| = \frac{1}{2}|\vec{r} \times \vec{v} dt| = \frac{h}{2} dt $$
+$$ dA = \frac{1}{2}|\mathbf{r} \times \mathbf{dx}| = \frac{1}{2}|\mathbf{r} \times \mathbf{v} dt| = \frac{h}{2} dt $$
 
 $$\tag{3.1.7} \implies \boxed{\frac{dA}{dt} = \frac{h}{2}} $$
 

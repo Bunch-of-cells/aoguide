@@ -1,0 +1,18 @@
+{{- $path := .Get 0 -}}
+{{- $alt := .Get 1 | default "" -}}
+{{- $caption := .Get 2 | default "" -}}
+
+{{- $res := resources.Get $path -}}
+{{- if $res }}
+  {{- $svg := $res | resources.Minify -}}
+  <figure class="ma0 w-75">
+    <div role="img" aria-label="{{ $alt }}" class="inline-svg">
+      {{ $svg.Content | safeHTML }}
+    </div>
+    {{- if $caption }}
+      <figcaption>{{ $caption }}</figcaption>
+    {{- end }}
+  </figure>
+{{- else }}
+  <div style="color: red;">⚠️ SVG not found at '{{ $path }}'</div>
+{{- end }}
