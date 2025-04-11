@@ -106,7 +106,7 @@ $$\tag{3.4.6} \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{
     {{< /tab >}}
 
     {{< tab >}} 
-    [NAC 2023, Long Questions, 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023_sols-1.pdf)
+    [Solution](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023_sols-1.pdf)
     {{< /tab >}}
 {{< /tabs >}}
 

@@ -35,7 +35,7 @@ $$
 \end{align*}
 $$
 
-From hereon, we consider the case when $m_2 \gg m_1$.
+From hereon for all subsections except the last one, we consider the case when $m_2 \gg m_1$.
 
 ## Orbital Velocity
 
@@ -117,6 +117,47 @@ $$
 ## Radial Elliptic trajectory
 
 A radial elliptic trajectory is a degenerate case of an elliptical trajectory, where the eccentricity $e$ is equal to 1 and the angular momentum of the system is zero. The trajectory is a straight line, and the two bodies collide with each other at some point in the trajectory. It is still classified as an elliptic trajectory since the total energy of the system is negative.
+
+## Binary Systems
+
+Consider a binary system having two bodies of masses $m_1$ and $m_2$ moving in bound orbits. Both the bodies move in ellipses of equal eccentricities but oriented opposite to each other. Properties of orbits of individual bodies will be labelled with a subscript (e.g. $x_1$ and $x_2$), and properties of the trajectory of the separation vector, or the orbit of one of the bodies relative to the other will be written without a subscript (e.g. $x$).
+
+The semi-major axes $a$ are related by the center of mass relation,
+
+$$\tag{3.2.9} m_1 a_1 = m_2 a_2 = ma \implies a = a_1 + a_2 $$
+
+Similarily, in the center of mass frame, the speeds $v$ are related by
+
+$$\tag{3.2.10} m_1 v_1 = m_2 v_2 = m v \implies v = v_1 + v_2$$
+
+When an elliptical orbit is projected onto a plane, it produces another ellipse. However, the foci of the original ellipse does not project onto the foci of the observed ellipse.
+
+Consider a binary system at a distance $r$ from us, inclined at an angle $i$, which is the angle between the plane of the orbit and plane of the sky. $\alpha$ and $\tilde{\alpha}$ be the true and observed angular semi-major axes. They are related by the equations
+
+$$ m_1 \alpha_1 = m_2 \alpha_2 = m \alpha \implies \alpha = \alpha_1 + \alpha_2$$
+$$ m_1 \tilde{\alpha}_1 = m_2 \tilde{\alpha}_2 = m \tilde{\alpha} \implies \tilde{\alpha} = \tilde{\alpha_1} + \tilde{\alpha_2} $$
+$$\tag{3.2.11} \tilde{\alpha} = \alpha \cos i $$
+
+The true semi-major axis $a$ is given by
+
+$$a = d \alpha = d \tilde{\alpha} \cos i$$
+
+Hence Kepler's third law can be written as
+
+$$\tag{3.2.12} m_1 + m_2 = \frac{4\pi^2}{G} \frac{a^3}{P^2} = \frac{4\pi^2}{G} \left( \frac{d}{\cos i} \right)^3 \frac{\tilde{\alpha}^3}{P^2}$$
+
+Usually, for a binary system, only the radial velocity of the bodies can be measured. If the trajectory of the binary system is circular, the radial velocity is given by $v = \frac{2 \pi a}{T}$. The maximum radial velocity observed is $v_r = v \sin i$
+
+$$ a = a_1 + a_2 = \frac{P}{2 \pi} (v_1 + v_2) = \frac{P}{2 \pi \sin i} (v_{1r} + v_{2r}) $$
+$$\tag{3.2.13} \implies m_1 + m_2 = \frac{P}{2 \pi G} \frac{(v_{1r} + v_{2r})^3}{\sin^3 i} $$
+
+If only one velocity ($v_{1r}$) is observable, $v_{2r}$ can be obtained using $m_1 v_{1r} = m_2 v_{2r}$. Putting this into the equation above, we get
+
+$$\tag{3.2.14} \boxed{ \frac{m_2^3}{(m_1 + m_2)^2} \sin^3 i = \frac{P}{2 \pi G} v_{1r}^3 } $$
+
+This is the mass function of the binary system. The mass function can be used to determine the mass of the secondary body if the mass of the primary body is known. The mass function can also be used to determine the inclination of the orbit if the masses of both bodies are known. It also sets a lower limit on the mass of $m_2$:
+
+$$\tag{3.2.15} m_2 \geq \frac{P}{2 \pi G} v_{1r}^3 $$
 
 ## Problems
 
