@@ -38,6 +38,10 @@ params:
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
+  math:
+    enable: true
+    katex: true
+
   navbar:
     displayTitle: true
     # displayLogo: true
