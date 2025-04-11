@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'Futura';
-    src: url('/static/fonts/futura/Futura\ Heavy\ font.ttf');
+    src: url('/assets/fonts/futura/Futura\ Heavy\ font.ttf');
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('/static/fonts/Roboto/Roboto-ExtraBold.ttf');
+    src: url('/assets/fonts/Roboto/Roboto-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Courier-Prime';
+    src: url('/assets/fonts/courier-prime/Courier\ Prime\ Bold.ttf');
 }
 
 .content {

@@ -18,15 +18,15 @@ Three parameters are required to descrive the orientation of the orbit. These ar
 - Longitude of the ascending node $\Omega$: describes the angle from the ascending node of the orbit (☊ in the diagram) to the reference frame's reference direction (♈︎ in the diagram). This is measured in the reference plane. This quantity is undefined for perfectly coplanar orbits, but is often set to zero instead by convention.
 - Argument of periapsis $\omega$: defines the orientation of the ellipse in the orbital plane, as an angle measured from the ascending node to the periapsis. This quantity is undefined for circular orbits, but is often set to zero instead by convention.
 
-Another element commonly used is
+Another parameter commonly used is
 
 - Longitude of periapsis $\varpi$: describes the angle between the reference direction (♈︎) and the periapsis, measured partly in the reference plane and partly in the orbital plane. It is defined as $\varpi =\Omega +\omega$. Unlike the longitude of the ascending node, this value is defined for orbits where the inclination is zero.
 
-One elements are needed to describe the position of the body around its orbit, and the time at which this occurs. These are:
+One parameter are needed to describe the position of the body around its orbit, and the time at which this occurs. These are:
 
 - Time of periapsis $\tau$:  time at which the orbiting body is at periapsis. This value is not defined for circular orbits, as they do not have a uniquely defined point of periapsis.
 
-Another element commonly used is
+Another parameter commonly used is
 
 - Mean Longitude $\bar{\lambda}$: Mean longitude is similar to mean anomaly, in that it increases linearly with time and does not represent the real angular displacement. Unlike with mean anomaly, mean longitude is defined relative to the vernal point, which means it is defined for circular orbits. $\bar{\lambda} = \varpi + M$
 
@@ -34,7 +34,7 @@ Another element commonly used is
 
 {{< svg "images/euler-angles.svg" "Euler angle illustration" "Euler Angles" >}}
 
-The Euler angles are three angles used to describe the orientation of a coordinate system with respect to another fixed coordinate system. The angles $\Omega$, $i$, $\omega$ are the Euler angles characterizing the orientation of the coordinate system. Let ${\mathbf{\hat{X}}}$, $\mathbf{\hat{Y}}$ and $\mathbf{\hat{Z}}$ define the coordinate system of the reference plane, and ${\mathbf{\hat{x}}}$, $\mathbf{\hat{y}}$ and $\mathbf{\hat{z}}$ define the coordinate system of the orbital plane. N in the figure denotes the direction of the ascending node.
+The Euler angles are three angles used to describe the orientation of a coordinate system with respect to another fixed coordinate system. The angles $\Omega$, $i$, $\omega$ are the Euler angles characterizing the orientation of the coordinate system. Let ${\mathbf{\hat{X}}}$, $\mathbf{\hat{Y}}$ and $\mathbf{\hat{Z}}$ define the coordinate system of the reference plane, and ${\mathbf{\hat{x}}}$, $\mathbf{\hat{y}}$ and $\mathbf{\hat{z}}$ define the coordinate system of the orbital plane. N in the figure denotes the direction of the ascending node, while X is the reference direction.
 
 The transformation between the two coordinate systems is given by the following equations:
 
@@ -100,7 +100,15 @@ $$\tag{3.4.6} \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{
 
 ## Problems
 
-- [NAC 2023, Long Questions, 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023-1.pdf)
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    [NAC 2023, Long Questions, 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023-1.pdf)
+    {{< /tab >}}
+
+    {{< tab >}} 
+    [NAC 2023, Long Questions, 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023_sols-1.pdf)
+    {{< /tab >}}
+{{< /tabs >}}
 
 {{< tabs items="Problem,Hint,Solution" >}}
     {{< tab >}}
