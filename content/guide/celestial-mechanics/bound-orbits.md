@@ -103,14 +103,14 @@ This is called Kepler's equation. It is a transcendental equation, and can be so
 
 It can be solved exactly in terms of an infinite series expansion, given by
 
-$$ E = M + e \sin M + \frac{e^2}{2} \sin 2M + \frac{e^3}{6} \sin 3M + \mathcal{O}(e^4) $$
+$$ E = M + e \sin M + \frac{e^2}{2} \sin 2M + \frac{e^3}{6} \sin 3M + \ldots $$
 
 The true anamoly and distance from focus too can be obtained in terms of infinite series expansion, given by
 
 $$
 \begin{align*}
-\theta &= M + {2e \sin M} + \frac{5e^2}{4} \sin 2M + \frac{e^3}{12} (12 \sin 3M - 3 \sin M) + \mathcal{O}(e^4)\\
-r &= a \left[ 1 - e\cos M + \frac{e^2}{2} (1 - \cos 2M) + \frac{3e^3}{8} (\cos M - \cos 3M) + \mathcal{O}(e^4) \right]
+\theta &= M + {2e \sin M} + \frac{5e^2}{4} \sin 2M + \frac{e^3}{12} (12 \sin 3M - 3 \sin M) + \ldots\\
+\frac{r}{a} &= 1 - e\cos M + \frac{e^2}{2} (1 - \cos 2M) + \frac{3e^3}{8} (\cos M - \cos 3M) + \ldots
 \end{align*}
 $$
 
@@ -140,11 +140,11 @@ $$\tag{3.2.11} \tilde{\alpha} = \alpha \cos i $$
 
 The true semi-major axis $a$ is given by
 
-$$a = d \alpha = d \tilde{\alpha} \cos i$$
+$$a = r \alpha = r \tilde{\alpha} \cos i$$
 
 Hence Kepler's third law can be written as
 
-$$\tag{3.2.12} m_1 + m_2 = \frac{4\pi^2}{G} \frac{a^3}{P^2} = \frac{4\pi^2}{G} \left( \frac{d}{\cos i} \right)^3 \frac{\tilde{\alpha}^3}{P^2}$$
+$$\tag{3.2.12} m_1 + m_2 = \frac{4\pi^2}{G} \frac{a^3}{P^2} = \frac{4\pi^2}{G} \left( \frac{r}{\cos i} \right)^3 \frac{\tilde{\alpha}^3}{P^2}$$
 
 Usually, for a binary system, only the radial velocity of the bodies can be measured. If the trajectory of the binary system is circular, the radial velocity is given by $v = \frac{2 \pi a}{T}$. The maximum radial velocity observed is $v_r = v \sin i$
 
