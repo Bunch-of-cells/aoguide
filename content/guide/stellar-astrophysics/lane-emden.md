@@ -1,6 +1,7 @@
 ---
 title: Lane-Emden Equation
 prev: /guide/stellar-astrophysics
+weight: 1
 ---
 
 The Lane–Emden equation is a dimensionless equation that describes a Newtonian self-gravitating, spherically symmetric, polytropic fluid. It is named after astrophysicists Jonathan Homer Lane and Robert Emden. The equation reads:

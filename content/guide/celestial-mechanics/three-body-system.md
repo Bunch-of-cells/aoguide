@@ -9,7 +9,7 @@ A class of three body problems, called the restricted three body problem is as f
 
 There do exist some special configurations, for which solutions to the three body problem are known:
 
-- Lagrange points: This is a solution to the restricted three body problem. Five points exist in the orbital plane of two massive bodies, where a third body can be placed and remain in a stable position relative to the two massive bodies. The Lagrange points are denoted $L_1$, $L_2$, $L_3$, $L_4$, and $L_5$. The $L_4$ and $_L5$ points are stable, while the others are unstable.
+- Lagrange points: This is a solution to the restricted three body problem. Five points exist in the orbital plane of two massive bodies, where a third body can be placed and remain in a stable position relative to the two massive bodies. The Lagrange points are denoted $L_1$, $L_2$, $L_3$, $L_4$, and $L_5$. The $L_4$ and $L_5$ points are stable, while the others are unstable.
 - 8 shaped orbit: This is a solution to the full three body problem. Three bodies of equal masses can orbit each other in a figure-eight pattern. This solution is known as the Chenciner–Montgomery orbit. The total angular momentum of such a system is zero, and the three bodies lie in a plane.
 
 ## Virial Theorem
@@ -17,15 +17,15 @@ There do exist some special configurations, for which solutions to the three bod
 Suppose we have a system of $n$ point masses $m_i$ with position vectors $\mathbf{r}_i$ and velocities $\mathbf{v}_i$. We define the virial of the system as
 
 $$\tag{3.5.1} A = \sum_{i=1}^n m_i \mathbf{v_i} \cdot \mathbf{r_i} $$
-$$\implies \dot{A} = 2\,T + \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} $$
+$$\implies \dot{A} = 2\,K + \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} $$
 
-where $T$ is the total kinetic energy of the system. Let $\lang x \rang$ denote the time average of $x$ in the interval $[0, \tau]$
+where $K$ is the total kinetic energy of the system. Let $\lang x \rang$ denote the time average of $x$ in the interval $[0, \tau]$
 
-$$ \lang \dot{A} \rang = \frac{1}{\tau} \int_0^\tau \dot{A} dt = \frac{A(\tau)}{\tau} = 2\, \lang T \rang + \lang \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} \rang  $$
+$$ \lang \dot{A} \rang = \frac{1}{\tau} \int_0^\tau \dot{A} dt = \frac{A(\tau)}{\tau} = 2\, \lang K \rang + \lang \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} \rang  $$
 
-If the system remains bound, $A$ remains finite. As $\tau \rightarrow \infty$, $\frac{A}{\tau} \rightarrow 0$, hence we get that $2 \lang T \rang + \lang \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} \rang = 0 $. If the forces are due to mutual gravity only, $\sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} = U$ is the total potential energy of the system. Hence we get that
+If the system remains bound, $A$ remains finite. As $\tau \rightarrow \infty$, $\frac{A}{\tau} \rightarrow 0$, hence we get that $2 \lang K \rang + \lang \sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} \rang = 0 $. If the forces are due to mutual gravity only, $\sum_{i=1}^n \mathbf{F_i} \cdot \mathbf{r_i} = U$ is the total potential energy of the system. Hence we get that
 
-$$\tag{3.5.2} \boxed{2 \, \lang T \rang + \lang U \rang = 0 }$$
+$$\tag{3.5.2} \boxed{2 \, \lang K \rang + \lang U \rang = 0 }$$
 
 This is the virial theorem, and is very useful.
 
@@ -65,7 +65,7 @@ $$\tag{3.5.4} \boxed{ \mathbf{a}_\text{tidal} \approx -\frac{GM}{r^3} \left[ \ma
 
 Consider a cartesian coordinate system with its origin at the center of the sphere, the $x$-axis pointing towards the massive body, and $y$-axis oriented such that $\mathbf{R}$ lies in the $xy$-plane. If the angle $\theta$ is the angle between the $x$-axis and the vector $\mathbf{R}$, the tidal acceleration experienced by $m$ is
 
-$$\tag{3.5.5} \boxed{\mathbf{a}_\text{tidal} = -\frac{GMR}{r^3} (2\cos \theta \, \hat{\mathbf{i}} + \sin \theta \, \hat{\mathbf{j}}) }$$
+$$\tag{3.5.5} \boxed{\mathbf{a}_\text{tidal} = \frac{GMR}{r^3} (2\cos \theta \, \hat{\mathbf{i}} - \sin \theta \, \hat{\mathbf{j}}) }$$
 
 We see that when $R$ and $r$ are parallel, i.e. $m$ lies on the line joining $M$ and the center of the sphere, the tidal acceleration is
 
@@ -157,18 +157,6 @@ $$\tag{3.5.9} r \approx \frac{7}{12}\frac{m}{M+m}R $$
 
 The reason these points are in balance is that at $L_4$ and $L_5$ the distances to the two primaries are equal. Accordingly, the gravitational forces from the two primary bodies are in the same ratio as the masses of the two bodies, and so the resultant force acts through the barycenter of the system. Additionally, the geometry of the triangle ensures that the resultant acceleration is to the distance from the barycenter in the same ratio as for the two primaries. This resultant force is exactly that required to keep the smaller body at the Lagrange point in orbital equilibrium with the primaries.
 
-## Roche Lobe
-
-Roche lobe is the region around a star in a binary system within which orbiting material is gravitationally bound to that star. It is an approximately teardrop-shaped region bounded by a critical gravitational equipotential, with the apex of the teardrop pointing towards the other star star (the apex is at the $L_1$ Lagrangian point of the system).
-
-Close to each star, surfaces of equal gravitational potential are approximately spherical and concentric with the nearer star. Far from the stellar system, the equipotentials are approximately ellipsoidal and elongated parallel to the axis joining the stellar centers. A critical equipotential intersects itself at the $L_1$ Lagrangian point of the system, forming a two-lobed figure-eight with one of the two stars at the center of each lobe. These lobes are called Roche lobes.
-
-$L_1$ is the gravitational capture equilibrium point. It is a gravity cut-off point of the binary star system. It is at the lowest potential of all Lagrange points. When a star "exceeds its Roche lobe", its surface extends out beyond its Roche lobe and the material which lies outside the Roche lobe can "fall off" into the other object's Roche lobe via the first Lagrangian point. In binary evolution this is referred to as mass transfer via Roche-lobe overflow.
-
-Consider a binary system with two stars of masses $M_1$ and $M_2$, having orbital separation $a$. Approximation of the lobe (of $M_1$) as a sphere of radius $r_1$ with mass ratio $q = M_1 / M_2$ is given by the Eggleton formula:
-
-$$\tag{3.5.10} \frac{r_1}{a} = \frac{0.49 q^{2/3}}{0.6q^{2/3} + \ln (1 + q^{1/3})} $$
-
 ## Orbital Resonance
 
 Orbital resonance occurs when orbiting bodies exert regular, periodic gravitational influence on each other, usually because their orbital periods are related by a ratio of small integers. Examples are the 1:2:4 resonance of Jupiter's moons Ganymede, Europa and Io, and the 2:3 resonance between Neptune and Pluto. Unstable resonances with Saturn's inner moons give rise to gaps in the rings of Saturn. The special case of 1:1 resonance between bodies with similar orbital radii causes large planetary system bodies to eject most other bodies sharing their orbits; this is part of the much more extensive process of clearing the neighbourhood around planets.
@@ -187,26 +175,57 @@ $$ \ddot{\mathbf{r}_i} = \sum_{\substack{j=0 \\ j \neq i}}^{n} \frac{G m_i m_j}{
 
 There is no general closed form solution for $n >2$.
 
-## Cosmic Velocity
+## Problems
 
-The first cosmic velocity or orbital velocity is the least velocity required to put a satellite into orbit around the earth. It is given by
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Find the first cosmic velocity, which is the least velocity of a satellite launched from the surface of Earth required to put a satellite into orbit around the earth.
+    {{< /tab >}}
 
-$$\tag{3.5.11} v_1 = \sqrt{\frac{GM_\oplus}{R_\oplus}} \approx 7.91 \mathrm{\,km/s}$$
+    {{< tab >}}
+    The first cosmic velocity is given by
 
-The second cosmic velocity or escape velocity is the least velocity required to escape from the gravitational field of the earth. It is given by
+    $$\tag{3.5.11} v_1 = \sqrt{\frac{GM_\oplus}{R_\oplus}} \approx 7.91 \mathrm{\,km/s}$$
 
-$$\tag{3.5.12} v_2 = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx 11.2 \mathrm{\,km/s}$$
+    {{< /tab >}}
+{{< /tabs >}}
 
-The third cosmic velocity is the least velocity required to escape from the gravitational field of the solar system. In heliocentric frame,
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Find the second cosmic velocity, which is the least velocity of a satellite launched from the surface of Earth required to escape from the gravitational field of the earth.
+    {{< /tab >}}
 
-$$v_{2,\odot} = \sqrt{\frac{2GM_\odot}{a_\odot}} \approx 42.1 \mathrm{\,km/s}$$
+    {{< tab >}}
+    The second cosmic velocity is given by
 
-From Earth's frame,
+    $$\tag{3.5.12} v_2 = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx 11.2 \mathrm{\,km/s}$$
 
-$$ v' = v_{2,\odot} - v_\oplus = \sqrt{\frac{2GM_\odot}{a_\odot}} - \sqrt{\frac{GM_\odot}{a_\odot}} \approx 12.3 \mathrm{\,km/s}$$
+    {{< /tab >}}
+{{< /tabs >}}
 
-Therefore, we can get the third cosmic velocity by
+{{< tabs items="Problem,Hint,Solution" >}}
+    {{< tab >}}
+    Find the third cosmic velocity, which is the least velocity of a satellite launched from the surface of Earth required to escape from the gravitational field of the solar system.
+    {{< /tab >}}
 
-$$ \frac{1}{2} v_3^2 - \frac{GM_\oplus}{R_\oplus} = \frac{1}{2}v'^3 $$
+    {{< tab >}}
+    First, find the escape velocity in the heliocentric frame. Then find what the velocity needs to be in the Earth's frame. Finally to find the third cosmic velocity, account for Earth's gravity, which the satellite needs to overcome to achieve that velocity.
+    {{< /tab >}}
 
-$$\tag{3.5.13} \implies v_3 = \sqrt{\frac{2GM_\oplus}{R_\oplus} + v'^2} \approx 16.7 \mathrm{\,km/s}$$
+    {{< tab >}}
+    In heliocentric frame, the escape velocity is
+
+    $$v_{2,\odot} = \sqrt{\frac{2GM_\odot}{a_\odot}} \approx 42.1 \mathrm{\,km/s}$$
+
+    From Earth's frame,
+
+    $$ v' = v_{2,\odot} - v_\oplus = \sqrt{\frac{2GM_\odot}{a_\odot}} - \sqrt{\frac{GM_\odot}{a_\odot}} \approx 12.3 \mathrm{\,km/s}$$
+
+    Therefore, we can get the third cosmic velocity by
+
+    $$ \frac{1}{2} v_3^2 - \frac{GM_\oplus}{R_\oplus} = \frac{1}{2}v'^3 $$
+
+    $$\tag{3.5.13} \implies v_3 = \sqrt{\frac{2GM_\oplus}{R_\oplus} + v'^2} \approx 16.7 \mathrm{\,km/s}$$
+
+    {{< /tab >}}
+{{< /tabs >}}

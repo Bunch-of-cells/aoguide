@@ -12,8 +12,8 @@ First of all, we define the following
 - Node: intersection of the orbiting body's orbital plane with the reference plane.
 - Ascending node (☊): point at which the orbiting body crosses the reference plane from below to above.
 - Descending node (☋): point at which the orbiting body crosses the reference plane from above to below.
-- Periapsis (☉): point at which the orbiting body is closest to the focus of the ellipse.
-- Apoapsis (☽): point at which the orbiting body is farthest from the focus of the ellipse.
+- Periapsis (☉): point at which the orbiting body is closest to the focus of the ellipse. If the primary body is the Sun, this point is called perihelion (☉). If the primary body is Earth, this point is called perigee (☉). If the primary body is the Moon, this point is called perilune (☉).
+- Apoapsis (☽): point at which the orbiting body is farthest from the focus of the ellipse. If the primary body is the Sun, this point is called aphelion (☽). If the primary body is Earth, this point is called apogee (☽). If the primary body is the Moon, this point is called apolune (☽).
 
 Orbital elements are the parameters required to uniquely identify a specific orbit. When viewed from an inertial frame, two orbiting bodies trace out distinct trajectories. Each of these trajectories has its focus at the common center of mass. When viewed from a non-inertial frame centered on one of the bodies, only the trajectory of the opposite body is apparent; Keplerian elements describe these non-inertial trajectories. In general, six parameters are used to describe the orbit.
 
