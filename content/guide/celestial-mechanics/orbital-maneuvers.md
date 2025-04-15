@@ -95,3 +95,74 @@ A spacecraft when launched from Earth, has to first leave Earth's hill sphere. A
 Planetary flypasts have the ability to change the energy of small bodies, and give it an entirely different heliocentric orbit. A gravity assist is a maneuver that uses the gravitational field of a planet or moon to change the speed and direction of a spacecraft. The spacecraft approaches the planet or moon, and as it passes close to the body, it is accelerated by the gravitational field. The spacecraft then moves away from the body, having gained speed and changed direction. Gravity assists are often used to increase the speed of a spacecraft, allowing it to reach its destination more quickly or to save fuel.
 
 Let a spacecraft having a velocity $v$ relative to the sun, approach Jupiter. From Jupiter's frame, the spacecraft has a velocity of $v_J - v$. The velocity after the slingshot, from Jupiter's frame is the same, $v_J - v$, but its direction has changed. However, from a heliocentric frame, the velocity is $v_J + (v_J - v) = 2v_J - v > v$. The spacecraft has gained a velocity of $2(v_J - v)$ in the heliocentric frame.
+
+## Problems
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Consider a spacecraft currently in a circular orbit of radius $a_1 = 1 \mathrm{\,AU}$ around sun, and has to go into a circular orbit of radius $a_2 = 5 \mathrm{\,AU}$, via a bi-elliptic transfer. To achieve this, it first goes into an elliptical orbit, with its aphelion at a distance $r =  8 \mathrm{\,AU}$. Then it goes into an orbit whose perihelion is at $a_2$. Find
+    1. $\Delta v$ of the first burn
+    2. $\Delta v$ of the second burn
+    3. $\Delta v$ of the third burn
+    4. minimum fuel needed for the maneuver, if the exhaust velocity is $v_\text{exh} = 1 \mathrm{\,km/s}$ and mass of the empty spacecraft is $m_0 = 2000 \mathrm{\, kg}$. Is this maneuver feasible?
+    {{< /tab >}}
+
+    {{< tab >}} 
+    1. The semi-major axis of the first parking orbit will be
+    
+    $$ a_\text{p1} = \frac{a_1 + r}{2} = 4.5 \mathrm{\,AU} $$
+
+    The velocity at perihelion ($a_1$) can be found via the vis-viva equation
+
+    $$ v_\text{p1}^2 = \mu \left( \frac{2}{a_1} - \frac{1}{a_\text{p1}} \right) \implies v_\text{p1} \approx 39.7 \mathrm{\,km/s} $$
+
+    The speed of the spacecraft in the circular orbit at $a_1$ was
+
+    $$ v_1 = \sqrt{\frac{\mu}{a_1}} \approx 29.8 \mathrm{\,km/s} $$
+
+    Hence the Delta-v for the first burn is
+
+    $$ \Delta v = v_\text{p1} - v_1 = \boxed{ 9.9 \mathrm{\,km/s} } $$
+
+    2. The semi-major axis of the second parking orbit will be
+    
+    $$ a_\text{p2} = \frac{r + a_2}{2} = 6.5 \mathrm{\,AU} $$
+
+    The velocity at aphelion ($r$) is
+
+    $$ v_\text{a2}^2 = \mu \left( \frac{2}{r} - \frac{1}{a_\text{p2}} \right) \implies v_\text{a2} \approx 9.2 \mathrm{\,km/s} $$
+
+    The speed of the spacecraft at the aphelion in the first parking orbit was
+    
+    $$ v_\text{a1}^2 = \mu \left( \frac{2}{r} - \frac{1}{a_\text{p1}} \right) \implies v_\text{a1} \approx 5.0 \mathrm{\,km/s} $$
+
+    Hence the Delta-v for the second burn is
+
+    $$ \Delta v = v_\text{a1} - v_\text{a2} = \boxed{ 4.2 \mathrm{\,km/s} } $$
+
+    3. The velocity at perihelion of the second parking orbit ($a_2$) is
+
+    $$ v_\text{p2}^2 = \mu \left( \frac{2}{a_2} - \frac{1}{a_\text{p2}} \right) \implies v_\text{p2} \approx 14.8 \mathrm{\,km/s} $$
+
+    The speed of the spacecraft in the circular orbit at $a_2$ will be
+
+    $$ v_2 = \sqrt{\frac{\mu}{a_2}} \approx 13.3 \mathrm{\,km/s} $$
+
+    Hence the Delta-v for the third burn is
+
+    $$ \Delta v = v_\text{p2} - v_2 = \boxed{ 1.5 \mathrm{\,km/s} } $$
+
+    4. The total Delta-v of the maneuver is given by 
+    
+    $$ \Delta v = \Delta v_1 + \Delta v_2 + \Delta v_3 = 15.6 \mathrm{\,km/s} $$
+
+    To find the minimum fuel, we take the fuel left after the maneuver to be zero. By Tsiolkovsky's equation,
+
+    $$ \Delta v = v_\text{exh} \ln \left( \frac{m_0 + m_\text{fuel}}{m_0} \right) $$
+
+    $$ \implies m_\text{fuel} = m_0 \left[ \exp \left( \frac{\Delta v}{v_\text{exh}}\right) -1 \right] \approx \boxed{ 1.2 \times 10^{10} \mathrm{\,kg} } $$
+
+    By no means is this maneuver feasible.
+
+    {{< /tab >}}
+{{< /tabs >}}

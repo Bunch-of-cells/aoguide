@@ -161,13 +161,9 @@ $$\tag{3.2.15} m_2 \geq \frac{P}{2 \pi G} v_{1r}^3 $$
 
 ## Problems
 
-{{< tabs items="Problem,Hint,Solution" >}}
+{{< tabs items="Problem,Solution" >}}
     {{< tab >}}
     $\text{(IOAA 2007)}$ A Sun-orbiting periodic comet is the farthest at $31.5 \mathrm{\,AU}$ and the closest at $0.5 \mathrm{\,AU}$. What is the orbital period of this comet? What is the area (in $\mathrm{AU^2/yr}$) swept by the line joining the comet and the Sun?
-    {{< /tab >}}
-
-    {{< tab >}} 
-    Find the semi-major axis and use Kepler's third law. For the second part, find the eccentricity and use Kepler's second law.
     {{< /tab >}}
 
     {{< tab >}}
@@ -191,13 +187,9 @@ $$\tag{3.2.15} m_2 \geq \frac{P}{2 \pi G} v_{1r}^3 $$
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Hint,Solution" >}}
+{{< tabs items="Problem,Solution" >}}
     {{< tab >}}
     $\text{(IOAA 2009)}$ Estimate the radius of a planet that a man can escape its gravitation by jumping vertically. Assume density of the planet and the Earth are the same.
-    {{< /tab >}}
-
-    {{< tab >}} 
-    Find the velocity of the man, and equate it to the escape velocity.
     {{< /tab >}}
 
     {{< tab >}}
@@ -208,5 +200,20 @@ $$\tag{3.2.15} m_2 \geq \frac{P}{2 \pi G} v_{1r}^3 $$
     Since $\rho = \rho_\oplus$, we have
 
     $$ R = \sqrt{R_\oplus h} \approx \boxed{1.79 \times 10^3 \mathrm{\,m}}  $$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    A projectile which starts from the surface of the Earth at the sea level is launched with the initial speed of $v_0 < \sqrt{\frac{2GM_\oplus}{R_\oplus}}$ and the projecting angle (with respect to the local horizon) of $\theta$. Ignore the air resistance.
+    1. The orbit of the projectile is an ellipse. Find its semi-major axis $a$ in units of $R_\oplus$.
+    2. Calculate the highest altitude of the projectile with respect to the Earth surface (in units of $R_\oplus$)
+    3. Find the time of filght for the projectile.
+    4. What is the range of the projectile (surface distance between launching point and falling point) in the units of $R_\oplus$?
+    5. What is the eccentricity $e$ of this elliptical orbit?
+    {{< /tab >}}
+
+    {{< tab >}}
+    Coming Soon
     {{< /tab >}}
 {{< /tabs >}}

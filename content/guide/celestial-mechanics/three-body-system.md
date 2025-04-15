@@ -185,7 +185,7 @@ There is no general closed form solution for $n >2$.
     {{< tab >}}
     The first cosmic velocity is given by
 
-    $$\tag{3.5.11} v_1 = \sqrt{\frac{GM_\oplus}{R_\oplus}} \approx 7.91 \mathrm{\,km/s}$$
+    $$\tag{3.5.11} v_1 = \sqrt{\frac{GM_\oplus}{R_\oplus}} \approx \boxed{7.91 \mathrm{\,km/s}}$$
 
     {{< /tab >}}
 {{< /tabs >}}
@@ -198,18 +198,14 @@ There is no general closed form solution for $n >2$.
     {{< tab >}}
     The second cosmic velocity is given by
 
-    $$\tag{3.5.12} v_2 = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx 11.2 \mathrm{\,km/s}$$
+    $$\tag{3.5.12} v_2 = \sqrt{\frac{2GM_\oplus}{R_\oplus}} \approx \boxed{11.2 \mathrm{\,km/s}}$$
 
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Hint,Solution" >}}
+{{< tabs items="Problem,Solution" >}}
     {{< tab >}}
     Find the third cosmic velocity, which is the least velocity of a satellite launched from the surface of Earth required to escape from the gravitational field of the solar system.
-    {{< /tab >}}
-
-    {{< tab >}}
-    First, find the escape velocity in the heliocentric frame. Then find what the velocity needs to be in the Earth's frame. Finally to find the third cosmic velocity, account for Earth's gravity, which the satellite needs to overcome to achieve that velocity.
     {{< /tab >}}
 
     {{< tab >}}
@@ -225,7 +221,20 @@ There is no general closed form solution for $n >2$.
 
     $$ \frac{1}{2} v_3^2 - \frac{GM_\oplus}{R_\oplus} = \frac{1}{2}v'^3 $$
 
-    $$\tag{3.5.13} \implies v_3 = \sqrt{\frac{2GM_\oplus}{R_\oplus} + v'^2} \approx 16.7 \mathrm{\,km/s}$$
+    $$\tag{3.5.13} \implies v_3 = \sqrt{\frac{2GM_\oplus}{R_\oplus} + v'^2} \approx \boxed{16.7 \mathrm{\,km/s}}$$
 
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    $\text{(IOAA 2011)}$ Estimate the number of stars in a globular cluster of diameter 40 pc, if the escape velocity at the edge of the cluster is 6 km/s and most of the stars are similar to the Sun.
+    {{< /tab >}}
+
+    {{< tab >}}
+    The escape velocity of object on the edge of the cluster is given by
+
+    $$ v_e = \sqrt{ \frac{2GM}{R} } \implies M = \frac{Rv_e^2}{2G} $$
+    $$ N = \frac{M}{M_\odot} = \frac{Rv_e^2}{2GM_\odot} \approx \boxed{ 8.4 \times 10^4 } $$
     {{< /tab >}}
 {{< /tabs >}}

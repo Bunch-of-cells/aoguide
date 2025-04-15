@@ -112,7 +112,7 @@ $$\tag{3.4.6} \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}
-    [NAC 2023, Long Questions, 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023-1.pdf)
+    [NAC 2023, Long Questions, problem 2](https://usaaao.org/wp-content/uploads/2023/09/second_exam_2023-1.pdf)
     {{< /tab >}}
 
     {{< tab >}} 
@@ -120,17 +120,13 @@ $$\tag{3.4.6} \tan \lambda = \frac{Y}{X}\,, \qquad \qquad \sin \beta = \frac{Z}{
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Hint,Solution" >}}
+{{< tabs items="Problem,Solution" >}}
     {{< tab >}}
     Assume that at this exact moment a satellite in circular heliocentric orbit is in a solar transit.
     1. Find the distance of the satellite from earth 65 days later.
     2. Find the equatorial coordinates of this satellite 140 days later.
 
     You are given that the orbital inclination of the satellite is $20^\circ$, orbital radius is $0.6 \mathrm{\, AU}$, longitude of ascending node is $130^\circ$ and inclination of the ecliptic relative to the equator is $23.5^\circ$. Assume the orbit of Earth to be circular.
-    {{< /tab >}}
-
-    {{< tab >}} 
-    Use equations 3.4.3 to 3.4.5 to find the cartesian coordinates of the satellite at a later time. Use the 3D distance formula to find the distance from Earth, and eq 3.4.6 to find the ecliptic coordinates, which can be converted to equatorial coordinates.
     {{< /tab >}}
 
     {{< tab >}}
