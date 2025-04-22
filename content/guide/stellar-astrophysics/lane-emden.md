@@ -1,8 +1,9 @@
 ---
-title: Lane-Emden Equation
-prev: /guide/stellar-astrophysics
-weight: 1
+title: Advance Topics
+weight: 6
 ---
+
+## Lane-Emden equation
 
 The Lane–Emden equation is a dimensionless equation that describes a Newtonian self-gravitating, spherically symmetric, polytropic fluid. It is named after astrophysicists Jonathan Homer Lane and Robert Emden. The equation reads:
 
@@ -14,7 +15,7 @@ $$P = K \rho^{1 + \frac{1}{n}}$$
 
 where $P$ and $\rho$ are the pressure and density, respectively, and $K$ is a constant of proportionality. The standard boundary conditions are $\theta(0) = 1$ and $\theta'(0) = 0$. Solutions thus describe the pressure and density profile with radius and are known as polytropes of index $n$. These are commonly used to model stars.
 
-## Derivation
+### Derivation
 
 Consider a self-gravitating, spherically symmetric fluid in hydrostatic equilibrium. Mass is conserved and thus described by the continuity equation
 
@@ -55,9 +56,9 @@ The boundary conditions are:
 
 The surface of the fluid is defined by the condition $\theta(\xi_R) = 0$, where $\xi_R$ is the radius of the fluid. Only solutions with $n < 5$ have a surface. All polytropes with $n \geq 5$ have infinite radii.
 
-## Solutions
+### Solutions
 
-### $n = 0$
+- $n = 0$
 
 The Lane-Emden equation becomes $\frac{1}{\xi^2} \frac{d}{d\xi^2} \left( \xi^2 \frac{d \theta}{d \xi} \right) = 0$. Integrating, we find that the solution is
 
@@ -65,7 +66,7 @@ $$ \theta(\xi) = 1 - \frac{\xi^2}{6} $$
 
 This gives the surface to be at $\xi_R = \sqrt{6}$. This solution corresponds to an incompressible fluid star, which has the same density everywhere.
 
-### $n = 1$
+- $n = 1$
 
 The solution for $n = 1$ is
 
@@ -73,7 +74,7 @@ $$ \theta(\xi) = \frac{\sin(\xi)}{\xi} $$
 
 This extends to infinity, hence has infinite radius, unless truncated artificially. We truncate the star at the first root, where $\xi_R = \pi$.
 
-### $n = 5$
+- $n = 5$
 
 The solution for $n = 5$ is
 
@@ -81,13 +82,13 @@ $$ \theta(\xi) = \left( 1 + \frac{\xi^2}{3} \right)^{-1/2} $$
 
 This solution has no surface, as it extends to infinity.
 
-### $n = 1.5,\, 3$
+- $n = 1.5,\, 3$
 
 The solution corresponding to $n = 1.5$ is of an adiabatic star supported by pressure of non relativistic gas, or a white dwarf.
 
 The solution corresponding to $n = 3$ is of an adiabatic star supported by pressure of ultra-relativistic gas, or a neutron star.
 
-## Physical Properties
+### Physical Properties
 
 The stellar radius is
 
