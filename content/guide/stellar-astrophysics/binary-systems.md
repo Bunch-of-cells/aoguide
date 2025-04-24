@@ -35,3 +35,18 @@ $L_1$ is the gravitational capture equilibrium point. It is a gravity cut-off po
 Consider a binary system with two stars of masses $M_1$ and $M_2$, having orbital separation $a$. Approximation of the lobe (of $M_1$) as a sphere of radius $r_1$ with mass ratio $q = M_1 / M_2$ is given by the Eggleton formula:
 
 $$\tag{5.3.2} \frac{r_1}{a} = \frac{0.49 q^{2/3}}{0.6q^{2/3} + \ln (1 + q^{1/3})} $$
+
+## Exoplanets
+
+Exoplanets are planets orbiting some other star, other than the Sun. The first exoplanet found in 1992 orbited a pulsar. The first exoplanet orbiting a normal star was found in 1995 around $\beta$ Pictoris. Rogue planets are ones which have escaped from planetary systems, and are wandering in space.
+
+There are various methods for detecting exoplanets
+
+- Astrometric methods are based on perturbations of the proper motion or radial velocity of the star, by the planet. If the planet is large enough, these can be detected.
+- Periodic doppler shifts in star;s spectra, because of the changing radial velocity of the star, can be detected, and the existance of an exoplanet can be deduced.
+- A planet causes the distance of a star to vary slightly, which in the case of regularly variable stars, changes the periodically of the brightness variation of the star in a regular manner.
+- ~200 exoplanets have been found by direct imaging of the system.
+- If a star passes in front of a background star, its gravity will bend the light, making the background star look brighter. If the star has exoplanets, the brightening is slightly stronger.
+- When a planet is between the star and the observer, it occults a part of the stellar disk, reducing its brightness. This event is called a transit. Periodic transits confirm the existance of an exoplanet. The transit depth is defined as
+
+$$\tag{5.3.4} \text{Transit Depth} = \left( \frac{R_\text{planet}}{R_\text{star}} \right)^2 $$

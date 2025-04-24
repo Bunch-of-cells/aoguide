@@ -1,6 +1,6 @@
 ---
 title: Advance Topics
-weight: 6
+weight: 5
 ---
 
 ## Lane-Emden equation
@@ -113,3 +113,7 @@ $$ \rho_{av} = \frac{3M}{4 \pi R^3} = \frac{3}{\xi_R^3} \left[ -\xi^2 \frac{d \t
 The gravitational potential energy is
 
 $$ \Omega = - \int_0^M \frac{GM_r dM_r}{r^2} = \frac{3}{5-n} \frac{GM^2}{R} $$
+
+## Limb Darkening
+
+## Compact Stars
