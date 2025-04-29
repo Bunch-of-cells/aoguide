@@ -26,7 +26,7 @@ N_\text{A} \qquad & 6.022141 & \times 10^{23} \quad & \mathrm{mol^{-1}} \quad & 
 R \qquad & 8.314463 & \quad & \mathrm{J\,mol^{-1}\,K^{-1}} \quad & \text{Gas constant} \\
 a_0 \qquad & 5.291772 & \times 10^{-11} \quad & \mathrm{m} \quad & \text{Bohr radius} \\
 R_\infty \qquad & 1.097373 & \times 10^{7} \quad & \mathrm{m^{-1}} \quad & \text{Rydberg constant} \\
-b \qquad & 2.897772 & \times 10^{-3} \quad & \mathrm{m\,K} \quad & \text{Wien's displacement constant} \\
+b_\lambda \qquad & 2.897772 & \times 10^{-3} \quad & \mathrm{m\,K} \quad & \text{Wien's displacement constant} \\
 b_\mathrm{\nu} \qquad & 5.878926 & \times 10^{10} \quad & \mathrm{Hz\,K} \quad &\\
 a \qquad & 7.565767 & \times 10^{-16} \quad & \mathrm{J\,m^{-3}\,K^{-4}} \quad & \text{Radiation constant} \\
 \alpha \qquad & 7.297353 & \times 10^{-3} \quad & & \text{Fine structure constant} \\
@@ -34,6 +34,7 @@ a \qquad & 7.565767 & \times 10^{-16} \quad & \mathrm{J\,m^{-3}\,K^{-4}} \quad &
 \mu_\text{B} \qquad & 9.274010 & \times 10^{-27} \quad & \mathrm{J\,T^{-1}} \quad & \text{Bohr magneton} \\
 r_\text{e} \qquad & 2.817940 & \times 10^{-15} \quad & \mathrm{m} \quad & \text{Classical electron radius} \\
 g \qquad & 9.80665 & & \mathrm{m\,s^{-2}} \quad & \text{Standard gravity on Earth} \\
+\text{atm} \qquad & 1.01325 & \times 10^{5} \quad & \mathrm{Pa} \quad & \text{Standard atmosphere} \\
 \end{aligned}
 $$
 
@@ -74,5 +75,6 @@ H_0 \qquad & 70.1 & & \mathrm{km\,s^{-1}\,Mpc^{-1}} \quad & \text{Hubble constan
 \kappa \qquad & 20.49552 & & \mathrm{arcsec} \quad & \text{Abberation constant} \\
 \varepsilon \qquad & 23^\circ\,26'\,21.4'' & & & \text{Obliquity of the ecliptic} \\
 \zeta \qquad & -34' & & & \text{Refraction at horizon} \\
+\text{Jy} \qquad & 1 & \times 10^{-26} \quad & \mathrm{W\,m^{-2}\,Hz^{-1}} \quad & \text{Jansky} \\
 \end{aligned}
 $$
