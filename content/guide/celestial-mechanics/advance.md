@@ -187,3 +187,5 @@ Now, $f_\text{GW} = 2f = \frac{\Omega}{\pi}$ gives
 $$ f_\text{GW}^{-8/3} (t) = \frac{(8 \pi)^{8/3}}{5} \left( \frac{GM_c}{c^3} \right)^{5/3} (t_0 - t) $$
 
 where $t_0$ is a constant of integration.
+
+## Poynting Robertson Effect

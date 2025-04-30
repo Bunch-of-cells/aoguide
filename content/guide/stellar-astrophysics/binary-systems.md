@@ -40,6 +40,8 @@ $$\tag{5.3.2} \frac{r_1}{a} = \frac{0.49 q^{2/3}}{0.6q^{2/3} + \ln (1 + q^{1/3})
 
 Exoplanets are planets orbiting some other star, other than the Sun. The first exoplanet found in 1992 orbited a pulsar. The first exoplanet orbiting a normal star was found in 1995 around $\beta$ Pictoris. Rogue planets are ones which have escaped from planetary systems, and are wandering in space.
 
+### Detection
+
 There are various methods for detecting exoplanets
 
 - Astrometric methods are based on perturbations of the proper motion or radial velocity of the star, by the planet. If the planet is large enough, these can be detected.
@@ -50,3 +52,15 @@ There are various methods for detecting exoplanets
 - When a planet is between the star and the observer, it occults a part of the stellar disk, reducing its brightness. This event is called a transit. Periodic transits confirm the existance of an exoplanet. The transit depth is defined as
 
 $$\tag{5.3.4} \text{Transit Depth} = \left( \frac{R_\text{planet}}{R_\text{star}} \right)^2 $$
+
+### Thermal Equillibrium
+
+If a slowly rotating planet is in thermal equillibrium, the temperature of the planet is given by
+
+$$ 2\pi R^2 \sigma T^4 = \frac{4\pi R_s^2 \sigma T_s^4}{4\pi r^2} \cdot \pi R^2 \cdot (1 - A) $$
+
+If the planet rotates fast, the temperature is given by
+
+$$ 4\pi R^2 \sigma T^4 = \frac{4\pi R_s^2 \sigma T_s^4}{4\pi r^2} \cdot \pi R^2 \cdot (1 - A)$$
+
+where $T$ is the temperature of the planet, $A$ is the planet's bond albedo, $T_s$ is the temperature of the star, $R$ is the radius of the planet, $R_s$ is the radius of the star and $r$ is the distance between them.
