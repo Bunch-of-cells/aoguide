@@ -13,6 +13,8 @@ Astrophysics relevant to Olympiads can be classified into a few broad categories
 - Stellar Astrophysics
 - Galactic Astrophysics
 - Cosmology
+- Observational Astronomy
+- Data Analysis
 
 The topics have been listed in the order of recommended order of study.
 
@@ -24,4 +26,6 @@ The topics have been listed in the order of recommended order of study.
   {{< card link="../stellar-astrophysics" title="Stellar Astrophysics" >}}
   {{< card link="../galactic-astrophysics" title="Galactic Astrophysics" >}}
   {{< card link="../cosmology" title="Cosmology" >}}
+  {{< card link="../obso" title="Observational Astronomy" >}}
+  {{< card link="../data" title="Data Analysis" >}}
 {{< /cards >}}

@@ -1,5 +1,5 @@
 ---
-title: Advance Topics
+title: Advanced Topics
 weight: 5
 ---
 
@@ -115,5 +115,64 @@ The gravitational potential energy is
 $$ \Omega = - \int_0^M \frac{GM_r dM_r}{r^2} = \frac{3}{5-n} \frac{GM^2}{R} $$
 
 ## Limb Darkening
+
+Limb darkening is the phenomenon where the center of a star appears brighter than the edges (limbs). This is due to the fact that light from the center of the star has to pass through less material than light from the edges, which has to pass through more material.
+
+The intensity seen at some point P is only a function of the incident angle $\psi$.
+
+$$ \frac{I(\psi)}{I(0)} = \sum_{k=0}^N a_k \cos^k \psi $$
+
+It can also be written as
+
+$$ \frac{I(\psi)}{I(0)} = 1 + \sum_{k=1}^N A_k (1 - \cos \psi)^k $$
+
+For a lambertian surface, $I(\psi) = I(0) \cos \psi$, hence no limb darkening is observed (the projected area also scales as $\cos \psi$).
+
+We have that
+
+$$ \cos \psi = \frac{\sqrt{\cos^2 \theta - \cos^2 \Omega}}{\sin \Omega} = \sqrt{1 - \left( \frac{\sin \theta}{\sin \Omega} \right)^2} $$
+
+For small $\theta$,
+
+$$ \cos \psi \approx \sqrt{1 - \left( \frac{\theta}{\sin \Omega} \right)^2}$$
+
+The mean intensity is given by
+
+$$ \bar{I} = \frac{\int I(\psi) \, d\omega}{\int d\omega} $$
+
+where $d\omega = \sin \theta \, d\theta \, d\phi$. We get that
+
+$$ \bar{I} = 2I(0) \sum_{k=0}^N \frac{a_k}{k+2} $$
+
+The radiative transfer equation is
+
+$$ \frac{dI_\nu}{d\tau_\nu} = I_\nu - S_\nu $$
+
+where $\tau_\nu = - \alpha_\nu \, ds$ and $ds = dr \, \cos \theta$. Defining $\mu = \cos \theta$, the equation for radial direction is therefore
+
+$$ \mu \frac{dI}{d\tau} (\tau, \mu) = I (\tau, \mu) - S (\tau) $$
+
+A solution upto linear terms is $I (\tau, \mu) = I_0 + I_1 \mu$. The mean intensity is
+
+$$ J(\tau) = \frac{1}{2} \int_{-1}^{1} (I_0 + I_1 \mu) d\mu = I_0$$
+
+The net flux is
+
+$$ F(\tau) = \int I(\tau, \mu) \cos \theta \, d\Omega = \frac{4\pi}{3} I_1$$
+$$ \implies I_1 = \frac{3 F(0)}{4\pi} $$
+
+In radiative equilibrium, $S(\tau) = J(\tau)$. Thus the equation for radiative transfer becomes
+
+$$ \mu \frac{dI_0}{d\tau} = I_1 \mu \implies I = I_1 (\tau + \mu) + C $$
+
+Setting the inward flux to be zero, we get that $C = 2/3$. Hence the intensity is
+
+$$ I = \frac{3 F(0)}{4\pi} \left( \tau + \mu + \frac{2}{3} \right) $$
+
+At the surface of the star, $\tau = 0$, therefore we get that
+
+$$ \frac{I(0, \theta)}{I(0, 0)} = 0.4 + 0.6 \cos \theta = 1 - u (1 - \mu) $$
+
+where $u = 0.6$ is the limb darkening coefficient.
 
 ## Compact Stars

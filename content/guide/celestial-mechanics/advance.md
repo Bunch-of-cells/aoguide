@@ -1,5 +1,5 @@
 ---
-title: Advance Topics
+title: Advanced Topics
 weight: 7
 ---
 
@@ -25,7 +25,7 @@ The conservation of the LRL vector $\mathbf{A}$ and angular momentum vector $\ma
 
 $$ mk \hat{\mathbf{r}} = \mathbf{p} \times \mathbf{L} - \mathbf{A} $$
 
-$$\implies (mk)^2 = A^2 + p^2L^2 + 2\mathbf{A} \cdot (\mathbf{p} \times \mathbf{A}) $$
+$$\implies (mk)^2 = A^2 + p^2L^2 + 2\mathbf{A} \cdot (\mathbf{p} \times \mathbf{L}) $$
 
 Choosing $\mathbf{L}$ along the $z$-axis, and the major semiaxis as the $x$-axis, yields the locus equation for $\mathbf{p}$
 

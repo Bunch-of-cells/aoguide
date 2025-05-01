@@ -1,10 +1,12 @@
 ---
 title: Guide
 next: /guide/getting-started
+sidebar:
+  open: true
 cascade:
   type: docs
-  sidebar:
-    open: true
+  # sidebar:
+  #   open: true
 ---
 
 ## What is this?

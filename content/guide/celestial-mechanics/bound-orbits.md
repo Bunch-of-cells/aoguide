@@ -1,11 +1,9 @@
 ---
 title: Bound Orbits
-# prev: /guide/celestial/keplers-laws
-# next: /guide/celestial/unbound-orbits
 weight: 2
 ---
 
-As proved in section 3.1, all bound orbits are elliptical. Consider an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$. The semi-major axis is half the length of longest chord of the ellipse, while the semi-minor axis is half the length of the shortest chord. The semi-minor and semi-major axis are related by
+As proved in section 3.1, all bound orbits are elliptical. Consider an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$. The semi-major axis is half the length of longest radii of the ellipse, while the semi-minor axis is half the length of the shortest radii. The semi-minor and semi-major axis are related by
 
 $$ b^2 = a^2 (1 - e^2) $$
 
@@ -94,6 +92,10 @@ $$ r = a (1 - \cos E) $$
 With this result, we can show that the true anomaly $\theta$ and the eccentric anamoly $E$ are related by
 
 $$\tag{3.2.7} \tan \frac{\theta}{2} = \sqrt{\frac{1+e}{1-e}} \tan \frac{E}{2} $$
+
+and
+
+$$ \cos \theta = \frac{a}{r} (\cos E - e) \qquad \qquad \sin \theta = \frac{b}{r} \sin E $$
 
 Using Kepler's second law, by finding the total area covered by the smaller body, presently at the eccentric angle $E$. Thus one obtains the relation between the mean anamoly $M$ and the eccentric anamoly $E$ as
 

@@ -68,29 +68,32 @@ $$
 
 Since gravitation is a central force, the angular momentum is conserved. Moreover since it is conservative, the total energy is also conserved. Hence $\mathbf{h}$ and $\varepsilon$ are constants of motion.
 
-Since $\mathbf{h} \cdot \mathbf{r} = 0$, $\mathbf{h}$ lies perpendicular to the plane of motion, and hence defines the plane of motion. We have
-
-$$
-\begin{align*}
-\frac{d}{dt} (\mathbf{h} \times \dot{\mathbf{r}}) = \mathbf{h} \times \ddot{\mathbf{r}} &= (\mathbf{r} \times \dot{\mathbf{r}}) \times \left( -\mu \frac{\mathbf{r}}{r^3} \right) \\
-&= -\mu \frac{1}{r^3} \left[(\mathbf{r} \cdot \mathbf{r}) \dot{\mathbf{r}} - (\mathbf{r} \cdot \dot{\mathbf{r}}) \times \mathbf{r} \right] \\
-&= -\mu (\frac{\dot{\mathbf{r}}}{r} - \mathbf{r} \frac{\dot{r}}{r^2}) = \frac{d}{dt} \left(-\mu \frac{\mathbf{r}}{r} \right)
-\end{align*}
-$$
-
-$$ \implies \frac{d}{dt} \left( \mathbf{h} \times \dot{\mathbf{r}} + \mu \frac{\mathbf{r}}{r} \right) = \mathbf{0} $$
-
-Hence we define the eccentricity vector as
+Since $\mathbf{h} \cdot \mathbf{r} = 0$, $\mathbf{h}$ lies perpendicular to the plane of motion, and hence defines the plane of motion. We define the eccentricity vector as
 
 $$\tag{3.1.2} \mathbf{e} = -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} $$
 
-This is another constant of motion. It lies in the plane of motion, hence $\mathbf{h} \cdot \mathbf{e} = 0$. It points in the direction of the periapsis. The mangnitude of the eccentricity vector is
+We have
+
+$$
+\begin{align*}
+\frac{d}{dt} \mathbf{e} &= \frac{d}{dt} \left( -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} \right) \\
+&= -\frac{1}{\mu} \left(\mathbf{h} \times \ddot{\mathbf{r}} \right) - \left( \frac{\dot{{\mathbf{r}}}}{r} - \frac{\dot{r}}{r^2} \mathbf{r} \right)\\
+&= -\frac{1}{\mu} \left( \left( \mathbf{r} \times \dot{\mathbf{r}} \right) \times \left(-\mu \frac{\mathbf{r}}{r^3} \right) \right) - \left( \frac{\dot{{\mathbf{r}}}}{r} - \frac{\dot{r}}{r^2} \mathbf{r} \right)\\
+&= \frac{1}{r^3} \left[(\mathbf{r} \cdot \mathbf{r}) \dot{\mathbf{r}} - (\mathbf{r} \cdot \dot{\mathbf{r}}) \times \mathbf{r} \right] - \left( \frac{\dot{{\mathbf{r}}}}{r} - \frac{\dot{r}}{r^2} \mathbf{r} \right)\\
+&= \frac{1}{r^3} \left( r^2 \dot{\mathbf{r}} - r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}} + r \dot{r} \mathbf{r} \right)\\
+&= 0\\
+\end{align*}
+$$
+
+<!-- $$ \implies \frac{d}{dt} \left( \mathbf{h} \times \dot{\mathbf{r}} + \mu \frac{\mathbf{r}}{r} \right) = \mathbf{0} $$ -->
+
+Hence the eccentricity vector is also a constant of motion. It lies in the plane of motion, hence $\mathbf{h} \cdot \mathbf{e} = 0$. It points in the direction of the periapsis. The magnitude of the eccentricity vector is
 
 $$\tag{3.1.3} e = \sqrt{1 + \frac{2 \varepsilon h^2}{\mu^2}} $$
 
 ## First Law
 
-The angle between the eccentricity vector and the position vector is called the mean anamoly $\theta$
+The angle between the eccentricity vector and the position vector is called the true anamoly $\theta$
 
 $$ \mathbf{r} \cdot \mathbf{e} = r e \cos \theta = \mathbf{r} \cdot \left( -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} \right) = \frac{h^2}{\mu} - r$$
 
@@ -134,9 +137,9 @@ For our solar system, the sun is much more massive than any of the planets, henc
 
 ## Second Law
 
-The cross product of two vectors gives the area of a parallelogram possessing sides of those vectors, hence the triangular area $dA$ swept out in a short period of time is given by half the cross product of the $\mathbf{r}$ and $\mathbf{dx}$ vectors, for some short piece of the orbit, $dx$.
+The cross product of two vectors gives the area of a parallelogram possessing sides of those vectors, hence the triangular area $dA$ swept out in a short period of time is given by half the cross product of the $\mathbf{r}$ and $\mathbf{dr}$ vectors, for some short piece of the orbit, $\mathbf{dr}$.
 
-$$ dA = \frac{1}{2}|\mathbf{r} \times \mathbf{dx}| = \frac{1}{2}|\mathbf{r} \times \mathbf{v} dt| = \frac{h}{2} dt $$
+$$ dA = \frac{1}{2}|\mathbf{r} \times \mathbf{dr}| = \frac{1}{2}|\mathbf{r} \times \mathbf{v} dt| = \frac{h}{2} dt $$
 
 $$\tag{3.1.7} \implies \boxed{\frac{dA}{dt} = \frac{h}{2}} $$
 
@@ -164,7 +167,7 @@ Rearranging, we get
 
 $$\tag{3.1.8} \boxed{P^2 = \frac{4 \pi^2}{\mu} a^3} $$
 
-This is known as Newton's form of the third law. If we work in the units of AU, sidereal years, and solar masses, we have $G M_\odot = 4 \pi^2$. Hence the equation simplifies to
+where $P$ is the period of one revolution. This is known as Newton's form of the third law. If we work in the units of AU, sidereal years, and solar masses, we have $G M_\odot = 4 \pi^2$. Hence the equation simplifies to
 
 $$\tag{3.1.9} \boxed{a^3 = M P^2} $$
 

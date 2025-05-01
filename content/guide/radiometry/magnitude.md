@@ -121,7 +121,7 @@ $$\tag{2.2.6} d\tau = \alpha \, {dr} $$
 
 $$\tag{2.2.7} \therefore dL = -L \, d\tau \implies \boxed{L = L_0 e^{-\tau}} $$
 
-Here $\tau = \int_0^r \alpha \, dr = \langle \alpha \rangle r$ is the optical thickness between the source and the observer.
+Here $\tau = \int_0^r \alpha \, dr = \langle \alpha \rangle r$ is the optical thickness between the source and the observer. This exponential decay is known as Beer-Lambert law.
 
 If $F_0$ is the flux density at the star's surface and $F(r)$ is the flux density at a distance $r$,
 

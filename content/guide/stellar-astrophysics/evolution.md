@@ -54,3 +54,5 @@ $$\tag{5.4.1} R = \lambda_J = \left( \frac{15}{4 \pi} \frac{k}{Gm_H} \frac{T}{\m
 The critical mass, called Jean's mass is given by
 
 $$\tag{5.4.2} M_J = \frac{4}{3} \pi \lambda_J^3 \rho = \sqrt{ \frac{375}{4 \pi} \left( \frac{k}{Gm_H} \right)^3 \frac{T^3}{\mu^3 \rho} } $$
+
+## Stromgren Sphere

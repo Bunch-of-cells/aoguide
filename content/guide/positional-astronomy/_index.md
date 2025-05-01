@@ -1,6 +1,7 @@
 ---
 title: Positional Astronomy
 weight: 2
+next: /guide/positional-astronomy/sphere/
 ---
 
 {{< tabs items="Problem,Hint,Solution" >}}
