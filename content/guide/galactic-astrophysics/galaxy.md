@@ -61,8 +61,8 @@ The Hubble classification scheme is a system used to classify galaxies based on 
 
 - Elliptical galaxies (E): These galaxies are characterized by their smooth, featureless appearance and are typically composed of older stars. They are classified based on their ellipticity, with E0 being nearly spherical and E7 being highly elongated. If the major and minor axes of the galaxy are $a$ and $b$ respectively, then its type is given by En, where $n = 10 (1 - b/a)$.
 - Lenticular galaxies (S0): These galaxies have a disk-like structure similar to spiral galaxies but lack the prominent spiral arms. They are often considered a transitional type between elliptical and spiral galaxies.
-- Spiral galaxies (S): These galaxies are characterized by their spiral arms and a central bulge. They are classified based on the tightness of their spiral arms and the size of their central bulge.
-- Spiral Barred galaxies (SB): These galaxies have a central bar-shaped structure that extends from the nucleus to the spiral arms. They are classified in the same way as normal spiral galaxies, with the addition of the "SB" prefix.
+- Spiral galaxies (S): These galaxies are characterized by their spiral arms and a central bulge. They are classified based on the tightness of their spiral arms and the size of their central bulge. These can be further classified as Sa, Sb and Sc, where Sa has tightly wound spiral arms and a large central bulge, Sb has moderately wound spiral arms and a medium-sized central bulge, and Sc has loosely wound spiral arms and a small central bulge.
+- Spiral Barred galaxies (SB): These galaxies have a central bar-shaped structure that extends from the nucleus to the spiral arms. They are classified in the same way as normal spiral galaxies, with the addition of the "SB" prefix. These can be further classified as SBa, SBb and SBc, where SBa has tightly wound spiral arms and a large central bulge, SBb has moderately wound spiral arms and a medium-sized central bulge, and SBc has loosely wound spiral arms and a small central bulge.
 - Irregular galaxies (Irr): These galaxies do not fit into any of the above categories and have an irregular shape. They are often rich in gas and dust and are typically associated with active star formation.
 
 ## Galactic Relations
@@ -125,3 +125,21 @@ $$
 A + B &= -\frac{dV}{dR} \Big|_{r=R_\odot} \\ A-B &= \frac{V_\odot}{R_\odot} = \omega_0\\
 \end{aligned}
 $$
+
+## Types of Galaxies
+
+Except the hubble classification scheme, galaxies can be classified into several other types based on their properties and characteristics. Some of the most common types of galaxies include:
+
+- CD galaxies: These are dwarf elliptical galaxies that are found in the central regions of galaxy clusters. They are typically small and have a low luminosity.
+- dIrr galaxies: These are dwarf irregular galaxies that are found in the outskirts of galaxy clusters. They are typically small and have a low luminosity.
+- dE galaxies: These are dwarf elliptical galaxies that are found in the outskirts of galaxy clusters. They are typically small and have a low luminosity.
+- dSph galaxies: These are dwarf spheroidal galaxies that are found in the outskirts of galaxy clusters. They are typically small and have a low luminosity.
+- uFd galaxies: These are ultra-faint dwarf galaxies that are found in the outskirts of galaxy clusters. They are typically very small and have a very low luminosity.
+- UCD galaxies: These are ultra-compact dwarf galaxies that are found in the central regions of galaxy clusters. They are typically very small and have a very low luminosity.
+- SAB galaxies: These are spiral barred galaxies that have a weak central bar-shaped structure that extends from the nucleus to the spiral arms. They lie between S and SB galaxies in terms of their morphology.
+- Sm galaxies: These are irregular galaxies that have a more regular shape than typical irregular galaxies. They are often rich in gas and dust and are typically associated with active star formation. These are shaped like the Magellanic clouds.
+- Radio galaxies: These are galaxies that emit strong radio waves, often associated with active galactic nuclei (AGN) or supermassive black holes. They can be classified into two main types: Fanaroff-Riley type I (FRI) and type II (FRII) radio galaxies, based on their radio morphology and luminosity.
+- Quasars: Quasars are extremely luminous and distant active galactic nuclei (AGN) powered by supermassive black holes. They are among the most energetic objects in the universe and can outshine entire galaxies.
+- Seyfert galaxies: These are a type of active galaxy that exhibits strong emission lines in their spectra. They are classified into two main types: Seyfert 1 and Seyfert 2, based on the strength and width of their emission lines. Seyfert I galaxies have broad emission lines, while Seyfert II galaxies have narrow emission lines.
+- Blazars: These are a type of active galaxy that emits strong and variable radiation across the electromagnetic spectrum, including radio, optical, and X-ray wavelengths. They are thought to be powered by supermassive black holes and are often associated with jets of relativistic particles.
+- AGN: Active Galactic Nuclei (AGN) are the central regions of galaxies that are extremely bright and energetic due to the presence of supermassive black holes. AGN can be classified into several types, including Seyfert galaxies, quasars, and blazars, based on their properties and characteristics.

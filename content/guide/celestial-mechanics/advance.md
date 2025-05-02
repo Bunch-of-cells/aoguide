@@ -172,20 +172,43 @@ According to general theory of relativity, accelerated masses with non zero quad
 - have a frequency twice as large as the orbital frequency
 - can be characterized by a luminosity, which is dominated by the expression
 
-$$ P = \frac{32}{5} \frac{G}{c^5}m^2 a^4 \Omega^6 $$
+$$\tag{3.7.12} P = \frac{32}{5} \frac{G}{c^5}m^2 a^4 \Omega^6 $$
 
 where $a$ is the orbital separation and $\Omega$ is the angular velocity of each mass.
 
 The energy of the system is $E = - \frac{GMm}{2a}$. Differentiating, we get
 
-$$ \left( \frac{d \Omega}{dt} \right)^3 = \left( \frac{96}{5} \right)^3 \frac{\Omega^{11}}{c^5} (GM_c)^5 $$
+$$\tag{3.7.13} \left( \frac{d \Omega}{dt} \right)^3 = \left( \frac{96}{5} \right)^3 \frac{\Omega^{11}}{c^5} (GM_c)^5 $$
 
 where we define the chirp mass $M_c = m^{3/5} M^{2/5}$.
 
 Now, $f_\text{GW} = 2f = \frac{\Omega}{\pi}$ gives
 
-$$ f_\text{GW}^{-8/3} (t) = \frac{(8 \pi)^{8/3}}{5} \left( \frac{GM_c}{c^3} \right)^{5/3} (t_0 - t) $$
+$$\tag{3.7.14} f_\text{GW}^{-8/3} (t) = \frac{(8 \pi)^{8/3}}{5} \left( \frac{GM_c}{c^3} \right)^{5/3} (t_0 - t) $$
 
 where $t_0$ is a constant of integration.
 
 ## Poynting Robertson Effect
+
+The force of radiation acting on a particle of mass $m$ density $\rho$ and radius $R$ is $F_\text{rad} = P_\text{rad} \sigma_\text{pr}$, where $\sigma_\text{pr} = Q_\text{pr} \pi R^2$ is the cross section of the particle, $Q_\text{pr}$ is the radiation pressure coefficient, and $P_\text{rad}$ is the radiation pressure. The radiation pressure is given by
+
+$$\tag{3.7.15} P_\text{rad} = \frac{L}{4 \pi r^2 c} $$
+
+where $L$ is the luminosity of the star and $r$ is the distance from the star. For sun, the peak wavelength is $\lambda_{p} \approx 500 \mathrm{\,nm}$. For $R \gg \lambda_p$, where sun's gravity dominates over radiation pressure, the Poynting-Robertson effect acts as a brake on orbiting particles, decreasing their angular momenta so that they slowly spiral into the sun. In the frame of the orbiting particle, the phenomena of abberation causes slight displacement in the direction of the motion for photons striking the particle. This applies a torque on the particle, causing it to lose angular momentum.
+
+$$ \mathbf{\tau} = \mathbf{r} \times \mathbf{F} = \frac{d \mathbf{L}}{dt} $$
+$$ \tau = -rF_\text{rad} \sin \theta = -r \frac{LR^2 Q_\text{pr}}{4cr^2} \frac{v}{c} $$
+
+The angular momenta of the orbiting particle is
+
+$$ L = m \sqrt{GMr} \implies \frac{dL}{dt} = \frac{m}{2} \sqrt{\frac{GM}{r}} \frac{dr}{dt} $$
+
+Hence we get that the radius of the particle's orbit decays as
+
+$$ \frac{dr}{dt} = -\frac{1}{r} \frac{L}{2c^2} \frac{R^2 Q_\text{pr}}{m} $$
+
+The Poynting Robertson time scale is the time it takes for the particle to spiral into the sun
+
+$$\tag{3.7.16} t_\text{pr} = \frac{a^2 c^2}{L} \frac{4 \pi}{3} \frac{\rho R}{Q_\text{pr}} $$
+
+where $r = a$ is the initial radius of the particle's orbit.
