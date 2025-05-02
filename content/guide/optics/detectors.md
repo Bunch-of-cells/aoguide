@@ -78,9 +78,17 @@ where AFOV is the apparent field of view and $m$ is the magnification.
 
 ## Charge-Coupled Devices (CCDs)
 
-A CCD comprises of a matrix of pixels, typically ~$10^4 \times 10^4$ in number. The final outputs of the signal levels are expressed in 'analogue to digital' units or ADUs. A specific number of photoelectrons correspond to a single ADU, which depends on the CCD. The quantum efficiency is the fraction of photons detected by the CCD. For CCDs, the quantum efficiency is above 80%, and varies from pixel to pixel. Flat fielding (uniform illumination of CCD) is done to estimate the quantum efficiency across pixels. Quantum efficiency of the eye is ~1%.
+A CCD comprises of a matrix of pixels, typically ~$10^4 \times 10^4$ in number. The final outputs of the signal levels are expressed in 'analogue to digital' units or ADUs. A specific number of photoelectrons correspond to a single ADU, which depends on the CCD. The quantum efficiency is the fraction of photons detected by the CCD. For CCDs, the quantum efficiency is above 80%, and varies from pixel to pixel. Flat fielding (uniform illumination of CCD) is done to estimate the quantum efficiency across pixels. Quantum efficiency of the eye is ~1%. A CCD has a linear response to the number of photons incident on it.
 
-## Signal and Noise
+## Pixel Spread Function (PSF)
+
+Stars have finite size in CCD images. This is because of the diffraction limit of the telescope used, atmospheric effects and optics of the telescope. Typically 3-4 pixels are required to resolve a star. The PSF is the response of the system to a point source of light. The star's light is spread over a number of pixels, and the PSF is the distribution of light over these pixels. All of the star's light falling on a single pixel is bad, since it makes it hard to distinguish noise. The PSF looks different for faint and bright stars, because the noise is high in faint sources (hence PSF is higher for bright stars). The PSF is usually modeled as a Gaussian function, which is a bell-shaped curve. The width of the Gaussian is called the full width at half maximum (FWHM), which is the distance between the two points on the curve where the intensity is half of its maximum value.
+
+## Noise
+
+Noise are the unpredicatable variations in data that obscure or distort the true characteristics of the system under study. Noise encompasses all factors that contribute to measurement uncertainities $\sigma_i$. If all noise sources are independent, the total noise is given by
+
+$$\tag{4.1.10} \sigma^2 = \sum_i \sigma_i^2 $$
 
 ### Telescope
 
@@ -100,6 +108,6 @@ Suppose over an exposure a star provides $N_*$ photons spread over $p$ pixels, a
 
 $$\tag{4.2.1} \text{SNR} = \frac{N_*}{\sqrt{N_* + N_\text{sky} + p N_d t + p \sigma^2}} $$
 
-The dark current is the thermal noise in the CCD. Readout noise is the noise introduced while reading out from the CCD. Dynamic range is the maximum SNR of a CCD.
+The dark current is the thermal noise in the CCD. Readout noise, also called bias voltage, leak noise or residual voltage, is the noise introduced while reading out from the CCD. Dynamic range is the maximum SNR of a CCD.
 
-Subtracting the dark frame (image captured with the shutter closed) removed the dark current and readout noise. Dividing by the flat field image removes the pixel-to-pixel variations in the quantum efficiency.
+Subtracting the dark frame (image captured with the shutter closed) removes the dark current and readout noise. Dividing by the flat field image removes the pixel-to-pixel variations in the quantum efficiency. Additionally, it is important to calibrate the CCD to ensure accurate measurements.

@@ -3,6 +3,8 @@ title: Data Analysis
 weight: 9
 ---
 
+## Significant Figures
+
 ## Types of Distributions
 
 ### Gaussian Distribution
@@ -33,6 +35,14 @@ $$\tag{9.1.3} P(k, n, p) = \binom{n}{k} p^k (1 - p)^{n - k}$$
 where $n$ is the number of trials, $k$ is the number of successes, and $p$ is the probability of success on each trial. The mean and variance of the binomial distribution are given by $np$ and $np(1 - p)$ respectively.
 
 ## Statistical Analysis
+
+The difference between true value of the quantity being measured and the measured value is called error. Since we do not know the true value, we can never know the error, only estimate it. There are two types of errors - systematic errors and random errors. Random errors are caused by unpredictable fluctuations in the measurement process, while systematic errors are caused by a consistent bias in the measurement process. Systematic errors can be reduced by calibration and careful experimental design, while random errors can be reduced by taking multiple measurements and averaging them.
+
+A precise measurement is one that is consistent and reproducible, while an accurate measurement is one that is close to the true value. A measurement can be precise but not accurate, or accurate but not precise. Ideally, we want measurements that are both precise and accurate.
+
+We use the term "uncertainty" to refer to the range of values within which we expect the true value to lie. The uncertainty in a measurement is often expressed as a percentage of the measured value, or as a range of values.
+
+Statistical analysis is the process of collecting, analyzing, interpreting, presenting, and organizing data. It involves using statistical methods to summarize and describe the data, as well as to make inferences and predictions based on the data. It allows us to estimate random errors and uncertainties in measurements, and to determine the significance of the results. However, statistical analysis cannot tell us about systematic errors, which are often more difficult to detect and correct.
 
 The mean or expected value of a random variable $X$ taken from a distribution $P(X)$ is given by
 

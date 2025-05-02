@@ -82,7 +82,17 @@ where $A$ is the area of the surface. The radiation pressure is equal to the mom
 
 ## Blackbody radiation
 
-A blackbody is an object that does not reflex or scatter any radiation falling on it, but absorbs and re-emits radiation completely. The radiation only depends on its temperature, and follows Planck's law. The spectral radiance of a blackbody at temperature $T$ is given by
+A blackbody is an object that does not reflex or scatter any radiation falling on it, but absorbs all the radiation falling on it completely. It emits at all wavelengths isotropically. Kirchoff's definition of a blackbody is an ideal body that neither reflects any light nor allows it to pass through. The emissivity $\epsilon$ of a body is defined as the ratio of the radiation emitted by the body to the radiation emitted by a blackbody of the same shape at the same temperature. The emissivity of a blackbody is 1, while that of a perfect reflector is 0. The emissivity of a real body lies between 0 and 1.
+
+$$\tag{2.1.9} \epsilon = \frac{B}{B_\text{blackbody}}$$
+
+where $B$ is the radiance of the body and $B_\text{blackbody}$ is the radiance of a blackbody at the same temperature.
+
+Kirchoff's law states that the emissivity of a body is equal to its absorptivity $a$. This means that a good absorber is also a good emitter.
+
+Examples of blackbodies are stars, the CMB, and a large cavity with a small hole.
+
+The radiation emitted by a blackbody only depends on its temperature, and follows Planck's law. The spectral radiance of a blackbody at temperature $T$ is given by
 
 $$
 \tag{2.1.10} \boxed{
