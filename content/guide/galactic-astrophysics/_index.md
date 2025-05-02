@@ -1,5 +1,5 @@
 ---
 title: Galactic Astrophysics
 weight: 7
-next: /guide/galactic-astrophysics/ism/
+next: /guide/galactic-astrophysics/galaxy/
 ---
