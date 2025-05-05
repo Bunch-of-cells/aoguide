@@ -4,13 +4,23 @@ weight: 1
 prev: /guide/radiometry
 ---
 
-Stars, galaxies, planets, and even you - everything in the universe emits some sort of radiation. This radiation can be in the form of electromagnetic radiation, such as light, or particles, such as electrons and protons. The study of this radiation is called radiometry. Here, we will be studying about electromagnetic radiation. Electromagnetic radiation is a wave in the electric and magnetic fields, which propagate through space, carrying energy and momentum. These waves can be characterized by a wavelength and frequency. Radiation with wavelength lying in the visible region of the electromagnetic spectrum (400 to 700 nm) is called light.
+Stars, galaxies, planets, and even you - everything in the universe emits some sort of radiation. This radiation can be in the form of electromagnetic radiation, such as light, or particles, such as electrons and protons. The study of this radiation is called radiometry. Here, we will be studying about electromagnetic radiation. Electromagnetic radiation is a wave in the electric and magnetic fields, which propagate through space, carrying energy and momentum. These waves can be characterized by a wavelength and frequency. Radiation can be classified on the basis of its wavelength or frequency:
+
+- Radio waves: These are used by your radio and TV sets, and are the longest wavelength radiation.
+- Microwaves: These are used in microwave ovens and radar systems.
+- Infrared: These are used in remote controls and thermal imaging.
+- Visible light: This is the light which we can see with our eyes.
+- Ultraviolet: This is what causes sunburns.
+- X-rays: These allow X-ray imaging.
+- Gamma rays: These are the most energetic forms of radiation.
 
 A surface which emits radiation isotropically (symmetrically in all directions) is called a Lambertian surface.
 
 ## Flux
 
-What is flux? Flux describes any effect that appears to pass or travel through a surface or substance. Here, the term flux density $F$ (flux and flux density are often used interchangeably without much thought, even though they're two different things) is the amount of radiant energy (energy carried by the radiation) passing through a unit area per unit time. The units of flux density are $\mathrm{W \, m^{-2}}$. Flux density is also called irradiance.
+### What is Flux?
+
+Flux describes any effect that appears to pass or travel through a surface or substance. Here, the term flux density $F$ (flux and flux density are often used interchangeably without much thought, even though they're two different things) is the amount of radiant energy (energy carried by the radiation) passing through a unit area per unit time. The units of flux density are $\mathrm{W \, m^{-2}}$. Flux density is also called irradiance.
 
 In astrophysics, we often have to deal with how much energy is being recieved by our telescopes from a star or any other astronomical object. This is where flux becomes important. For example, the flux density of Sun's radiation on earth is called the solar constant, which is about $1365 \mathrm{\, W \, m^{-2}}$.
 
@@ -23,6 +33,8 @@ where $A$ is the area of the surface. The factor $\cos \theta$ accounts for the 
 {{< /callout >}}
 
 Now we will define some more useful quantities related to the flow of radiation.
+
+### Radiance
 
 Assume we have some radiation passing through a surface element $dA$. Some of the radiation will leave $dA$ within a solid angle $d \omega$; the angle between $d \omega$ (the direction of outgoing radiation) and the normal to the surface is denoted by $\theta$. The amount of energy with frequency in the range [$\nu$, $\nu + d\nu$] entering this solid angle in time $dt$ is
 
@@ -44,13 +56,19 @@ For isotropic radiation, the flux density leaving a spherical surface of radius 
 $$F = \int_S B \cos \theta \, d\omega = \int_0^{\pi/2} \int_0^{2\pi} B \cos \theta \sin \theta \, d\theta \,  d\phi$$
 $$\tag{2.1.5}  \implies \boxed{F = \pi B}$$
 
+### Luminosity
+
 Flux $L$ is defined as the power going through some surface, and is measured in units of $\mathrm{W}$. The flux emitted by a star (power emitted by the star) into a solid angle $\omega$ is $L = \omega r^2 F$, where $F$ is the flux density at a distance $r$. The total flux passing through a closed surface surrounding the source is known as the luminosity $L$. If the source radiates isotropically, $L = 4\pi r^2 F$. The luminosity does not depend on the distance; this gives that the flux density is inversely proportional to the square of the distance.
+
+### Surface Brightness
 
 For extended objects, surface brightness $B$ is defined as the flux density per unit solid angle. Here, the observer views an extended source and is located at the vertex of the solid angle subtended by the object.
 
 $$\tag{2.1.6} B = \frac{F}{\omega}$$
 
 Surface brightness is independent of distance. It is equal to radiance of the object if the object emits isotropically.
+
+### A List of Radiometric Quantities
 
 Name | Symbol | Unit | Description |
 -----|--------|------|-------------|
@@ -69,6 +87,8 @@ Radiant Exitance | $M$ | $\mathrm{W \, m^{-2}}$ | Radiant flux emitted by a surf
 Spectral Exitance | $M_\nu$ | $\mathrm{W \, m^{-2} \, Hz^{-1}}$ | Radiant exitance of a surface per unit frequency or wavelength |
 Radiant Exposure | $H$ | $\mathrm{J \, m^{-2}}$ | Radiant energy received by a surface per unit area |
 Spectral Exposure | $H_\nu$ | $\mathrm{J \, m^{-2} \, Hz^{-1}}$ | Radiant exposure of a surface per unit frequency or wavelength |
+
+### Properties of Radiation
 
 The energy of radiation is quantized in packets called photons. The energy of a photon is given by
 
@@ -94,6 +114,8 @@ This shows that radiation can exert measurable forces, especially significant in
 
 ## Blackbody radiation
 
+### What is a Blackbody?
+
 A blackbody is an object that does not reflect or scatter any radiation falling on it, but absorbs all the radiation falling on it completely. It emits radiation evenly in all directions and at all wavelengths. Kirchoff's definition of a blackbody is an ideal body that neither reflects any light nor allows it to pass through. The emissivity $\epsilon$ of a body is defined as the ratio of the radiation emitted by the body to the radiation emitted by a blackbody of the same shape at the same temperature. The emissivity of a blackbody is 1, while that of a perfect reflector is 0. The emissivity of a real body lies between 0 and 1.
 
 $$\tag{2.1.10} \epsilon = \frac{B}{B_\text{blackbody}}$$
@@ -117,6 +139,22 @@ $$
 
 These two are connected by the relation $B_\nu(T) \, d\nu = -B_\lambda(T) \, d\lambda$ (the minus sign comes from the fact that as frequency increases, wavelength decreases.).
 
+These equations for spectral radiance can be simplified when the wavelengths in question are much larger than the peak wavelength of the spectrum or when they are approximately equal to the peak wavelength of the spectrum.
+
+When $\lambda \gg \lambda_\text{peak}$ or $\nu \ll \nu_\text{peak}$, we can use the Rayleigh-Jeans approximation
+
+$$\tag{2.1.21} B_\nu(T) \approx \frac{2 \nu^2 kT}{c^2}$$
+$$\tag{2.1.22} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
+
+The Rayleigh-Jeans approximation is used often in radio astronomy, where the wavelengths are much larger than the peak wavelength of the blackbody spectrum.
+
+When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wein approximation
+
+$$\tag{2.1.23} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
+$$\tag{2.1.24} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
+
+### Stefan Boltzmann Law
+
 The total radiance is the spectral radiance integrated over all frequencies. It is given by
 
 $$
@@ -137,7 +175,7 @@ $$\tag{2.1.13} \sigma = \frac{2 \pi^5 k^4}{15 h^3 c^2}$$
 It is numerically equal to $\sigma \approx 5.67 \times 10^{-8} \, \mathrm{W \, m^{-2} \, K^{-4}}$.
 
 {{< callout emoji="🧮" >}}
-The integral can be carried out as follows:
+{{% details title="The integral can be carried out as follows:" closed="true" %}}
 
 $$
 \begin{aligned}
@@ -158,6 +196,7 @@ This gives the result
 
 $$\int_0^{\infty} B_\nu(T) \, d\nu = \frac{2 h}{c^2} \left( \frac{kT}{h} \right)^4 \cdot \frac{\pi^4}{15} = \frac{2 \pi^4 k^4}{15 h^3 c^2} T^4$$
 
+{{% /details %}}
 {{< /callout >}}
 
 The flux density for an isotropic source is given by (using eq 2.1.5)
@@ -174,7 +213,11 @@ The spectral luminosity is defined as $L_\lambda = 4 \pi^2 R^2 B_\lambda$. The s
 
 $$\tag{2.1.16} F_\lambda = \frac{L_\lambda}{4\pi r^2} = \pi B_\lambda \left( \frac{R}{r} \right)^2 $$
 
-Hotter objects emit more at higher energies (higher frequencies and lower wavelengths). This can be quantified by Wein's law, which relates the peak wavelength and frequency (wavelength or frequency corresponding to the mode energy of the radiated photons; the wavelength or frequency at which the blackbody emits the most) of the blackbody spectrum to the temperature of the object. The peak of the blackbody spectrum shifts with temperature, and this is described by Wien's displacement law. The wavelength corresponding to the peak of the blackbody spectrum is given by
+### Wein's Displacement Law
+
+Hotter objects emit more at higher energies (higher frequencies and lower wavelengths). This can be quantified by Wein's law, which relates the peak wavelength and frequency (wavelength or frequency corresponding to the mode energy of the radiated photons; the wavelength or frequency at which the blackbody emits the most) of the blackbody spectrum to the temperature of the object. The peak of the blackbody spectrum shifts with temperature, and this is described by Wien's displacement law. This is the reason why stars have different colors, and why metals glow red then white when heated.
+
+The wavelength corresponding to the peak of the blackbody spectrum is given by
 
 $$\frac{d}{d\lambda} B_\lambda(T) = 0$$
 
@@ -182,11 +225,13 @@ This gives the relation
 
 $$\tag{2.1.17} \boxed{\lambda_\text{peak} T = b_\lambda}$$
 
-Thus $B_\lambda$ peaks at the energy
+$B_\lambda$ peaks at the energy
 
 $$\tag{2.1.18} E \approx 4.965 \,kT $$
 
 {{< callout emoji="🧮" >}}
+
+{{% details title="Taking the derivative gives" closed="true" %}}
 
 Taking the derivative $\frac{d}{d\lambda} B_\lambda (T)$ and defining $x = \frac{hc}{\lambda kT}$, after some algebra we get
 
@@ -196,6 +241,7 @@ This equation can be solved using the Lambert W function, which gives the soluti
 
 The peak energy can be calculated using the relation $E = \frac{hc}{\lambda} = xkT \approx 4.965 \,kT$.
 
+{{% /details %}}
 {{< /callout >}}
 
 The frequency corresponding to the peak of the blackbody spectrum is given by
@@ -206,11 +252,12 @@ This gives the relation
 
 $$\tag{2.1.19} \boxed{\nu_\text{peak} / T = b_\nu}$$
 
-Thus $B_\nu$ peaks at the energy
+$B_\nu$ peaks at the energy
 
 $$\tag{2.1.20} E \approx 2.821 \,kT $$
 
 {{< callout emoji="🧮" >}}
+{{% details title="Taking the derivative gives" closed="true" %}}
 
 Taking the derivative $\frac{d}{d\nu} B_\nu (T)$ and defining $y = \frac{h\nu}{kT}$, after some algebra we get
 
@@ -220,23 +267,14 @@ This gives $y = 3 + W_0(-3 e^{-3}) \approx 2.821$. This gives the value of $b_\n
 
 The peak energy can be calculated using the relation $E = h \nu = ykT \approx 2.821 \,kT$.
 
+{{% /details %}}
 {{< /callout >}}
 
 The reason eq 2.1.18 and 2.1.20 are different is because the peak of the spectrum is not at the same energy for both $\lambda$ and $\nu$. One cannot go from $B_\nu$ to $B_\lambda$ by simply changing the variable. One also needs to multiply by $|d\nu / d\lambda| = c /\lambda^2$, which shifts the peak of the distribution to higher energies. These peaks are the mode energy of a photon.
 
 Equation 2.1.17 and 2.1.19 are together known as Wien's displacement law.
 
-When $\lambda \gg \lambda_\text{peak}$ or $\nu \ll \nu_\text{peak}$, we can use the Rayleigh-Jeans approximation to get
-
-$$\tag{2.1.21} B_\nu(T) \approx \frac{2 \nu^2 kT}{c^2}$$
-$$\tag{2.1.22} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
-
-The Rayleigh-Jeans approximation is used often in radio astronomy, where the wavelengths are much larger than the peak wavelength of the blackbody spectrum.
-
-When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wein approximation to get
-
-$$\tag{2.1.23} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
-$$\tag{2.1.24} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
+### Properties of Blackbody Radiation
 
 The energy density of blackbody radiation is given by
 
@@ -262,7 +300,8 @@ $$\tag{2.1.27} n(T) = \beta \, T^3$$
 where $\beta \approx 2.03 \times 10^7 \mathrm{m^{-3} K^{-3}}$.
 
 {{< callout emoji="🧮" >}}
-The integral can be carried out as follows:
+
+{{% details title="The integral can be carried out as follows:" closed="true" %}}
 
 $$
 \begin{aligned}
@@ -279,6 +318,7 @@ For $s=3$, we have $\Gamma(3) = 2$. This gives the result
 
 $$\int_0^{\infty} \frac{u_\nu(T)}{h \nu} \, d\nu = \frac{2}{c^2} \frac{4 \pi}{c} \left( \frac{kT}{h} \right)^3 \cdot 2 \zeta(3) = \frac{16 \pi k^3 \zeta(3)}{h^3 c^3} T^3$$
 
+{{% /details %}}
 {{< /callout >}}
 
 The mean energy of the photons emitted by the blackbody is

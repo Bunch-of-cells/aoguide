@@ -36,3 +36,46 @@
 .hextra-scrollbar::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #ff6a00, #ee0979);
 }
+
+/* Base details styling */
+details {
+    background-color: transparent !important;
+    border: none !important;
+    margin-top: 0 !important;
+    color: inherit !important;
+}
+
+/* Summary/title specific fixes */
+details > summary {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 400 !important; /* Normal weight */
+    cursor: pointer;
+    list-style: none; /* Removes default arrow in Firefox */
+    color: inherit !important;
+    background: transparent !important;
+}
+
+/* Remove hover effects */
+details > summary:hover {
+    background: transparent !important;
+}
+
+/* Remove default marker (Chrome/Safari) */
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Math content protection */
+details .math {
+    font-weight: normal !important;
+    background-color: transparent;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+  
+/* Force normal weight for all text inside details except math */
+details :not(.math) {
+    font-weight: 400 !important;
+}
