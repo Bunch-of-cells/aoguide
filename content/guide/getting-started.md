@@ -2,6 +2,7 @@
 title: Getting Started
 prev: /guide/
 weight: 1
+next: N
 ---
 
 Astrophysics relevant to Olympiads can be classified into a few broad categories:
