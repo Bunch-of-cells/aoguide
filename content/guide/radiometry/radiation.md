@@ -104,19 +104,45 @@ $$\tag{2.1.9} u = \frac{1}{c} \int_\Omega B \, {d \omega} $$
 
 where $B$ is the radiance of the radiation.
 
-For an isotropic source, $u = \frac{4 \pi}{c} B$.
+For an isotropic source,
+
+$$\tag{2.1.10} \boxed{u = \frac{4 \pi}{c} B}$$
 
 The radiation pressure (measured in units of $\mathrm{Pa}$) is the force per unit area exerted by radiation on a surface. It is given by
 
-$$ P = \frac{1}{c} \int_S B \cos \theta \, {d \omega} $$
+$$\tag{2.1.11} \boxed{P = \frac{F}{c} \cos^2 \theta} $$
 
-This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails. For an isotropic source, $P = \frac{1}{3} u$. The radiation pressure is equal to the momentum flux density of the radiation.
+where $F$ is the flux density of the radiation falling on the surface, and $\theta$ is the angle between the direction of the radiation and the normal to the surface. The factor $\cos^2 \theta$ accounts for the fact that the radiation is not perpendicular to the surface. The radiation pressure is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
+
+This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails. For an isotropic source, the total radiation pressure is given by
+
+$$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
+
+The radiation pressure is equal to the momentum flux density of the radiation.
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    What is the pressure of radiation from a flux density $F$ falling on a surface which perfectly absorbs all the radiation falling on it? What is the pressure of radiation on a surface which perfectly reflects all the radiation falling on it? Consider the case when the direction of the incoming radiation is perpendicular to the surface.
+    {{< /tab >}}
+
+    {{< tab >}}
+    The pressure of radiation from a flux density $F$ falling on a surface which perfectly absorbs all the radiation falling on it is
+
+    $$P = \frac{F}{c}$$
+
+    If however, all the radiation falling on the surface is reflected, aside from the pressure due to the incident radiation, there is also a pressure due to the reflected radiation, since the reflected radiation carries momentum away from the surface. The net pressure is given by
+
+    $$ P = P_\text{incident} + P_{emitted} = \frac{F}{c} + \frac{F}{c} = \frac{2F}{c} $$
+
+    Hence the radiation pressure on a perfectly reflecting surface is twice that on a perfectly absorbing surface.
+    {{< /tab >}}
+{{< /tabs >}}
 
 ## Blackbody radiation
 
 ### What is a Blackbody?
 
-A blackbody is an object that does not reflect or scatter any radiation falling on it, but absorbs all the radiation falling on it completely. It emits radiation evenly in all directions and at all wavelengths. Kirchoff's definition of a blackbody is an ideal body that neither reflects any light nor allows it to pass through. The emissivity $\epsilon$ of a body is defined as the ratio of the radiation emitted by the body to the radiation emitted by a blackbody of the same shape at the same temperature. The emissivity of a blackbody is 1, while that of a perfect reflector is 0. The emissivity of a real body lies between 0 and 1.
+A blackbody is an object that does not reflect or scatter any radiation falling on it, but absorbs all the radiation falling on it completely. It emits radiation evenly in all directions and at all wavelengths. Kirchoff's definition of a blackbody is an ideal body that neither reflects any light nor allows it to pass through. The emissivity $\epsilon$ of a body is defined as the ratio of the radiation emitted by the body to the radiation emitted by a blackbody of the same shape at the same temperature. The emissivity $\epsilon$ of a blackbody is 1, while that of a perfect reflector is 0. The emissivity of a real body lies between 0 and 1.
 
 $$\tag{2.1.10} \epsilon = \frac{B}{B_\text{blackbody}}$$
 
@@ -148,7 +174,7 @@ $$\tag{2.1.22} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
 
 The Rayleigh-Jeans approximation is used often in radio astronomy, where the wavelengths are much larger than the peak wavelength of the blackbody spectrum.
 
-When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wein approximation
+When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wien approximation
 
 $$\tag{2.1.23} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
 $$\tag{2.1.24} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
@@ -166,7 +192,7 @@ $$
 
 This gives
 
-$$\tag{2.1.12} \boxed{B(T) = \frac{\sigma}{\pi} \, T^4}$$
+$$\tag{2.1.12} B(T) = \frac{\sigma}{\pi} \, T^4$$
 
 Here we have defined a new constant - called the Stefan-Boltzmann constant as
 
@@ -201,11 +227,11 @@ $$\int_0^{\infty} B_\nu(T) \, d\nu = \frac{2 h}{c^2} \left( \frac{kT}{h} \right)
 
 The flux density for an isotropic source is given by (using eq 2.1.5)
 
-$$\tag{2.1.14} F(T) = \pi B(T) = \sigma T^4$$
+$$\tag{2.1.14} \boxed{F(T) = \pi B(T) = \sigma T^4}$$
 
 This is known as the Stefan-Boltzmann law.
 
-If the radius of a star is $R$ and its temperature is $T$, then its luminosity is given by
+If the radius of a star is $R$ and its temperature is $T$, then its luminosity is given by (assuming the star emits isotropically)
 
 $$\tag{2.1.15} L = 4 \pi R^2 F = 4 \pi^2 R^2 B = 4 \pi R^2 \sigma T^4$$
 
@@ -213,9 +239,38 @@ The spectral luminosity is defined as $L_\lambda = 4 \pi^2 R^2 B_\lambda$. The s
 
 $$\tag{2.1.16} F_\lambda = \frac{L_\lambda}{4\pi r^2} = \pi B_\lambda \left( \frac{R}{r} \right)^2 $$
 
-### Wein's Displacement Law
+For a blackbody having surface area $A$, its luminosity is given by
 
-Hotter objects emit more at higher energies (higher frequencies and lower wavelengths). This can be quantified by Wein's law, which relates the peak wavelength and frequency (wavelength or frequency corresponding to the mode energy of the radiated photons; the wavelength or frequency at which the blackbody emits the most) of the blackbody spectrum to the temperature of the object. The peak of the blackbody spectrum shifts with temperature, and this is described by Wien's displacement law. This is the reason why stars have different colors, and why metals glow red then white when heated.
+$$\tag{2.1.16} \boxed{L = A \sigma T^4}$$
+
+If the object is not a perfect blackbody, we can still use the Stefan-Boltzmann law, but we need to multiply by the emissivity $\epsilon$ of the object. The luminosity is then given by
+
+$$\tag{2.1.16} L = A \epsilon \sigma T^4$$
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    The flux density of a star on Earth is observed to be $F = 10^{-12} \, \mathrm{W \, m^{-2}}$. The star has a parallax of $4 \, \mathrm{mas}$. From spectroscopic measurements, it is found that the star has an effective temperature of $T = 5000 \, \mathrm{K}$. What is the radius of the star?
+    {{< /tab >}}
+
+    {{< tab >}}
+    This distance to the star is
+
+    $$ d = \frac{1}{\pi} = 250 \, \mathrm{kpc} $$
+
+    The flux density of the star is given by
+
+    $$ F = \frac{L}{4 \pi d^2} = \frac{4\pi R^2 \sigma T^4}{4 \pi d^2} $$
+
+    Rearranging, we get the radius of the star to be
+
+    $$ R = \frac{d}{T^2} \sqrt{\frac{F}{\sigma}} \approx 1.3 \times 10^9 \, \mathrm{m} \approx 1.9 \, \mathrm{R_\odot} $$
+
+    {{< /tab >}}
+{{< /tabs >}}
+
+### Wien's Displacement Law
+
+Hotter objects emit more at higher energies (higher frequencies and lower wavelengths). This can be quantified by Wien's law, which relates the peak wavelength and frequency (wavelength or frequency corresponding to the mode energy of the radiated photons; the wavelength or frequency at which the blackbody emits the most) of the blackbody spectrum to the temperature of the object. The peak of the blackbody spectrum shifts with temperature, and this is described by Wien's displacement law. This is the reason why stars have different colors, and why metals glow red then white when heated.
 
 The wavelength corresponding to the peak of the blackbody spectrum is given by
 
@@ -274,6 +329,38 @@ The reason eq 2.1.18 and 2.1.20 are different is because the peak of the spectru
 
 Equation 2.1.17 and 2.1.19 are together known as Wien's displacement law.
 
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Using Wien's displacement law, determine the peak wavelength of radiation emitted by stars with the following temperatures, and indicate what color they would appear to human eyes:
+
+    a) A red dwarf at 3000 K <br>
+    b) A Sun-like star at 5800 K <br>
+    c) A blue giant at 25,000 K
+    {{< /tab >}}
+
+    {{< tab >}}
+    Using Wien's displacement law: $\lambda_\text{peak} = \frac{b_\lambda}{T}$
+
+    a) Red dwarf (3000 K):
+
+    $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{3000} \approx 966 \text{ nm}$$
+
+    This is in the near-infrared range, but the visible spectrum tail extends into red wavelengths, making the star appear red.
+
+    b) Sun-like star (5800 K):
+
+    $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{5800} \approx 500 \text{ nm}$$
+
+    This is in the green part of the visible spectrum, but the full spectrum makes the star appear yellow-white.
+
+    c) Blue giant (25,000 K):
+
+    $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{25000} \approx 116 \text{ nm}$$
+
+    This is in the extreme ultraviolet range, but the visible tail makes the star appear blue.
+    {{< /tab >}}
+{{< /tabs >}}
+
 ### Properties of Blackbody Radiation
 
 The energy density of blackbody radiation is given by
@@ -325,6 +412,24 @@ The mean energy of the photons emitted by the blackbody is
 
 $$\tag{2.1.28} \langle E \rangle = \frac{u(T)}{n(T)} = \frac{\pi^4}{30 \zeta(3)} kT \approx 2.70 \, kT$$
 
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Find the average energy of the cosmic microwave background (CMB) photons. The CMB is a nearly perfect blackbody radiation from the early universe, with a blackbody temperature of 2.7 K.
+    {{< /tab >}}
+
+    {{< tab >}}
+    The average energy of the CMB photons can be calculated using the relation
+
+    $$\langle E \rangle \approx 2.70 kT$$
+
+    For $T = 2.7 \, \mathrm{K}$, we have
+
+    $$\langle E \rangle \approx 1.02 \times 10^{-22} \, \mathrm{J} \approx 6.36 \times 10^{-4} \, \mathrm{eV} $$
+
+    This is in the microwave range of the electromagnetic spectrum.
+    {{< /tab >}}
+{{< /tabs >}}
+
 ## Temperature
 
 The temperature of a star can be defined in several ways.
@@ -333,6 +438,63 @@ The temperature of a star can be defined in several ways.
 
 $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\, K}$$
 
-- If we assume at some wavelength $\lambda$ the spectral flux density $F_\lambda$ at the surface of the star is given by Planck's law, we get the brightness temperature $T_b$. This is the temperature of a blackbody that matches the brightness of the star at that specific wavelength. Since stars are not ideal blackbodies, $T_b$ depends on the wavelength used.
+- If we assume at some wavelength $\lambda$ the spectral flux density $F_\lambda$ at the surface of the star is given by Planck's law, we get the brightness temperature $T_b$. This is the temperature of a blackbody that matches the brightness of the star at that specific wavelength. Since stars are not ideal blackbodies, $T_b$ depends on the wavelength used. This is commonly used in radio astronomy, where the Rayleigh-Jeans approximation is used to find brightness temperature at a specific wavelength/frequency.
 
 - The temperature giving the best fit for Planck's law in a wavelength range is the color temperature $T_c$ of the object.
+
+## Problems
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    $\text{(IOAA 2010)}$ Estimate the effective temperature of the photosphere of the Sun using the naked eye colour of the Sun.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Using Wien's law,
+
+    $$
+    \begin{aligned}
+    \lambda_\text{peak} T &= b_\lambda \\
+    T &= \frac{b_\lambda}{\lambda_\text{peak}} \\
+    &\approx \frac{2.898 \times 10^{-3}}{500 \times 10^{-9}} \, \mathrm{K} = 5800 \mathrm{\, K}\\
+    &\approx \boxed{6000 \, \mathrm{K}} \\
+    \end{aligned}
+    $$
+
+    The temperature is rounded as the peak wavelength has only one significant digit.
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Find the size of a spherical grain of dust (density $\rho = 5000 \, \mathrm{kg \, m^{-3}}$) which can remain stationary in space due to radiation pressure from the Sun.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Let the radius of the grain of dust be $R$.
+    The radiation pressure of Sun at a distance $r$ is given by
+
+    $$P = \frac{F}{c} = \frac{L}{4 \pi r^2 c}$$
+
+    This gives a radiation force acting on the grain of dust of area $A = \pi R^2$ as
+
+    $$F_r = PA = \frac{L }{4 \pi r^2 c} \pi R^2$$
+
+    The mass of the grain of dust is given by
+
+    $$m = \rho \frac{4}{3} \pi R^3$$
+
+    Hence, the gravitational force acting on the grain of dust is given by
+
+    $$F_g = \frac{GMm}{r^2} = \frac{GM \rho \frac{4}{3} \pi R^3}{r^2}$$
+
+    For the grain of dust to remain stationary, the radiation force must be equal to the gravitational force. Hence,
+
+    $$\frac{L }{4 \pi r^2 c} \pi R^2 = \frac{GM \rho \frac{4}{3} \pi R^3}{r^2}$$
+
+    Rearranging gives
+
+    $$R = \frac{3L}{16 \pi \rho c GM} \approx \boxed{115 \, \mathrm{nm}} $$
+    
+    {{< /tab >}}
+{{< /tabs >}}

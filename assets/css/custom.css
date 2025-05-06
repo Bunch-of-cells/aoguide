@@ -79,3 +79,41 @@ details .math {
 details :not(.math) {
     font-weight: 400 !important;
 }
+
+/* Problem tab button (first tab) */
+.hextra-tabs-toggle:nth-child(1) {
+    background: #1a365d !important; /* Dark blue */
+    color: #fff !important;
+    margin-left: 16px !important; /* Shift right for spacing */
+}
+
+/* Solution tab button (second tab) */
+.hextra-tabs-toggle:nth-child(2) {
+    background: #2e8b57 !important; /* Teal */
+    color: #fff !important;
+}
+
+/* Add spacing between tab buttons */
+.hextra-tabs-toggle {
+    margin-right: 6px;
+}
+
+/* Problem tab panel (first panel) */
+.hextra-tabs-panel#tabs-panel-0 {
+    background: rgba(26, 54, 93, 0.3) !important;   /* Dark blue, low opacity */
+    color: #fff !important;                         /* Light text for contrast */
+    padding: 1.25rem 1.5rem !important;
+    border-radius: 10px !important;
+    border: 3px solid #1a365d !important;
+    box-shadow: none !important;
+}
+
+/* Solution tab panel (second panel) */
+.hextra-tabs-panel#tabs-panel-1 {
+    background: rgba(46, 139, 87, 0.3) !important;  /* Teal, low opacity */
+    color: #fff !important;                         /* Light text for contrast */
+    padding: 1.25rem 1.5rem !important;
+    border-radius: 10px !important;
+    border: 3px solid #2e8b57 !important;
+    box-shadow: none !important;
+}
