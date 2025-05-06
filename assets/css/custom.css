@@ -117,3 +117,81 @@ details :not(.math) {
     border: 3px solid #2e8b57 !important;
     box-shadow: none !important;
 }
+
+/* Callout base styles */
+.callout {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.7rem 1rem 0.5rem 0; /* Top Right Bottom Left - left padding set to 0 */
+    border-radius: 0.375rem;
+    margin: 0.75rem 0;
+    line-height: 1.5;
+}  
+
+/* Default (orange) */
+.callout-default {
+    border-color: #ffedd5;
+    background-color: #fff7ed;
+    color: #9a3412;
+}
+.dark .callout-default {
+    border-color: rgba(251, 146, 60, 0.3);
+    background-color: rgba(251, 146, 60, 0.2);
+    color: #fdba74;
+}
+
+/* Light Mode */
+.callout-remark {
+    border-color: #800020;             /* Softer maroon */
+    background-color: rgba(128, 0, 32, 0.08); /* Subtle maroon tint */
+    color: #4d0013;                         /* Dark maroon text */
+}
+  
+/* Dark Mode */
+.dark .callout-remark {
+    border-color: #a2324a;             /* Softer maroon */
+    background-color: rgba(162, 50, 74, 0.15);
+    color: #ffb8c6;                        /* Pale pink text */
+}
+
+/* Light Mode */
+.callout-example {
+    border-color: #008000;             /* green */
+    background-color: rgba(0, 128, 0, 0.08); /* Subtle green tint */
+    color: #004d00;                         /* Dark green text */
+}
+  
+/* Dark Mode */
+.dark .callout-example {
+    border-color: #32a232;             /* green */
+    background-color: rgba(50, 162, 50, 0.15);
+    color: #b8ffb8;                        /* Pale green text */
+}
+
+/* Light Mode */
+.callout-tip {
+    border-color: #000080;             /* blue */
+    background-color: rgba(0, 0, 128, 0.08); /* Subtle blue tint */
+    color: #00004d;                         /* Dark blue text */
+}
+  
+/* Dark Mode */
+.dark .callout-tip {
+    border-color: #3232a2;             /* blue */
+    background-color: rgba(50, 50, 162, 0.15);
+    color: #b8b8ff;                        /* Pale blue text */
+}
+
+/* Light Mode */
+.callout-math {
+    border-color: #808080;             /* gray */
+    background-color: rgba(128, 128, 128, 0.08); /* Subtle gray tint */
+    color: #4d4d4d;                         /* Dark gray text */
+}
+  
+/* Dark Mode */
+.dark .callout-math {
+    border-color: #a2a2a2;             /* gray */
+    background-color: rgba(162, 162, 162, 0.15);
+    color: #dcdcdc;                        /* Pale gray text */
+}

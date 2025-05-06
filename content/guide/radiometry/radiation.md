@@ -24,7 +24,7 @@ Flux describes any effect that appears to pass or travel through a surface or su
 
 In astrophysics, we often have to deal with how much energy is being recieved by our telescopes from a star or any other astronomical object. This is where flux becomes important. For example, the flux density of Sun's radiation on earth is called the solar constant, which is about $1365 \mathrm{\, W \, m^{-2}}$.
 
-{{< callout type="info" emoji="📍" >}}
+{{< callout type="remark" >}}
 If a surface receives power $P$ from radiation, at an angle $\theta$ to the normal, the flux density $F$ is given by
 
 $$F = \frac{P}{A} \cos \theta$$
@@ -174,6 +174,10 @@ $$\tag{2.1.22} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
 
 The Rayleigh-Jeans approximation is used often in radio astronomy, where the wavelengths are much larger than the peak wavelength of the blackbody spectrum.
 
+{{< callout type="example" >}}
+Derive the Rayleigh-Jeans approximation from Planck's law.
+{{% /callout %}}
+
 When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wien approximation
 
 $$\tag{2.1.23} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
@@ -200,7 +204,7 @@ $$\tag{2.1.13} \sigma = \frac{2 \pi^5 k^4}{15 h^3 c^2}$$
 
 It is numerically equal to $\sigma \approx 5.67 \times 10^{-8} \, \mathrm{W \, m^{-2} \, K^{-4}}$.
 
-{{< callout emoji="🧮" >}}
+{{< callout type="math" >}}
 {{% details title="The integral can be carried out as follows:" closed="true" %}}
 
 $$
@@ -284,7 +288,7 @@ $B_\lambda$ peaks at the energy
 
 $$\tag{2.1.18} E \approx 4.965 \,kT $$
 
-{{< callout emoji="🧮" >}}
+{{< callout type="math" >}}
 
 {{% details title="Taking the derivative gives" closed="true" %}}
 
@@ -311,7 +315,7 @@ $B_\nu$ peaks at the energy
 
 $$\tag{2.1.20} E \approx 2.821 \,kT $$
 
-{{< callout emoji="🧮" >}}
+{{< callout type="math" >}}
 {{% details title="Taking the derivative gives" closed="true" %}}
 
 Taking the derivative $\frac{d}{d\nu} B_\nu (T)$ and defining $y = \frac{h\nu}{kT}$, after some algebra we get
@@ -386,7 +390,7 @@ $$\tag{2.1.27} n(T) = \beta \, T^3$$
 
 where $\beta \approx 2.03 \times 10^7 \mathrm{m^{-3} K^{-3}}$.
 
-{{< callout emoji="🧮" >}}
+{{< callout type="math" >}}
 
 {{% details title="The integral can be carried out as follows:" closed="true" %}}
 

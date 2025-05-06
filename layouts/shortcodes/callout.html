@@ -1,0 +1,26 @@
+{{- $calloutEmojiDict := dict "tip" "ℹ️" "example" "✏️" "math" "🧮" "remark" "📍" -}}
+{{- $type := .Get "type" | default "default" -}}
+{{- $emoji := .Get "emoji" -}}
+{{- if eq $emoji "" -}}
+  {{- $emoji = index $calloutEmojiDict $type -}}
+{{- end -}}
+{{- $icon := .Get "icon" -}}
+{{- $content := .InnerDeindent | markdownify -}}
+
+{{/* Map types to CSS classes */}}
+{{- $classMap := dict 
+  "default" "callout callout-default"
+  "remark"  "callout callout-remark"
+  "example" "callout callout-example"
+  "tip" "callout callout-tip"
+  "math"   "callout callout-math"
+-}}
+
+{{- $class := index $classMap $type -}}
+
+{{- partial "shortcodes/callout.html" (dict 
+  "content" $content 
+  "emoji" $emoji 
+  "icon" $icon 
+  "class" $class
+) -}}
