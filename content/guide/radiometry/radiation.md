@@ -92,19 +92,13 @@ Spectral Exposure | $H_\nu$ | $\mathrm{J \, m^{-2} \, Hz^{-1}}$ | Radiant exposu
 
 The energy of radiation is quantized in packets called photons. The energy of a photon is given by
 
-$$\tag{2.1.7} E = h \nu$$
+$$\tag{2.1.7} E = h \nu = \frac{h c}{\lambda}$$
 
 where $\nu$ is the frequency of the radiation. The momentum carried by a photon is given by
 
-$$\tag{2.1.8} p = \frac{E}{c} = \frac{h \nu}{c}$$
+$$\tag{2.1.8} p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}$$
 
-The energy density of radiation (measured in units of $\mathrm{J \, m^{-3}}$) is the amount of energy per unit volume, given by
-
-$$\tag{2.1.9} u = \frac{1}{c} \int_\Omega B \, {d \omega} $$
-
-where $B$ is the radiance of the radiation.
-
-For an isotropic source,
+The energy density $u$ of radiation (measured in units of $\mathrm{J \, m^{-3}}$) is the amount of energy per unit volume. For an isotropic source having radiance $B$,
 
 $$\tag{2.1.10} \boxed{u = \frac{4 \pi}{c} B}$$
 
@@ -114,11 +108,11 @@ $$\tag{2.1.11} \boxed{P = \frac{F}{c} \cos^2 \theta} $$
 
 where $F$ is the flux density of the radiation falling on the surface, and $\theta$ is the angle between the direction of the radiation and the normal to the surface. The factor $\cos^2 \theta$ accounts for the fact that the radiation is not perpendicular to the surface. The radiation pressure is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
 
-This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails. For an isotropic source, the total radiation pressure is given by
+This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails. The radiation pressure is equal to the momentum flux density of the radiation.
+
+For an isotropic source with energy density $u$, the total radiation pressure is given by
 
 $$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
-
-The radiation pressure is equal to the momentum flux density of the radiation.
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}

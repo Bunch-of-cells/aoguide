@@ -143,55 +143,41 @@ details :not(.math) {
 /* Light Mode */
 .callout-remark {
     border-color: #800020;             /* Softer maroon */
-    background-color: rgba(128, 0, 32, 0.08); /* Subtle maroon tint */
+    background-color: rgba(128, 0, 32, 0.04); /* Subtle maroon tint */
     color: #4d0013;                         /* Dark maroon text */
 }
   
 /* Dark Mode */
 .dark .callout-remark {
     border-color: #a2324a;             /* Softer maroon */
-    background-color: rgba(162, 50, 74, 0.15);
+    background-color: rgba(162, 50, 74, 0.07);
     color: #ffb8c6;                        /* Pale pink text */
 }
 
 /* Light Mode */
 .callout-example {
-    border-color: #008000;             /* green */
-    background-color: rgba(0, 128, 0, 0.08); /* Subtle green tint */
-    color: #004d00;                         /* Dark green text */
+    border-color: #fef3c7;
+    background-color: #fef9c3;
+    color: #854d0e;
 }
   
 /* Dark Mode */
 .dark .callout-example {
-    border-color: #32a232;             /* green */
-    background-color: rgba(50, 162, 50, 0.15);
-    color: #b8ffb8;                        /* Pale green text */
-}
-
-/* Light Mode */
-.callout-tip {
-    border-color: #000080;             /* blue */
-    background-color: rgba(0, 0, 128, 0.08); /* Subtle blue tint */
-    color: #00004d;                         /* Dark blue text */
-}
-  
-/* Dark Mode */
-.dark .callout-tip {
-    border-color: #3232a2;             /* blue */
-    background-color: rgba(50, 50, 162, 0.15);
-    color: #b8b8ff;                        /* Pale blue text */
+    border-color: rgba(253, 230, 138, 0.3);
+    background-color: rgba(161, 98, 7, 0.3);
+    color: #fde047;
 }
 
 /* Light Mode */
 .callout-math {
-    border-color: #808080;             /* gray */
-    background-color: rgba(128, 128, 128, 0.08); /* Subtle gray tint */
-    color: #4d4d4d;                         /* Dark gray text */
+    border-color: #ffedd5;
+    background-color: #fff7ed;
+    color: #9a3412;
 }
   
 /* Dark Mode */
 .dark .callout-math {
-    border-color: #a2a2a2;             /* gray */
-    background-color: rgba(162, 162, 162, 0.15);
-    color: #dcdcdc;                        /* Pale gray text */
+    border-color: rgba(251, 146, 60, 0.3);
+    background-color: rgba(251, 146, 60, 0.2);
+    color: #fdba74;
 }
