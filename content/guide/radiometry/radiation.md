@@ -541,3 +541,103 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     {{< /tab >}}
 {{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    $\text{(NAC 2025)}$ Consider a hypothetical solar sail that starts its trajectory just outside the surface of the Sun and aims to reach Jupiter’s orbit. This is a square sail with a size length of $l = 50 \, \mathrm{m}$, a mass of $m = 2.0 \, \mathrm{kg}$, and a reflectivity of $\eta = 85\%$. The remaining $15\%$ of the photons are absorbed by the sail. In order to simplify the calculations, only take into account the gravity and radiation pressure from the Sun, and assume that the sail is initially stationary with respect to the Sun. Estimate how long it would take for this sail to reach Jupiter’s orbit. Feel free to make reasonable approximations if needed.
+    {{< /tab >}}
+
+    {{< tab >}}
+    The radiation flux on the sail when it is at a distance $r$ from the Sun is $\frac{L_\odot}{4 \pi r^2}$. Therefore the radiation force acting on the sail is
+
+    $$ F_\text{rad} = \frac{L_\odot}{4 \pi r^2} \frac{1}{c} A \, (1 + \eta) $$
+
+    where $A = l^2$ is the area of the sail. The gravitational force acting on the sail is
+
+    $$ F_g = \frac{GM_\odot m}{r^2} $$
+
+    The net force acting on the sail is thus
+
+    $$ F = F_\text{rad} - F_g = \frac{L_\odot}{4 \pi r^2} \frac{1}{c} A \, (1 + \eta) - \frac{GM_\odot m}{r^2} $$
+
+    Defining the constant $\alpha$ to be
+
+    $$\alpha = \frac{L_\odot l^2}{4 \pi \, m c} (1 + \eta) - GM_\odot m$$
+
+    The acceleration of the sail is therefore
+
+    $$ a = \frac{F}{m} = \frac{\alpha}{r^2} $$
+
+    Since the acceleration is only in the radial direction, 
+    
+    $$a = \frac{dv}{dt} = \frac{dv}{dr} \frac{dr}{dt} = v \frac{dv}{dr}$$
+
+    We can write
+
+    $$v \frac{dv}{dr} = \frac{\alpha}{r^2}$$
+
+    Integrating and substituting the limits, we get
+
+    $$\int_0^v v dv = \int_{R_\odot}^r \frac{\alpha}{r^2} dr$$
+    $$v^2 = -2\alpha \left( \frac{1}{r} - \frac{1}{R_\odot} \right) $$
+    $$v = \frac{dr}{dt} = \sqrt{\frac{2\alpha}{R_\odot} \left( 1-\frac{R_\odot}{r}\right)}$$
+
+    Further integrating a second time and substituting the limits, we get
+
+    $$\int_{R_\odot}^{a_J} dr = \int_0^T \sqrt{\frac{2\alpha}{R_\odot} \left( 1-\frac{R_\odot}{r}\right)} dt$$
+
+    where $a_J$ is the orbital radius of Jupiter. Rearranging and defining $r = (u + 1) R_\odot$ and $a_J = (a + 1) R_\odot$ gives
+
+    $$T = T_0 \int_{0}^{a} \sqrt{1 + \frac{1}{u}} \, du$$
+
+    where $T_0 = \sqrt{\frac{R_\odot^3}{2\alpha}} \approx 21.4 \, \mathrm{min}$ and $a \approx 1117$. This integral cannot be evaluated analytically, and numerical methods need to be used. Thus, we will approximate the integral. Here, we will be working with a very crude approximating.
+
+    Notice that when $u \gg 1$, the integrand is approximately equal to $1$.
+    When $u \ll 1$, the integrand is approximately equal to $u^{-1/2}$. Splitting the integral at $u = 1$ and evaluating them separately gives
+
+    $$T \approx T_0 \left( \int_{0}^{1} u^{-1/2} \, du + \int_{1}^{a} 1 \, du \right)$$
+    $$= T_0 \left( 2 + a - 1 \right) = T_0 (a + 1)$$
+
+    This gives the time taken to reach Jupiter's orbit as $\boxed{T \approx 16.6 \, \mathrm{days}}$.
+
+    Numerically integrating, the time taken to reach Jupiter's orbit is $T \approx 16.7 \, \mathrm{days}$, very close to our crude approximation.
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Assuming the human body to be a perfect blackbody, estimate the number of photons emitted in a bandwidth 10% wide around wavelength 550 nm (peak emission wavelength of Sun), by a person in their entire life. Make reasonable assumptions.
+    {{< /tab >}}
+
+    {{< tab >}}
+
+    Assuming the human body to be a perfect blackbody, its spectral luminosity will be
+
+    $$L_\lambda = A \pi B_\lambda$$
+
+    where $A \approx 1.7 \, \mathrm{m^2}$ is the surface area of the human body. The temperature of the body is $T \approx 310 \, \mathrm{K}$. The number of photons emitted per unit time per unit wavelength is thus
+
+    $$\frac{d^2N}{dt \,d\lambda} = \frac{L_\lambda}{h c / \lambda} = \frac{A \pi}{hc} \lambda B_\lambda$$
+
+    Therefore the number of photons emitted by the human body in the given wavelength range in its entire lifetime of $\tau \approx 80 \, \mathrm{yrs}$ is
+
+    $$N = \frac{A \pi \tau}{hc} \int_{\lambda_1}^{\lambda_2} \lambda B_\lambda d\lambda $$
+
+    where $\lambda_1 = \lambda_0 + 0.05 \lambda_0$ and $\lambda_2 = \lambda_0 - 0.05 \lambda_0$ are the limits of the bandwidth ($\lambda_0 = 550 \, \mathrm{nm}$). Using planck's law and definfing $x = \frac{hc}{\lambda kT}$, the integral becomes
+
+    $$N = \frac{2 \pi k^3 T^3 A \tau}{h^3 c^2} \int_{x_2}^{x_1} \frac{x^2 \, dx}{e^x - 1}$$
+
+    where $x_1 = \frac{hc}{\lambda_1 kT} \approx 89$ and $x_2 = \frac{hc}{\lambda_2 kT} \approx 81$. Since $x \gg 1$, we can approximate $e^x - 1 \approx e^x$ and the integral becomes
+
+    $$N = N_0 \int_{x_2}^{x_1} x^2 e^{-x} dx$$
+
+    where $N_0 = \frac{2 \pi k^3 T^3 A \tau}{h^3 c^2} \approx 8 \times 10^{31} \, \mathrm{photons}$. The integral now can be evaluated by parts to give
+
+    $$\int_{x_2}^{x_1} x^2 e^{-x} dx = e^{-x} (x^2 + 2x + 2) \bigg|_{x_2}^{x_1} \approx 4.5 \times 10^{-32}$$
+
+    Therefore the total number of photons emitted by a human body in a $10\%$ bandwidth centered around $550 \, \mathrm{nm}$ in its entire lifetime is
+
+    $$\boxed{N \approx 4 \, \mathrm{photons}}$$
+    
+    {{< /tab >}}
+{{< /tabs >}}
