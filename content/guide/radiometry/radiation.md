@@ -20,35 +20,54 @@ A surface which emits radiation isotropically (symmetrically in all directions) 
 
 ### What is Flux?
 
-Flux describes any effect that appears to pass or travel through a surface or substance. Here, the term flux density $F$ (flux and flux density are often used interchangeably without much thought, even though they're two different things) is the amount of radiant energy (energy carried by the radiation) passing through a unit area per unit time. The units of flux density are $\mathrm{W \, m^{-2}}$. Flux density is also called irradiance.
+Flux describes any effect that appears to pass or travel through a surface or substance. Here, the flux $\Phi$ is defined as the radiant power (power associated with the radiation) going through some surface, and is measured in units of $\mathrm{W}$.
 
-In astrophysics, we often have to deal with how much energy is being recieved by our telescopes from a star or any other astronomical object. This is where flux becomes important. For example, the flux density of Sun's radiation on earth is called the solar constant, which is about $1365 \mathrm{\, W \, m^{-2}}$.
+The term flux density $F$ (flux and flux density are often used interchangeably without much thought, even though they're two different things) is the amount of radiant energy (energy carried by the radiation) passing through a unit area per unit time. The units of flux density are $\mathrm{W \, m^{-2}}$. Flux density is also called irradiance.
+
+The flux emitted by a spherically symmetric body, such as a star (power emitted by the star) into a solid angle $\omega$ is $\Phi = \omega r^2 F$, where $F$ is the flux density at a distance $r$. The total flux passing through a closed surface surrounding the source is known as the luminosity $L$. Here, $L = 4\pi r^2 F$.
+
+The luminosity is independent of distance; this gives that the flux density is inversely proportional to the square of the distance from the source.
+
+In astrophysics, we often have to deal with how much energy is being recieved by our telescopes from a star or any other astronomical object. This is where flux and flux density becomes important. For example, the flux density of Sun's radiation on earth is called the solar constant, which is about $1365 \mathrm{\, W \, m^{-2}}$.
 
 {{< callout type="remark" >}}
-If a surface receives power $P$ from radiation, at an angle $\theta$ to the normal, the flux density $F$ is given by
+If a surface of surface area $A$ receives flux $\Phi$ from radiation, the flux density $F$ at a point is given by
 
-$$F = \frac{P}{A} \cos \theta$$
+$$\tag{2.1.1} F = \frac{\partial \Phi}{\partial A}$$
 
-where $A$ is the area of the surface. The factor $\cos \theta$ accounts for the fact that the radiation is not perpendicular to the surface. The flux density is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
+If the surface is illuminated uniformly (flux at each point is the same), then
+
+$$F = \frac{\Phi}{A}$$
+
+If the cross sectional area of the radiation beam (projected surface area) is $A_\text{proj}$, and the radiation is hitting the surface at an angle $\theta$ to the normal, then we have the relation $A_\text{proj} = A \cos \theta$. Therefore the flux density due to radiation becomes
+
+$$\tag{2.1.2} F = \frac{\Phi}{A_\text{proj}} \cos \theta$$
+The factor $\cos \theta$ accounts for the fact that the radiation is not perpendicular to the surface. For a given beam, the flux density is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
 {{< /callout >}}
+
+The spectral flux density $F_\nu$ is the flux density of the radiation in the frequency range [$\nu$, $\nu + d\nu$]. This tells us how much power carried by radiation is passing through unit area per unit frequency. In radio astronomy, spectral flux densities are often measured in Janskys.
 
 Now we will define some more useful quantities related to the flow of radiation.
 
 ### Radiance
 
-Assume we have some radiation passing through a surface element $dA$. Some of the radiation will leave $dA$ within a solid angle $d \omega$; the angle between $d \omega$ (the direction of outgoing radiation) and the normal to the surface is denoted by $\theta$. The amount of energy with frequency in the range [$\nu$, $\nu + d\nu$] entering this solid angle in time $dt$ is
+Radiance is the radiant flux passing through a given surface, per unit solid angle per unit projected area. Radiance is also called brightness, since this is the quantity that determines how bright an object will appear, independent of its shape, size and other physical properties. It is useful because it indicates how much of the power emitted, reflected, transmitted or received by a surface will be received by an optical system looking at that surface from a specified angle of view.
 
-$$\tag{2.1.1} dE_\nu = B_\nu \cos \theta \, dA \, d\nu \, d\omega \, dt$$
+{{< callout type="remark" >}}
+Assume we have some radiation passing through a surface element $dA$. Some of the radiation will leave $dA$ within a solid angle $d \omega$; the angle between $d \omega$ (the direction of outgoing radiation) and the normal to the surface is denoted by $\theta$. If spectral flux or power of radiation with frequency in the range [$\nu$, $\nu + d\nu$] passing through the area is $\Phi_\nu$, then the spectral radiance is defined as
 
-Here the quantity $B_\nu$ is called the spectral radiance of the radiation at frequency $\nu$ and direction $\theta$. The total radiance is given by
+$$\tag{2.1.1} B_\nu = \frac{\partial^2 \Phi_\nu}{\partial \omega \, \partial A_\text{proj}}$$
+
+Here the quantity $B_\nu$ is called the spectral radiance of the radiation at frequency $\nu$ and direction $\theta$. $A_\text{proj} = A \cos \theta$ is the projected area on which the radiation is incident. The total radiance is given by
 
 $$\tag{2.1.2} B = \int_0^{\infty} B_\nu \, d\nu $$
+{{% /callout %}}
 
 {{< callout type="image" >}}
 {{< svg "images/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: H. Karttunen)" >}}
 {{% /callout %}}
 
-The spectral flux density $F_\nu$ is the flux density of the radiation in the frequency range [$\nu$, $\nu + d\nu$]. This tells us how much flux is carried by radiation per unit frequency. In radio astronomy, spectral flux densities are often measured in Janskys. The flux density is related to the spectral radiance as
+The flux density is related to the spectral radiance as
 
 $$\tag{2.1.3} F_\nu = \int_\Omega B_\nu \cos \theta \, d\omega $$
 $$\tag{2.1.4} F = \int_\Omega B \cos \theta \, d\omega $$
@@ -57,12 +76,8 @@ The integral is carried over the solid angle $\Omega$ through which the flux den
 
 For isotropic radiation, the flux density leaving a spherical surface of radius $r$ is given by
 
-$$F = \int_S B \cos \theta \, d\omega = \int_0^{\pi/2} \int_0^{2\pi} B \cos \theta \sin \theta \, d\theta \,  d\phi$$
+$$F = \int_\Omega B \cos \theta \, d\omega = \int_0^{\pi/2} \int_0^{2\pi} B \cos \theta \sin \theta \, d\theta \,  d\phi$$
 $$\tag{2.1.5}  \implies \boxed{F = \pi B}$$
-
-### Luminosity
-
-Flux $L$ is defined as the power going through some surface, and is measured in units of $\mathrm{W}$. The flux emitted by a star (power emitted by the star) into a solid angle $\omega$ is $L = \omega r^2 F$, where $F$ is the flux density at a distance $r$. The total flux passing through a closed surface surrounding the source is known as the luminosity $L$. If the source radiates isotropically, $L = 4\pi r^2 F$. The luminosity does not depend on the distance; this gives that the flux density is inversely proportional to the square of the distance.
 
 ### Surface Brightness
 
@@ -106,19 +121,17 @@ where $\nu$ is the frequency of the radiation. The momentum carried by a photon 
 
 $$\tag{2.1.8} p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}$$
 
-The energy density $u$ of radiation (measured in units of $\mathrm{J \, m^{-3}}$) is the amount of energy per unit volume. For an isotropic source having radiance $B$,
-
-$$\tag{2.1.10} \boxed{u = \frac{4 \pi}{c} B}$$
-
 The radiation pressure (measured in units of $\mathrm{Pa}$) is the force per unit area exerted by radiation on a surface. It is given by
 
 $$\tag{2.1.11} \boxed{P = \frac{F}{c} \cos^2 \theta} $$
 
-where $F$ is the flux density of the radiation falling on the surface, and $\theta$ is the angle between the direction of the radiation and the normal to the surface. The factor $\cos^2 \theta$ accounts for the fact that the radiation is not perpendicular to the surface. The radiation pressure is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
+where $F$ is the flux density of the radiation falling on the surface, and $\theta$ is the angle between the direction of the radiation and the normal to the surface. The factor $\cos^2 \theta$ accounts for the fact that the radiation is not perpendicular to the surface. The radiation pressure is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface. This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails.
 
-This shows that radiation can exert measurable forces, especially significant in stellar interiors or solar sails. The radiation pressure is equal to the momentum flux density of the radiation.
+The energy density $u$ of the radiation source (measured in units of $\mathrm{J \, m^{-3}}$) is the amount of energy stored in it per unit volume. For an isotropic source having radiance $B$,
 
-For an isotropic source with energy density $u$, the total radiation pressure is given by
+$$\tag{2.1.10} \boxed{u = \frac{4 \pi}{c} B}$$
+
+For an isotropic source with energy density $u$, the its internal pressure $P$ is
 
 $$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
 
