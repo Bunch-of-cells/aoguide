@@ -56,34 +56,34 @@ Radiance is the radiant flux passing through a given surface, per unit solid ang
 {{< callout type="remark" >}}
 Assume we have some radiation passing through a surface element $dA$. Some of the radiation will leave $dA$ within a solid angle $d \omega$; the angle between $d \omega$ (the direction of outgoing radiation) and the normal to the surface is denoted by $\theta$. If spectral flux or power of radiation with frequency in the range [$\nu$, $\nu + d\nu$] passing through the area is $\Phi_\nu$, then the spectral radiance is defined as
 
-$$\tag{2.1.1} B_\nu = \frac{\partial^2 \Phi_\nu}{\partial \omega \, \partial A_\text{proj}}$$
+$$\tag{2.1.3} B_\nu = \frac{\partial^2 \Phi_\nu}{\partial \omega \, \partial A_\text{proj}}$$
 
 Here the quantity $B_\nu$ is called the spectral radiance of the radiation at frequency $\nu$ and direction $\theta$. $A_\text{proj} = A \cos \theta$ is the projected area on which the radiation is incident. The total radiance is given by
 
-$$\tag{2.1.2} B = \int_0^{\infty} B_\nu \, d\nu $$
+$$\tag{2.1.4} B = \int_0^{\infty} B_\nu \, d\nu $$
 {{% /callout %}}
 
 {{< callout type="image" >}}
-{{< svg "images/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: H. Karttunen)" >}}
+{{< svg "images/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: Fundamental Astronomy)" >}}
 {{% /callout %}}
 
 The flux density is related to the spectral radiance as
 
-$$\tag{2.1.3} F_\nu = \int_\Omega B_\nu \cos \theta \, d\omega $$
-$$\tag{2.1.4} F = \int_\Omega B \cos \theta \, d\omega $$
+$$\tag{2.1.5} F_\nu = \int_\Omega B_\nu \cos \theta \, d\omega $$
+$$\tag{2.1.6} F = \int_\Omega B \cos \theta \, d\omega $$
 
 The integral is carried over the solid angle $\Omega$ through which the flux density is being calculated.
 
 For isotropic radiation, the flux density leaving a spherical surface of radius $r$ is given by
 
 $$F = \int_\Omega B \cos \theta \, d\omega = \int_0^{\pi/2} \int_0^{2\pi} B \cos \theta \sin \theta \, d\theta \,  d\phi$$
-$$\tag{2.1.5}  \implies \boxed{F = \pi B}$$
+$$\tag{2.1.7}  \implies \boxed{F = \pi B}$$
 
 ### Surface Brightness
 
 For extended objects, surface brightness $B$ is defined as the flux density per unit solid angle. Here, the observer views an extended source and is located at the vertex of the solid angle subtended by the object.
 
-$$\tag{2.1.6} B = \frac{F}{\omega}$$
+$$\tag{2.1.8} B = \frac{F}{\omega}$$
 
 Surface brightness is independent of distance. It is equal to radiance of the object if the object emits isotropically.
 
@@ -115,11 +115,11 @@ Spectral Exposure | $H_\nu$ | $\mathrm{J \, m^{-2} \, Hz^{-1}}$ | Radiant exposu
 
 The energy of radiation is quantized in packets called photons. The energy of a photon is given by
 
-$$\tag{2.1.7} E = h \nu = \frac{h c}{\lambda}$$
+$$\tag{2.1.9} E = h \nu = \frac{h c}{\lambda}$$
 
-where $\nu$ is the frequency of the radiation. The momentum carried by a photon is given by
+where $\nu" is the frequency of the radiation. The momentum carried by a photon is given by
 
-$$\tag{2.1.8} p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}$$
+$$\tag{2.1.10} p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}$$
 
 The radiation pressure (measured in units of $\mathrm{Pa}$) is the force per unit area exerted by radiation on a surface. It is given by
 
@@ -129,11 +129,11 @@ where $F$ is the flux density of the radiation falling on the surface, and $\the
 
 The energy density $u$ of the radiation source (measured in units of $\mathrm{J \, m^{-3}}$) is the amount of energy stored in it per unit volume. For an isotropic source having radiance $B$,
 
-$$\tag{2.1.10} \boxed{u = \frac{4 \pi}{c} B}$$
+$$\tag{2.1.12} \boxed{u = \frac{4 \pi}{c} B}$$
 
 For an isotropic source with energy density $u$, the its internal pressure $P$ is
 
-$$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
+$$\tag{2.1.13} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}
@@ -159,7 +159,7 @@ $$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
 
 A blackbody is an object that does not reflect or scatter any radiation falling on it, but absorbs all the radiation falling on it completely. It emits radiation evenly in all directions and at all wavelengths. Kirchoff's definition of a blackbody is an ideal body that neither reflects any light nor allows it to pass through. The emissivity $\epsilon$ of a body is defined as the ratio of the radiation emitted by the body to the radiation emitted by a blackbody of the same shape at the same temperature. The emissivity $\epsilon$ of a blackbody is 1, while that of a perfect reflector is 0. The emissivity of a real body lies between 0 and 1.
 
-$$\tag{2.1.10} \epsilon = \frac{B}{B_\text{blackbody}}$$
+$$\tag{2.1.14} \epsilon = \frac{B}{B_\text{blackbody}}$$
 
 where $B$ is the radiance of the body and $B_\text{blackbody}$ is the radiance of a blackbody at the same temperature.
 
@@ -170,7 +170,7 @@ Examples of blackbodies include stars (which closely approximate blackbody spect
 The radiation emitted by a blackbody only depends on its temperature, and follows Planck's law. Planck's law describes how the light from a blackbody is spread across different wavelengths or frequencies, depending only on its temperature. The spectral radiance of a blackbody at temperature $T$ is given by
 
 $$
-\tag{2.1.11} \boxed{
+\tag{2.1.15} \boxed{
     \begin{aligned}
         B_\nu(T) &= \frac{2 h \nu^3}{c^2} \frac{1}{e^{h\nu / kT} - 1} \\
         B_\lambda(T) &= \frac{2 h c^2}{\lambda^5} \frac{1}{e^{h c / \lambda k T} - 1} \\
@@ -188,8 +188,8 @@ These equations for spectral radiance can be simplified when the wavelengths in 
 
 When $\lambda \gg \lambda_\text{peak}$ or $\nu \ll \nu_\text{peak}$, we can use the Rayleigh-Jeans approximation
 
-$$\tag{2.1.21} B_\nu(T) \approx \frac{2 \nu^2 kT}{c^2}$$
-$$\tag{2.1.22} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
+$$\tag{2.1.16} B_\nu(T) \approx \frac{2 \nu^2 kT}{c^2}$$
+$$\tag{2.1.17} B_\lambda(T) \approx \frac{2c kT}{\lambda^4}$$
 
 The Rayleigh-Jeans approximation is used often in radio astronomy, where the wavelengths are much larger than the peak wavelength of the blackbody spectrum.
 
@@ -199,8 +199,8 @@ Derive the Rayleigh-Jeans approximation from Planck's law.
 
 When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wien approximation
 
-$$\tag{2.1.23} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
-$$\tag{2.1.24} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
+$$\tag{2.1.18} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
+$$\tag{2.1.19} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
 
 ### Stefan Boltzmann Law
 
@@ -215,11 +215,11 @@ $$
 
 This gives
 
-$$\tag{2.1.12} B(T) = \frac{\sigma}{\pi} \, T^4$$
+$$\tag{2.1.20} B(T) = \frac{\sigma}{\pi} \, T^4$$
 
 Here we have defined a new constant - called the Stefan-Boltzmann constant as
 
-$$\tag{2.1.13} \sigma = \frac{2 \pi^5 k^4}{15 h^3 c^2}$$
+$$\tag{2.1.21} \sigma = \frac{2 \pi^5 k^4}{15 h^3 c^2}$$
 
 It is numerically equal to $\sigma \approx 5.67 \times 10^{-8} \, \mathrm{W \, m^{-2} \, K^{-4}}$.
 
@@ -248,27 +248,27 @@ $$\int_0^{\infty} B_\nu(T) \, d\nu = \frac{2 h}{c^2} \left( \frac{kT}{h} \right)
 {{% /details %}}
 {{< /callout >}}
 
-The flux density for an isotropic source is given by (using eq 2.1.5)
+The flux density for an isotropic source is given by (using eq 2.1.7)
 
-$$\tag{2.1.14} \boxed{F(T) = \pi B(T) = \sigma T^4}$$
+$$\tag{2.1.22} \boxed{F(T) = \pi B(T) = \sigma T^4}$$
 
 This is known as the Stefan-Boltzmann law.
 
 If the radius of a star is $R$ and its temperature is $T$, then its luminosity is given by (assuming the star emits isotropically)
 
-$$\tag{2.1.15} L = 4 \pi R^2 F = 4 \pi^2 R^2 B = 4 \pi R^2 \sigma T^4$$
+$$\tag{2.1.23} L = 4 \pi R^2 F = 4 \pi^2 R^2 B = 4 \pi R^2 \sigma T^4$$
 
 The spectral luminosity is defined as $L_\lambda = 4 \pi^2 R^2 B_\lambda$. The spectral flux density at a distance $r$ is given by
 
-$$\tag{2.1.16} F_\lambda = \frac{L_\lambda}{4\pi r^2} = \pi B_\lambda \left( \frac{R}{r} \right)^2 $$
+$$\tag{2.1.24} F_\lambda = \frac{L_\lambda}{4\pi r^2} = \pi B_\lambda \left( \frac{R}{r} \right)^2 $$
 
 For a blackbody having surface area $A$, its luminosity is given by
 
-$$\tag{2.1.16} \boxed{L = A \sigma T^4}$$
+$$\tag{2.1.25} \boxed{L = A \sigma T^4}$$
 
 If the object is not a perfect blackbody, we can still use the Stefan-Boltzmann law, but we need to multiply by the emissivity $\epsilon$ of the object. The luminosity is then given by
 
-$$\tag{2.1.16} L = A \epsilon \sigma T^4$$
+$$\tag{2.1.26} L = A \epsilon \sigma T^4$$
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}
@@ -301,11 +301,11 @@ $$\frac{d}{d\lambda} B_\lambda(T) = 0$$
 
 This gives the relation
 
-$$\tag{2.1.17} \boxed{\lambda_\text{peak} T = b_\lambda}$$
+$$\tag{2.1.27} \boxed{\lambda_\text{peak} T = b_\lambda}$$
 
 $B_\lambda$ peaks at the energy
 
-$$\tag{2.1.18} E \approx 4.965 \,kT $$
+$$\tag{2.1.28} E \approx 4.965 \,kT $$
 
 {{< callout type="math" >}}
 
@@ -328,11 +328,11 @@ $$\frac{d}{d\nu} B_\nu(T) = 0$$
 
 This gives the relation
 
-$$\tag{2.1.19} \boxed{\nu_\text{peak} / T = b_\nu}$$
+$$\tag{2.1.29} \boxed{\nu_\text{peak} / T = b_\nu}$$
 
 $B_\nu$ peaks at the energy
 
-$$\tag{2.1.20} E \approx 2.821 \,kT $$
+$$\tag{2.1.30} E \approx 2.821 \,kT $$
 
 {{< callout type="math" >}}
 {{% details title="Taking the derivative gives" closed="true" %}}
@@ -348,9 +348,9 @@ The peak energy can be calculated using the relation $E = h \nu = ykT \approx 2.
 {{% /details %}}
 {{< /callout >}}
 
-The reason eq 2.1.18 and 2.1.20 are different is because the peak of the spectrum is not at the same energy for both $\lambda$ and $\nu$. One cannot go from $B_\nu$ to $B_\lambda$ by simply changing the variable. One also needs to multiply by $|d\nu / d\lambda| = c /\lambda^2$, which shifts the peak of the distribution to higher energies. These peaks are the mode energy of a photon.
+The reason eq 2.1.28 and 2.1.30 are different is because the peak of the spectrum is not at the same energy for both $\lambda$ and $\nu$. One cannot go from $B_\nu$ to $B_\lambda$ by simply changing the variable. One also needs to multiply by $|d\nu / d\lambda| = c /\lambda^2$, which shifts the peak of the distribution to higher energies. These peaks are the mode energy of a photon.
 
-Equation 2.1.17 and 2.1.19 are together known as Wien's displacement law.
+Equation 2.1.27 and 2.1.29 are together known as Wien's displacement law.
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}
@@ -388,11 +388,11 @@ Equation 2.1.17 and 2.1.19 are together known as Wien's displacement law.
 
 The energy density of blackbody radiation is given by
 
-$$\tag{2.1.25} u(T) = \int_0^{\infty} \frac{4 \pi}{c} B_\nu(T) \, d\nu = \frac{4 \sigma}{c} T^4 = aT^4$$
+$$\tag{2.1.31} u(T) = \int_0^{\infty} \frac{4 \pi}{c} B_\nu(T) \, d\nu = \frac{4 \sigma}{c} T^4 = aT^4$$
 
 where $a \approx 7.566 \times 10^{-16} \, \mathrm{J \, m^{-3} \, K^{-4}}$ is the radiation constant. The radiation pressure is given by
 
-$$\tag{2.1.26} P = \frac{1}{3} u = \frac{1}{3} a T^4 $$
+$$\tag{2.1.32} P = \frac{1}{3} u = \frac{1}{3} a T^4 $$
 
 As stated earlier, energy comes in quantized packets called photons. The number density of photons emitted by a blackbody at temperature $T$ is given by
 
@@ -405,7 +405,7 @@ $$
 
 Hence,
 
-$$\tag{2.1.27} n(T) = \beta \, T^3$$
+$$\tag{2.1.33} n(T) = \beta \, T^3$$
 
 where $\beta \approx 2.03 \times 10^7 \mathrm{m^{-3} K^{-3}}$.
 
@@ -433,7 +433,7 @@ $$\int_0^{\infty} \frac{u_\nu(T)}{h \nu} \, d\nu = \frac{2}{c^2} \frac{4 \pi}{c}
 
 The mean energy of the photons emitted by the blackbody is
 
-$$\tag{2.1.28} \langle E \rangle = \frac{u(T)}{n(T)} = \frac{\pi^4}{30 \zeta(3)} kT \approx 2.70 \, kT$$
+$$\tag{2.1.34} \langle E \rangle = \frac{u(T)}{n(T)} = \frac{\pi^4}{30 \zeta(3)} kT \approx 2.70 \, kT$$
 
 {{< tabs items="Problem,Solution" >}}
     {{< tab >}}
