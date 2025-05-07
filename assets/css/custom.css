@@ -181,3 +181,17 @@ details :not(.math) {
     background-color: rgba(251, 146, 60, 0.2);
     color: #fdba74;
 }
+
+/* Light Mode */
+.callout-image {
+    border-color: #add8e6; /* Light Blue */
+    background-color: #e0ffff; /* Very Light Blue */
+    color: #000080; /* Dark Blue */
+}
+
+/* Dark Mode */
+.dark .callout-image {
+    border-color: #87ceeb; /* Sky Blue */
+    background-color: #1E2A385d; /* Sky Blue with Opacity */
+    color: #b0e2ff; /* Light Sky Blue */
+}

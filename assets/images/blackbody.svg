@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480">
+
+<desc>Produced by GNUPLOT 4.4 patchlevel 0, background spectrum based on http://commons.wikimedia.org/wiki/File:Linear_visible_spectrum.svg</desc>
+<defs>
+<linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="grad_spectrum">
+<stop offset="0.000" stop-color="#020005"/>
+<stop offset="0.108" stop-color="#17032a"/>
+<stop offset="0.121" stop-color="#1f053a"/>
+<stop offset="0.135" stop-color="#25084b"/>
+<stop offset="0.148" stop-color="#290a5c"/>
+<stop offset="0.162" stop-color="#2b0e6f"/>
+<stop offset="0.175" stop-color="#291380"/>
+<stop offset="0.189" stop-color="#1f237b"/>
+<stop offset="0.202" stop-color="#132e74"/>
+<stop offset="0.216" stop-color="#09376c"/>
+<stop offset="0.229" stop-color="#0a3e66"/>
+<stop offset="0.243" stop-color="#0c4667"/>
+<stop offset="0.256" stop-color="#0e4f6a"/>
+<stop offset="0.270" stop-color="#10596c"/>
+<stop offset="0.283" stop-color="#11636d"/>
+<stop offset="0.297" stop-color="#146e6f"/>
+<stop offset="0.310" stop-color="#177970"/>
+<stop offset="0.324" stop-color="#178672"/>
+<stop offset="0.337" stop-color="#1a9574"/>
+<stop offset="0.351" stop-color="#1da375"/>
+<stop offset="0.364" stop-color="#1db273"/>
+<stop offset="0.378" stop-color="#20c070"/>
+<stop offset="0.391" stop-color="#22cb6b"/>
+<stop offset="0.405" stop-color="#21d662"/>
+<stop offset="0.418" stop-color="#23e054"/>
+<stop offset="0.432" stop-color="#36e842"/>
+<stop offset="0.445" stop-color="#50ed28"/>
+<stop offset="0.459" stop-color="#73eb22"/>
+<stop offset="0.472" stop-color="#8fe722"/>
+<stop offset="0.486" stop-color="#a5e221"/>
+<stop offset="0.500" stop-color="#b9dc22"/>
+<stop offset="0.513" stop-color="#cbd621"/>
+<stop offset="0.527" stop-color="#dcce20"/>
+<stop offset="0.540" stop-color="#ecc420"/>
+<stop offset="0.554" stop-color="#f2b735"/>
+<stop offset="0.567" stop-color="#f5ab42"/>
+<stop offset="0.581" stop-color="#f69f49"/>
+<stop offset="0.594" stop-color="#f7944b"/>
+<stop offset="0.608" stop-color="#f98848"/>
+<stop offset="0.621" stop-color="#fa7b42"/>
+<stop offset="0.635" stop-color="#fb6c39"/>
+<stop offset="0.648" stop-color="#fd5b2e"/>
+<stop offset="0.662" stop-color="#fc471f"/>
+<stop offset="0.675" stop-color="#f7300f"/>
+<stop offset="0.689" stop-color="#ea220d"/>
+<stop offset="0.702" stop-color="#d42215"/>
+<stop offset="0.716" stop-color="#bf2318"/>
+<stop offset="0.729" stop-color="#a92309"/>
+<stop offset="0.743" stop-color="#981f07"/>
+<stop offset="0.756" stop-color="#871b06"/>
+<stop offset="0.770" stop-color="#771805"/>
+<stop offset="0.783" stop-color="#671504"/>
+<stop offset="0.797" stop-color="#591303"/>
+<stop offset="0.810" stop-color="#4d1103"/>
+<stop offset="0.824" stop-color="#420e02"/>
+<stop offset="0.837" stop-color="#370c01"/>
+<stop offset="0.851" stop-color="#2e0a01"/>
+<stop offset="0.864" stop-color="#270801"/>
+<stop offset="0.878" stop-color="#210600"/>
+<stop offset="0.891" stop-color="#1e0400"/>
+<stop offset="0.905" stop-color="#1a0300"/>
+<stop offset="1.000" stop-color="#040100"/>
+</linearGradient>
+</defs>
+
+<path fill="url(#grad_spectrum)" fill-opacity="0.25" d="M144 18h62v395h-62z"/>
+<g font-family="Arial" font-size="12pt" font-weight="bold" text-anchor="middle" stroke="none" fill="#DDD">
+ <switch>
+   <text x="120" y="16" systemLanguage="da" id="trsvg55"><tspan id="trsvg1">UV</tspan></text>
+   <text x="120" y="16" id="trsvg56-ca" systemLanguage="ca"><tspan id="trsvg2-ca">UV</tspan></text>
+    <text x="110" y="16" id="trsvg56-de" systemLanguage="de"><tspan id="trsvg2-de">UV</tspan></text>
+    <text x="120" y="16" id="trsvg56-it" systemLanguage="it"><tspan id="trsvg2-it">UV</tspan></text>
+    <text x="120" y="16" id="trsvg56-mk" systemLanguage="mk"><tspan id="trsvg2-mk">УВ</tspan></text>
+    <text x="120" y="16" id="trsvg56-es" systemLanguage="es"><tspan id="trsvg2-es">UV</tspan></text>
+    <text x="110" y="16" id="trsvg56-prg" systemLanguage="prg"><tspan id="trsvg2-prg">UW</tspan></text>
+    <text x="110" y="16" id="trsvg56-uk" systemLanguage="uk"><tspan id="trsvg2-uk">УВ</tspan></text>
+    <text x="110" y="16" id="trsvg56-fr" systemLanguage="fr"><tspan id="trsvg2-fr">UV</tspan></text>
+   <text x="120" y="16" id="trsvg56"><tspan id="trsvg2">UV</tspan></text>
+ </switch>
+ <switch>
+   <text x="175" y="16" systemLanguage="da" id="trsvg57"><tspan id="trsvg3">SYNLIGT</tspan></text>
+   <text x="175" y="16" id="trsvg58-ca" systemLanguage="ca"><tspan id="trsvg4-ca">VISIBLE</tspan></text>
+   <text x="175" y="16" id="trsvg58-de" systemLanguage="de"><tspan id="trsvg4-de">SICHTBAR</tspan></text>
+   <text x="175" y="16" id="trsvg58-it" systemLanguage="it"><tspan id="trsvg4-it">VISIBILE</tspan></text>
+   <text x="175" y="16" id="trsvg58-mk" systemLanguage="mk"><tspan id="trsvg4-mk">ВИДЛИВИ</tspan></text>
+   <text x="175" y="16" id="trsvg58-es" systemLanguage="es"><tspan id="trsvg4-es">VISIBLE</tspan></text>
+   <text x="175" y="16" id="trsvg58-prg" systemLanguage="prg"><tspan id="trsvg4-prg">WĪDAMINS</tspan></text>
+   <text x="175" y="16" id="trsvg58-uk" systemLanguage="uk"><tspan id="trsvg4-uk">ОЧЕВИДНИй</tspan></text>
+   <text x="175" y="16" id="trsvg58-fr" systemLanguage="fr"><tspan id="trsvg4-fr">VISIBLE</tspan></text>
+   <text x="175" y="16" id="trsvg58"><tspan id="trsvg4">VISIBLE</tspan></text>
+ </switch>
+ <switch>
+   <text x="372" y="16" systemLanguage="da" id="trsvg59"><tspan id="trsvg5">INFRARØD</tspan></text>
+   <text x="372" y="16" id="trsvg60-ca" systemLanguage="ca"><tspan id="trsvg6-ca">INFRAROIG</tspan></text>
+   <text x="372" y="16" id="trsvg60-de" systemLanguage="de"><tspan id="trsvg6-de">INFRAROT</tspan></text>
+   <text x="372" y="16" id="trsvg60-it" systemLanguage="it"><tspan id="trsvg6-it">INFAROSSO</tspan></text>
+   <text x="372" y="16" id="trsvg60-mk" systemLanguage="mk"><tspan id="trsvg6-mk">ИНФРАЦРВЕН</tspan></text>
+   <text x="372" y="16" id="trsvg60-es" systemLanguage="es"><tspan id="trsvg6-es">INFRARROJO</tspan></text>
+   <text x="372" y="16" id="trsvg60-prg" systemLanguage="prg"><tspan id="trsvg6-prg">INFRAWURMIS</tspan></text>
+   <text x="400" y="16" id="trsvg60-uk" systemLanguage="uk"><tspan id="trsvg6-uk">ИНФРАЧЕРВОНЕ ВИПРОМІНЮВАННЯ</tspan></text>
+   <text x="372" y="16" id="trsvg60-fr" systemLanguage="fr"><tspan id="trsvg6-fr">INFRAROUGE</tspan></text>
+   <text x="372" y="16" id="trsvg60"><tspan id="trsvg6">INFRARED</tspan></text>
+ </switch>
+</g>
+<g style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter">
+<path stroke="rgb(173, 216, 230)" d="M579.1 413.4L579.1 16.7M496.1 413.4L496.1 16.7M413 413.4L413 16.7M330 413.4L330 16.7M247 413.4L247 16.7M163.9 413.4L163.9 16.7M80.9 413.4L80.9 16.7M80.9 43.1L579.1 43.1M80.9 96L579.1 96M80.9 148.9L579.1 148.9M80.9 201.8L579.1 201.8M80.9 254.7L579.1 254.7M80.9 307.6L579.1 307.6M80.9 360.5L579.1 360.5M80.9 413.4L579.1 413.4M579.1 413.4L579.1 16.7M496.1 413.4L496.1 16.7M413 413.4L413 16.7M330 413.4L330 16.7M247 413.4L247 16.7M163.9 413.4L163.9 16.7M80.9 413.4L80.9 16.7M80.9 43.1L579.1 43.1M80.9 96L579.1 96M80.9 148.9L579.1 148.9M80.9 201.8L579.1 201.8M80.9 254.7L579.1 254.7M80.9 307.6L579.1 307.6M80.9 360.5L579.1 360.5M80.9 413.4L579.1 413.4"/>
+
+<path style="stroke:#EAEAEA" d="M579.1 413.4L579.1 422.4M496.1 413.4L496.1 422.4M413 413.4L413 422.4M330 413.4L330 422.4M247 413.4L247 422.4M163.9 413.4L163.9 422.4M80.9 413.4L80.9 422.4M80.9 43.1L71.9 43.1M80.9 96L71.9 96M80.9 148.9L71.9 148.9M80.9 201.8L71.9 201.8M80.9 254.7L71.9 254.7M80.9 307.6L71.9 307.6M80.9 360.5L71.9 360.5M579.1 413.4L579.1 422.4M496.1 413.4L496.1 422.4M413 413.4L413 422.4M330 413.4L330 422.4M247 413.4L247 422.4M163.9 413.4L163.9 422.4M80.9 413.4L80.9 422.4M80.9 43.1L71.9 43.1M80.9 96L71.9 96M80.9 148.9L71.9 148.9M80.9 201.8L71.9 201.8M80.9 254.7L71.9 254.7M80.9 307.6L71.9 307.6M80.9 360.5L71.9 360.5M80.9 413.4L71.9 413.4"/>
+<path style="stroke:#EAEAEA" d="M80.9 16.7L80.9 413.4L579.1 413.4M579.1 16.7M80.9 16.7"/>
+<path style="stroke:#EAEAEA" d="M80.9 16.7L80.9 413.4L579.1 413.4M579.1 16.7M80.9 16.7M80.9 413.4L71.9 413.4"/>
+<path style="stroke:#EAEAEA" d="M80.9 16.7L80.9 413.4L579.1 413.4M579.1 16.7M80.9 16.7"/>
+<path style="stroke:#EAEAEA" d="M80.9 16.7L80.9 413.4L579.1 413.4M579.1 16.7M80.9 16.7"/>
+
+<g style="stroke:none;fill:#EAEAEA;font-family:Arial;font-size:12pt;text-anchor:end">
+<g transform="translate(63.6,417.9)">
+  <text id="trsvg61"><tspan id="trsvg7">0</tspan></text>
+</g>
+<g transform="translate(63.6,365.0)">
+  <text id="trsvg62"><tspan id="trsvg8">2</tspan></text>
+</g>
+<g transform="translate(63.6,312.1)">
+  <text id="trsvg63"><tspan id="trsvg9">4</tspan></text>
+</g>
+<g transform="translate(63.6,259.2)">
+  <text id="trsvg64"><tspan id="trsvg10">6</tspan></text>
+</g>
+<g transform="translate(63.6,206.3)">
+  <text id="trsvg65"><tspan id="trsvg11">8</tspan></text>
+</g>
+<g transform="translate(63.6,153.4)">
+  <text id="trsvg66"><tspan id="trsvg12">10</tspan></text>
+</g>
+<g transform="translate(63.6,100.5)">
+  <text id="trsvg67"><tspan id="trsvg13">12</tspan></text>
+</g>
+<g transform="translate(63.6,47.6)">
+  <text id="trsvg68"><tspan id="trsvg14">14</tspan></text>
+</g>
+<g transform="translate(80.9,444.9)" style="text-anchor:middle">
+  <text id="trsvg69"><tspan id="trsvg15">0</tspan></text>
+</g>
+<g transform="translate(163.9,444.9)" style="text-anchor:middle">
+  <text id="trsvg70"><tspan id="trsvg16">0.5</tspan></text>
+</g>
+<g transform="translate(247.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg71"><tspan id="trsvg17">1</tspan></text>
+</g>
+<g transform="translate(330.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg72"><tspan id="trsvg18">1.5</tspan></text>
+</g>
+<g transform="translate(413.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg73"><tspan id="trsvg19">2</tspan></text>
+</g>
+<g transform="translate(496.1,444.9)" style="text-anchor:middle">
+  <text id="trsvg74"><tspan id="trsvg20">2.5</tspan></text>
+</g>
+<g transform="translate(579.1,444.9)" style="text-anchor:middle">
+  <text id="trsvg75"><tspan id="trsvg21">3</tspan></text>
+</g>
+<g transform="translate(25.9,215.1) rotate(270)" style="text-anchor:middle">
+<switch>
+  <text systemLanguage="da" id="trsvg76"><tspan id="trsvg22">Spectral intensitet (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-ca" systemLanguage="ca"><tspan id="trsvg23-ca">radiació espectral (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-de" systemLanguage="de"><tspan id="trsvg23-de">Strahlungsleistung (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-it" systemLanguage="it"><tspan id="trsvg23-it">Irradianza (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-mk" systemLanguage="mk"><tspan id="trsvg23-mk">Интензитет (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-es" systemLanguage="es"><tspan id="trsvg23-es">Radiación espectral (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-prg" systemLanguage="prg"><tspan id="trsvg23-prg">spektriska spārtas kāmstis (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-uk" systemLanguage="uk"><tspan id="trsvg23-uk">Інтенсивність (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77-fr" systemLanguage="fr"><tspan id="trsvg23-fr">Luminance spectrale (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg77"><tspan id="trsvg23">Spectral radiance (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+</switch>
+</g>
+<g transform="translate(330.0,471.9)" style="text-anchor:middle">
+<switch>
+  <text systemLanguage="da" id="trsvg78"><tspan id="trsvg24">Bølgelængde (µm)</tspan></text>
+  <text id="trsvg79-ca" systemLanguage="ca"><tspan id="trsvg25-ca">longitud d'ona (μm)</tspan></text>
+  <text id="trsvg79-de" systemLanguage="de"><tspan id="trsvg25-de">Wellenlänge (μm)</tspan></text>
+  <text id="trsvg79-it" systemLanguage="it"><tspan id="trsvg25-it">Lunghezza d'onda (μm)</tspan></text>
+  <text id="trsvg79-mk" systemLanguage="mk"><tspan id="trsvg25-mk">Бранова должина (μm)</tspan></text>
+  <text id="trsvg79-es" systemLanguage="es"><tspan id="trsvg25-es">Longitud de onda (μm)</tspan></text>
+  <text id="trsvg79-prg" systemLanguage="prg"><tspan id="trsvg25-prg">bāngas ilgan (μm)</tspan></text>
+  <text id="trsvg79-uk" systemLanguage="uk"><tspan id="trsvg25-uk">Довжина хвилі (μm)</tspan></text>
+  <text id="trsvg79-fr" systemLanguage="fr"><tspan id="trsvg25-fr">Longueur d'onde (nm)</tspan></text>
+  <text id="trsvg79"><tspan id="trsvg25">Wavelength (μm)</tspan></text>
+</switch>
+</g>
+<g transform="translate(155.6,71.4)" style="text-anchor:start">
+  <text id="trsvg80"><tspan id="trsvg26">5000 K</tspan></text>
+</g>
+<g transform="translate(180.5,297.6)" style="text-anchor:start">
+  <text id="trsvg81"><tspan id="trsvg27">4000 K</tspan></text>
+</g>
+<g transform="translate(213.8,380.9)" style="text-anchor:start">
+  <text id="trsvg82"><tspan id="trsvg28">3000 K</tspan></text>
+</g>
+<g transform="translate(338.3,127.0)" style="text-anchor:start">
+<switch>
+  <text systemLanguage="da" id="trsvg83"><tspan id="trsvg29">Klassisk teori (5000 K)</tspan></text>
+  <text id="trsvg84-ca" systemLanguage="ca"><tspan id="trsvg30-ca">Teoria clàssica (5000 K)</tspan></text>
+  <text id="trsvg84-de" systemLanguage="de"><tspan id="trsvg30-de">Klassische Theorie (5000 K)</tspan></text>
+  <text id="trsvg84-it" systemLanguage="it"><tspan id="trsvg30-it">Teoria classica (5000 K)</tspan></text>
+  <text id="trsvg84-mk" systemLanguage="mk"><tspan id="trsvg30-mk">Класична теорија (5000 K)</tspan></text>
+  <text id="trsvg84-es" systemLanguage="es"><tspan id="trsvg30-es">Teoría clásica (5000 K)</tspan></text>
+  <text id="trsvg84-prg" systemLanguage="prg"><tspan id="trsvg30-prg">Klassiska fizīki (5000 K)</tspan></text>
+  <text id="trsvg84-uk" systemLanguage="uk"><tspan id="trsvg30-uk">Класична фізика (5000 K)</tspan></text>
+  <text id="trsvg84-fr" systemLanguage="fr"><tspan id="trsvg30-fr">Théorie classique (5000 K)</tspan></text>
+  <text id="trsvg84"><tspan id="trsvg30">Classical theory (5000 K)</tspan></text>
+</switch>
+</g>
+</g>
+<g style="stroke:red;stroke-width:2" id="g361">
+  <path d="m 85.9,413.4 c 0,0 3.4,0 5.1,0 1.666667,0 3.333333,0 5,0 1.666667,0 3.333333,0 5,0 1.7,0 3.4,0 5.1,0 1.66667,0 3.33333,0 5,0 1.66667,0 3.33333,0 5,0 1.7,0 3.4,0 5.1,0 1.66667,0 3.33367,0.0333 5,0 1.66767,-0.0333 3.33331,-0.13399 5,-0.2 1.69997,-0.0673 3.40279,-0.082 5.1,-0.2 1.67094,-0.1162 3.33897,-0.28426 5,-0.5 1.67381,-0.2174 3.34111,-0.48862 5,-0.8 1.70924,-0.32083 3.41188,-0.68202 5.1,-1.1 1.68003,-0.41598 3.34673,-0.88791 5,-1.4 1.68155,-0.52085 3.34363,-1.10392 5,-1.7 1.67762,-0.60373 3.33671,-1.25786 5,-1.9 1.7035,-0.65766 3.40809,-1.31307 5.1,-2 1.67491,-0.68003 3.33333,-1.4 5,-2.1 1.66667,-0.7 3.32509,-1.41997 5,-2.1 1.69191,-0.68693 3.3965,-1.34234 5.1,-2 1.66329,-0.64214 3.32238,-1.29627 5,-1.9 1.65637,-0.59608 3.32188,-1.16819 5,-1.7 1.68921,-0.53532 3.39229,-1.02699 5.1,-1.5 1.65959,-0.45968 3.32544,-0.89826 5,-1.3 1.65944,-0.39811 3.32602,-0.76831 5,-1.1 1.69335,-0.33553 3.39493,-0.63029 5.1,-0.9 1.66225,-0.26294 3.32906,-0.49957 5,-0.7 1.66306,-0.19949 3.33165,-0.35117 5,-0.5 1.69848,-0.15151 3.39776,-0.29924 5.1,-0.4 1.66508,-0.0986 3.33233,-0.16666 5,-0.2 1.66633,-0.0333 3.33341,-0.0163 5,0 1.70025,0.0167 3.40001,0.0663 5.1,0.1 1.66667,0.033 3.33433,0.0334 5,0.1 1.66833,0.0667 3.33432,0.18472 5,0.3 1.70115,0.11774 3.4001,0.26534 5.1,0.4 1.66677,0.13203 3.33333,0.26667 5,0.4 1.66667,0.13333 3.33611,0.23563 5,0.4 1.70343,0.16828 3.39832,0.41483 5.1,0.6 1.66515,0.18119 3.33506,0.31687 5,0.5 1.66856,0.18352 3.3331,0.40193 5,0.6 1.69977,0.20197 3.40023,0.39803 5.1,0.6 1.6669,0.19807 3.33333,0.4 5,0.6 1.66667,0.2 3.3331,0.40193 5,0.6 1.69977,0.20197 3.40023,0.39803 5.1,0.6 1.6669,0.19807 3.33538,0.38362 5,0.6 1.66888,0.21693 3.33087,0.485 5,0.7 1.6977,0.21868 3.40023,0.39803 5.1,0.6 1.6669,0.19807 3.33333,0.4 5,0.6 1.66667,0.2 3.33144,0.41648 5,0.6 1.66494,0.18313 3.33485,0.31881 5,0.5 1.70168,0.18517 3.40023,0.39803 5.1,0.6 1.6669,0.19807 3.33144,0.41648 5,0.6 1.66494,0.18313 3.33317,0.33495 5,0.5 1.69984,0.16832 3.40016,0.33168 5.1,0.5 1.66683,0.16505 3.33333,0.33333 5,0.5 1.66667,0.16667 3.33317,0.33495 5,0.5 1.69984,0.16832 3.40016,0.33168 5.1,0.5 1.66683,0.16505 3.33176,0.34987 5,0.5 1.66526,0.14986 3.33323,0.26797 5,0.4 1.6999,0.13466 3.40152,0.24849 5.1,0.4 1.66835,0.14883 3.33176,0.34987 5,0.5 1.66526,0.14986 3.33202,0.28424 5,0.4 1.69885,0.11791 3.40115,0.18209 5.1,0.3 1.66798,0.11576 3.33333,0.26667 5,0.4 1.66667,0.13333 3.33202,0.28424 5,0.4 1.69885,0.11791 3.40115,0.18209 5.1,0.3 1.66798,0.11576 3.33209,0.28326 5,0.4 1.66559,0.11658 3.33328,0.20098 5,0.3 1.69994,0.101 3.40006,0.199 5.1,0.3 1.66672,0.099 3.33333,0.2 5,0.3 1.66667,0.1 3.33239,0.21728 5,0.3 1.69922,0.0843 3.40078,0.11571 5.1,0.2 1.66761,0.0827 3.33242,0.21663 5,0.3 1.66592,0.0833 3.33403,0.11769 5,0.2 1.70086,0.084 3.39914,0.21596 5.1,0.3 1.66597,0.0823 3.33333,0.13333 5,0.2 1.66667,0.0667 3.33403,0.11769 5,0.2 1.70086,0.084 3.39914,0.21596 5.1,0.3 1.66597,0.0823 3.33333,0.13333 5,0.2 1.66667,0.0667 3.33331,0.13399 5,0.2 1.69997,0.0673 3.39944,0.14965 5.1,0.2 1.66627,0.0493 3.33375,0.05 5,0.1 1.66725,0.05 3.33333,0.13333 5,0.2 1.66667,0.0667 3.33331,0.13399 5,0.2 1.69997,0.0673 3.39944,0.14965 5.1,0.2 1.66627,0.0493 3.33375,0.05 5,0.1 1.66725,0.05 3.33274,0.15031 5,0.2 1.69957,0.0506 3.40043,0.0494 5.1,0.1 1.66726,0.0497 3.33275,0.14999 5,0.2 1.66625,0.05 3.33333,0.067 5,0.1 1.69999,0.0337 3.40043,0.0494 5.1,0.1 1.66726,0.0497 3.33275,0.14999 5,0.2 1.66625,0.05 3.33333,0.067 5,0.1 1.69999,0.0337 3.40001,0.0663 5.1,0.1 1.66667,0.033 3.33333,0.0667 5,0.1 1.66667,0.0333 3.33333,0.067 5,0.1 1.69999,0.0337 3.40001,0.0663 5.1,0.1 1.66667,0.033 5,0.1 5,0.1" id="path359"/>
+  </g>
+  <g style="stroke:green;stroke-width:2" id="g365">
+    <path d="m 85.9,413.4 c 0,0 3.4,0 5.1,0 1.666667,0 3.333333,0 5,0 1.666667,0 3.333333,0 5,0 1.7,0 3.4,0 5.1,0 1.66667,0 3.33408,0.0499 5,0 1.66891,-0.05 3.34374,-0.0889 5,-0.3 1.71847,-0.21903 3.46483,-0.42788 5.1,-1 1.77313,-0.62039 3.46203,-1.52133 5,-2.6 1.85413,-1.30041 3.49824,-2.90483 5,-4.6 1.93229,-2.18114 3.55125,-4.63171 5.1,-7.1 1.85508,-2.9565 3.43268,-6.08139 5,-9.2 1.78142,-3.54462 3.37397,-7.18146 5,-10.8 1.7438,-3.88061 3.41406,-7.7939 5.1,-11.7 1.68071,-3.89397 3.29564,-7.81632 5,-11.7 1.63076,-3.71597 3.2589,-7.43444 5,-11.1 1.59897,-3.36633 3.22333,-6.72398 5,-10 1.60255,-2.95497 3.28996,-5.86738 5.1,-8.7 1.57334,-2.46219 3.19028,-4.90595 5,-7.2 1.5499,-1.9647 3.18534,-3.87686 5,-5.6 1.58174,-1.50196 3.29216,-2.87955 5.1,-4.1 1.58321,-1.0688 3.24131,-2.05442 5,-2.8 1.60203,-0.67917 3.2896,-1.18016 5,-1.5 1.67617,-0.31344 3.39488,-0.41824 5.1,-0.4 1.67488,0.0179 3.34849,0.22057 5,0.5 1.68998,0.28593 3.36059,0.6999 5,1.2 1.7352,0.52932 3.43053,1.19008 5.1,1.9 1.70129,0.72345 3.35934,1.54793 5,2.4 1.69522,0.88041 3.34334,1.84902 5,2.8 1.71052,0.98189 3.41909,1.96823 5.1,3 1.68642,1.03516 3.34836,2.11022 5,3.2 1.68229,1.11 3.33576,2.2631 5,3.4 1.70249,1.16303 3.40543,2.32547 5.1,3.5 1.67206,1.15893 3.33333,2.33333 5,3.5 1.66667,1.16667 3.32019,2.35234 5,3.5 1.68701,1.15257 3.40522,2.25888 5.1,3.4 1.67185,1.12568 3.32555,2.2782 5,3.4 1.65904,1.11148 3.32079,2.21925 5,3.3 1.68761,1.08616 3.39715,2.1379 5.1,3.2 1.66389,1.0378 3.32585,2.07884 5,3.1 1.65933,1.01212 3.31448,2.03212 5,3 1.6818,0.96574 3.40393,1.85954 5.1,2.8 1.67057,0.92633 3.31908,1.89259 5,2.8 1.65305,0.89237 3.32316,1.75318 5,2.6 1.68999,0.85346 3.39658,1.67369 5.1,2.5 1.66335,0.80687 3.32684,1.61368 5,2.4 1.66033,0.78029 3.3243,1.55329 5,2.3 1.69112,0.75358 3.39649,1.47486 5.1,2.2 1.66328,0.70802 3.3274,1.41429 5,2.1 1.6609,0.68091 3.32194,1.36256 5,2 1.65593,0.62903 3.33146,1.20522 5,1.8 1.69811,0.60532 3.39656,1.20983 5.1,1.8 1.66337,0.57629 3.32829,1.14839 5,1.7 1.66179,0.54834 3.32714,1.08641 5,1.6 1.69397,0.52007 3.40136,0.99541 5.1,1.5 1.66801,0.49549 3.32879,1.01539 5,1.5 1.66229,0.48202 3.32798,0.95288 5,1.4 1.69481,0.45321 3.397,0.87861 5.1,1.3 1.66382,0.41169 3.33333,0.8 5,1.2 1.66667,0.4 3.32882,0.81929 5,1.2 1.69565,0.38629 3.40076,0.72983 5.1,1.1 1.66742,0.36323 3.3299,0.74931 5,1.1 1.6634,0.34928 3.32965,0.68562 5,1 1.69648,0.3193 3.40052,0.59709 5.1,0.9 1.66718,0.29715 3.33333,0.6 5,0.9 1.66667,0.3 3.33006,0.61877 5,0.9 1.69689,0.28577 3.40041,0.53073 5.1,0.8 1.66707,0.26412 3.33081,0.54965 5,0.8 1.66431,0.24962 3.33302,0.46891 5,0.7 1.69968,0.23562 3.40032,0.46438 5.1,0.7 1.66698,0.23109 3.33112,0.48307 5,0.7 1.66462,0.21638 3.33509,0.38586 5,0.6 1.70192,0.2189 3.396,0.49793 5.1,0.7 1.66332,0.19725 3.33506,0.31687 5,0.5 1.66856,0.18352 3.33126,0.4181 5,0.6 1.69809,0.1851 3.40016,0.33168 5.1,0.5 1.66683,0.16505 3.33333,0.33333 5,0.5 1.66667,0.16667 3.33165,0.35117 5,0.5 1.69848,0.15151 3.40152,0.24849 5.1,0.4 1.66835,0.14883 3.33176,0.34987 5,0.5 1.66526,0.14986 3.33323,0.26797 5,0.4 1.6999,0.13466 3.4001,0.26534 5.1,0.4 1.66677,0.13203 3.33209,0.28326 5,0.4 1.66559,0.11658 3.33441,0.18342 5,0.3 1.66791,0.11674 3.33202,0.28424 5,0.4 1.69885,0.11791 3.40006,0.199 5.1,0.3 1.66672,0.099 3.33333,0.2 5,0.3 1.66667,0.1 3.33328,0.20098 5,0.3 1.69994,0.101 3.40006,0.199 5.1,0.3 1.66672,0.099 3.33242,0.21663 5,0.3 1.66592,0.0833 3.33403,0.11769 5,0.2 1.70086,0.084 3.39914,0.21596 5.1,0.3 1.66597,0.0823 3.33408,0.11671 5,0.2 1.66758,0.0834 3.33239,0.21728 5,0.3 1.69922,0.0843 3.40003,0.13267 5.1,0.2 1.66669,0.066 3.33333,0.13333 5,0.2 1.66667,0.0667 3.33331,0.13399 5,0.2 1.69997,0.0673 3.40003,0.13267 5.1,0.2 1.66669,0.066 5,0.2 5,0.2" id="path363"/>
+    </g>
+    <g style="stroke:blue;stroke-width:2" id="g369">
+      <path d="m 85.9,413.4 c 0,0 3.4,0 5.1,0 1.666667,0 3.333333,0 5,0 1.666667,0 3.333653,0.0327 5,0 1.70098,-0.0333 3.433,0.13995 5.1,-0.2 1.74699,-0.35626 3.5953,-0.80196 5,-1.9 2.30207,-1.79951 3.72461,-4.57109 5,-7.2 2.54056,-5.23673 3.73597,-11.04163 5.1,-16.7 2.22188,-9.21695 3.54466,-18.63139 5,-28 1.95096,-12.55912 3.42664,-25.18801 5,-37.8 1.80727,-14.48702 3.43674,-28.99574 5.1,-43.5 1.70433,-14.8624 3.28035,-29.73937 5,-44.6 1.61687,-13.97252 3.19335,-27.95075 5,-41.9 1.5779,-12.1831 3.22673,-24.3588 5.1,-36.5 1.52584,-9.88942 3.06664,-19.78211 5,-29.6 1.46558,-7.44244 2.97202,-14.89075 5,-22.2 1.41753,-5.109092 2.80168,-10.275105 5,-15.1 1.38184,-3.03287 2.78378,-6.203564 5.1,-8.6 1.37519,-1.422816 3.04029,-2.925976 5,-3.2 1.72329,-0.240965 3.50614,0.607725 5,1.5 2.06401,1.232823 3.60328,3.218553 5.1,5.1 1.95771,2.460945 3.46177,5.257241 5,8 1.82298,3.250481 3.41082,6.629035 5,10 1.78815,3.79302 3.47103,7.63595 5.1,11.5 1.74328,4.1352 3.36115,8.32232 5,12.5 1.69552,4.32213 3.33552,8.66583 5,13 1.70223,4.43248 3.41458,8.8611 5.1,13.3 1.68122,4.42783 3.32221,8.87086 5,13.3 1.6557,4.37084 3.29573,8.74787 5,13.1 1.66343,4.24784 3.39699,8.46788 5.1,12.7 1.66373,4.13452 3.29721,8.28142 5,12.4 1.63217,3.94777 3.29434,7.88342 5,11.8 1.66216,3.8167 3.37549,7.61106 5.1,11.4 1.64338,3.61069 3.29349,7.21871 5,10.8 1.62884,3.41828 3.28543,6.82391 5,10.2 1.65411,3.25705 3.37038,6.48242 5.1,9.7 1.63874,3.04851 3.29674,6.08706 5,9.1 1.63185,2.88663 3.27505,5.76802 5,8.6 1.6451,2.70088 3.38089,5.34561 5.1,8 1.64842,2.54524 3.29345,5.09336 5,7.6 1.62901,2.39275 3.28976,4.76463 5,7.1 1.65831,2.26446 3.36886,4.49072 5.1,6.7 1.63753,2.08983 3.30829,4.15378 5,6.2 1.6426,1.98682 3.28983,3.97104 5,5.9 1.65864,1.87084 3.37467,3.69049 5.1,5.5 1.64286,1.72302 3.30777,3.42545 5,5.1 1.64223,1.62507 3.30866,3.22611 5,4.8 1.67596,1.55958 3.37325,3.09685 5.1,4.6 1.64174,1.42915 3.30824,2.83042 5,4.2 1.64284,1.32998 3.3252,2.61049 5,3.9 1.65868,1.2771 3.29495,2.58549 5,3.8 1.66413,1.18537 3.39738,2.2706 5.1,3.4 1.66412,1.10386 3.31789,2.22376 5,3.3 1.65184,1.05688 3.31402,2.09849 5,3.1 1.68135,0.99876 3.38952,1.952 5.1,2.9 1.65671,0.91819 3.31937,1.82635 5,2.7 1.65334,0.85947 3.32353,1.68656 5,2.5 1.69036,0.82018 3.39,1.6216 5.1,2.4 1.65724,0.75439 3.33333,1.46667 5,2.2 1.66667,0.73333 3.31281,1.51521 5,2.2 1.68096,0.68226 3.40208,1.26112 5.1,1.9 1.66872,0.62789 3.32783,1.28135 5,1.9 1.66132,0.61464 3.32631,1.21988 5,1.8 1.69313,0.58686 3.39161,1.15915 5.1,1.7 1.6589,0.52519 3.33333,1 5,1.5 1.66667,0.5 3.32756,1.01966 5,1.5 1.69439,0.48665 3.39688,0.94485 5.1,1.4 1.66369,0.44461 3.33333,0.86667 5,1.3 1.66667,0.43333 3.3284,0.88609 5,1.3 1.69523,0.41976 3.39714,0.81237 5.1,1.2 1.66396,0.37877 3.33333,0.73333 5,1.1 1.66667,0.36667 3.32924,0.75246 5,1.1 1.69607,0.3528 3.39746,0.67988 5.1,1 1.66429,0.31293 3.33333,0.6 5,0.9 1.66667,0.3 3.33282,0.60285 5,0.9 1.69948,0.30291 3.39765,0.61362 5.1,0.9 1.66448,0.28001 3.33333,0.53333 5,0.8 1.66667,0.26667 3.33047,0.55189 5,0.8 1.6973,0.25223 3.40032,0.46438 5.1,0.7 1.66698,0.23109 3.33333,0.46667 5,0.7 1.66667,0.23333 3.33087,0.485 5,0.7 1.6977,0.21868 3.40023,0.39803 5.1,0.6 1.6669,0.19807 3.33333,0.4 5,0.6 1.66667,0.2 3.33144,0.41648 5,0.6 1.66494,0.18313 3.33317,0.33495 5,0.5 1.69984,0.16832 3.40016,0.33168 5.1,0.5 1.66683,0.16505 3.33333,0.33333 5,0.5 1.66667,0.16667 3.33165,0.35117 5,0.5 1.69848,0.15151 3.40152,0.24849 5.1,0.4 1.66835,0.14883 3.33176,0.34987 5,0.5 1.66526,0.14986 3.33323,0.26797 5,0.4 1.6999,0.13466 3.39885,0.28226 5.1,0.4 1.66568,0.11528 3.33441,0.18342 5,0.3 1.66791,0.11674 3.33202,0.28424 5,0.4 1.69885,0.11791 3.40115,0.18209 5.1,0.3 1.66798,0.11576 3.33209,0.28326 5,0.4 1.66559,0.11658 3.33328,0.20098 5,0.3 1.69994,0.101 3.39914,0.21596 5.1,0.3 1.66597,0.0823 5,0.2 5,0.2" id="path367"/>
+      </g>
+<g style="stroke:none;fill:#EAEAEA;font-family:Arial;font-size:12pt;text-anchor:end">
+<g transform="translate(63.6,417.9)">
+  <text id="trsvg85"><tspan id="trsvg31">0</tspan></text>
+</g>
+<g transform="translate(63.6,365.0)">
+  <text id="trsvg86"><tspan id="trsvg32">2</tspan></text>
+</g>
+<g transform="translate(63.6,312.1)">
+  <text id="trsvg87"><tspan id="trsvg33">4</tspan></text>
+</g>
+<g transform="translate(63.6,259.2)">
+  <text id="trsvg88"><tspan id="trsvg34">6</tspan></text>
+</g>
+<g transform="translate(63.6,206.3)">
+  <text id="trsvg89"><tspan id="trsvg35">8</tspan></text>
+</g>
+<g transform="translate(63.6,153.4)">
+  <text id="trsvg90"><tspan id="trsvg36">10</tspan></text>
+</g>
+<g transform="translate(63.6,100.5)">
+  <text id="trsvg91"><tspan id="trsvg37">12</tspan></text>
+</g>
+<g transform="translate(63.6,47.6)">
+  <text id="trsvg92"><tspan id="trsvg38">14</tspan></text>
+</g>
+<g transform="translate(80.9,444.9)" style="text-anchor:middle">
+  <text id="trsvg93"><tspan id="trsvg39">0</tspan></text>
+</g>
+<g transform="translate(163.9,444.9)" style="text-anchor:middle">
+  <text id="trsvg94"><tspan id="trsvg40">0.5</tspan></text>
+</g>
+<g transform="translate(247.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg95"><tspan id="trsvg41">1</tspan></text>
+</g>
+<g transform="translate(330.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg96"><tspan id="trsvg42">1.5</tspan></text>
+</g>
+<g transform="translate(413.0,444.9)" style="text-anchor:middle">
+  <text id="trsvg97"><tspan id="trsvg43">2</tspan></text>
+</g>
+<g transform="translate(496.1,444.9)" style="text-anchor:middle">
+  <text id="trsvg98"><tspan id="trsvg44">2.5</tspan></text>
+</g>
+<g transform="translate(579.1,444.9)" style="text-anchor:middle">
+  <text id="trsvg99"><tspan id="trsvg45">3</tspan></text>
+</g>
+<g transform="translate(25.9,215.1) rotate(270)" style="text-anchor:middle">
+<switch>
+  <text systemLanguage="da" id="trsvg100"><tspan id="trsvg46"> Spectral intensitet (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-ca" systemLanguage="ca"><tspan id="trsvg47-ca">radiació espectral (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-de" systemLanguage="de"><tspan id="trsvg47-de">Strahlungsleistung (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-it" systemLanguage="it"><tspan id="trsvg47-it">Irradianza (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-mk" systemLanguage="mk"><tspan id="trsvg47-mk">Интензитет (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-es" systemLanguage="es"><tspan id="trsvg47-es">Radiación espectral (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-prg" systemLanguage="prg"><tspan id="trsvg47-prg">spektriska spārtas kāmstis (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-uk" systemLanguage="uk"><tspan id="trsvg47-uk">Інтенсивність (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101-fr" systemLanguage="fr"><tspan id="trsvg47-fr">Luminance spectrale (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+  <text id="trsvg101"><tspan id="trsvg47">Spectral radiance (kW · sr⁻¹ · m⁻² · nm⁻¹)</tspan></text>
+</switch>
+</g>
+<g transform="translate(330.0,471.9)" style="text-anchor:middle">
+<switch>
+  <text systemLanguage="da" id="trsvg102"><tspan id="trsvg48"> Bølgelængde (µm)</tspan></text>
+  <text id="trsvg103-ca" systemLanguage="ca"><tspan id="trsvg49-ca">longitud d'ona (μm)</tspan></text>
+  <text id="trsvg103-de" systemLanguage="de"><tspan id="trsvg49-de">Wellenlänge (μm)</tspan></text>
+  <text id="trsvg103-it" systemLanguage="it"><tspan id="trsvg49-it">Lunghezza d'onda (μm)</tspan></text>
+  <text id="trsvg103-mk" systemLanguage="mk"><tspan id="trsvg49-mk">Бранова должина (μm)</tspan></text>
+  <text id="trsvg103-es" systemLanguage="es"><tspan id="trsvg49-es">Longitud de onda (μm)</tspan></text>
+  <text id="trsvg103-prg" systemLanguage="prg"><tspan id="trsvg49-prg">bāngas ilgan (μm)</tspan></text>
+  <text id="trsvg103-uk" systemLanguage="uk"><tspan id="trsvg49-uk">Довжина хвилі (μm)</tspan></text>
+  <text id="trsvg103-fr" systemLanguage="fr"><tspan id="trsvg49-fr">Longueur d'onde (nm)</tspan></text>
+  <text id="trsvg103"><tspan id="trsvg49">Wavelength (μm)</tspan></text>
+</switch>
+</g>
+<g transform="translate(155.6,71.4)" style="text-anchor:start">
+  <text id="trsvg104"><tspan id="trsvg50">5000 K</tspan></text>
+</g>
+<g transform="translate(180.5,297.6)" style="text-anchor:start">
+  <text id="trsvg105"><tspan id="trsvg51">4000 K</tspan></text>
+</g>
+<g transform="translate(213.8,380.9)" style="text-anchor:start">
+  <text id="trsvg106"><tspan id="trsvg52">3000 K</tspan></text>
+</g>
+<g transform="translate(338.3,127.0)" style="text-anchor:start">
+<switch>
+  <text systemLanguage="da" id="trsvg107"><tspan id="trsvg53">Klassisk teori (5000 K)</tspan></text>
+  <text id="trsvg108-ca" systemLanguage="ca"><tspan id="trsvg54-ca">Teoria clàssica (5000 K)</tspan></text>
+  <text id="trsvg108-de" systemLanguage="de"><tspan id="trsvg54-de">Klassische Theorie (5000 K)</tspan></text>
+  <text id="trsvg108-it" systemLanguage="it"><tspan id="trsvg54-it">Teoria classica (5000 K)</tspan></text>
+  <text id="trsvg108-mk" systemLanguage="mk"><tspan id="trsvg54-mk">Класична теорија (5000 K)</tspan></text>
+  <text id="trsvg108-es" systemLanguage="es"><tspan id="trsvg54-es">Teoría clásica (5000 K)</tspan></text>
+  <text id="trsvg108-prg" systemLanguage="prg"><tspan id="trsvg54-prg">Klassiska fizīki (5000 K)</tspan></text>
+  <text id="trsvg108-uk" systemLanguage="uk"><tspan id="trsvg54-uk">Класична фізика (5000 K)</tspan></text>
+  <text id="trsvg108-fr" systemLanguage="fr"><tspan id="trsvg54-fr">Théorie classique (5000 K)</tspan></text>
+  <text id="trsvg108"><tspan id="trsvg54">Classical theory (5000 K)</tspan></text>
+</switch>
+</g>
+</g>
+<path style="stroke:#AAA;stroke-width:2" d="M295 16.7L297.3 33.6L302.3 67L307.4 96.8L312.4 123.4L317.4 147.3L322.5 168.8L327.5 188.2L332.5 205.6L337.5 221.5L342.6 235.8L347.6 248.8L352.6 260.7L357.7 271.5L362.7 281.4L367.7 290.4L372.8 298.7L377.8 306.2L382.8 313.2L387.9 319.6L392.9 325.5L397.9 331L403 336L408 340.7L413 345L418.1 349L423.1 352.7L428.1 356.1L433.2 359.3L438.2 362.3L443.2 365.1L448.3 367.7L453.3 370.1L458.3 372.4L463.4 374.5L468.4 376.5L473.4 378.3L478.5 380.1L483.5 381.7L488.5 383.2L493.6 384.7L498.6 386L503.6 387.3L508.6 388.5L513.7 389.7L518.7 390.7L523.7 391.7L528.8 392.7L533.8 393.6L538.8 394.5L543.9 395.3L548.9 396L553.9 396.8L559 397.5L564 398.1L569 398.7L574.1 399.3L579.1 399.9"/>
+</g>
+</svg>

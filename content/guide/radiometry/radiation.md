@@ -44,6 +44,10 @@ Here the quantity $B_\nu$ is called the spectral radiance of the radiation at fr
 
 $$\tag{2.1.2} B = \int_0^{\infty} B_\nu \, d\nu $$
 
+{{< callout type="image" >}}
+{{< svg "images/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: H. Karttunen)" >}}
+{{% /callout %}}
+
 The spectral flux density $F_\nu$ is the flux density of the radiation in the frequency range [$\nu$, $\nu + d\nu$]. This tells us how much flux is carried by radiation per unit frequency. In radio astronomy, spectral flux densities are often measured in Janskys. The flux density is related to the spectral radiance as
 
 $$\tag{2.1.3} F_\nu = \int_\Omega B_\nu \cos \theta \, d\omega $$
@@ -67,6 +71,10 @@ For extended objects, surface brightness $B$ is defined as the flux density per 
 $$\tag{2.1.6} B = \frac{F}{\omega}$$
 
 Surface brightness is independent of distance. It is equal to radiance of the object if the object emits isotropically.
+
+{{< callout type="image" >}}
+{{< svg "images/surfbright.svg" "Surface Brightness" "The surface brightness B is the flux received by the observer, divided by the solid angle the object is spread over as seen by the observer" >}}
+{{% /callout %}}
 
 ### A List of Radiometric Quantities
 
@@ -124,7 +132,7 @@ $$\tag{2.1.11} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
 
     $$P = \frac{F}{c}$$
 
-    If however, all the radiation falling on the surface is reflected, aside from the pressure due to the incident radiation, there is also a pressure due to the reflected radiation, since the reflected radiation carries momentum away from the surface. The net pressure is given by
+    If however, all the radiation falling on the surface is reflected, aside from the pressure due to the incident radiation, there is also a pressure due to the reflected radiation, since the reflected radiation carries momentum away from the surface. The net pressure is thus
 
     $$ P = P_\text{incident} + P_{emitted} = \frac{F}{c} + \frac{F}{c} = \frac{2F}{c} $$
 
@@ -158,6 +166,10 @@ $$
 $$
 
 These two are connected by the relation $B_\nu(T) \, d\nu = -B_\lambda(T) \, d\lambda$ (the minus sign comes from the fact that as frequency increases, wavelength decreases.).
+
+{{< callout type="image" >}}
+{{< svg "images/blackbody.svg" "Black Body Radiation Curve" "Black Body Radiation Curve (source: Wikipedia)" >}}
+{{% /callout %}}
 
 These equations for spectral radiance can be simplified when the wavelengths in question are much larger than the peak wavelength of the spectrum or when they are approximately equal to the peak wavelength of the spectrum.
 
@@ -494,5 +506,38 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     $$R = \frac{3L}{16 \pi \rho c GM} \approx \boxed{115 \, \mathrm{nm}} $$
     
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="Problem,Solution" >}}
+    {{< tab >}}
+    Consider a surface of surface area $A$ and reflection coefficient of $\alpha$, that is it reflects a fraction $\alpha$ of the radiation falling on it. The rest of the radiation is absorbed. The surface is illuminated by radiation of flux density $F$, at an angle $\theta$ to the normal. Find the force exerted on the surface by the radiation.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Let the normal of the surface be pointing along the $z$-axis, the surface being in the $xy$-plane, and the incoming radiation be in the $zx$-plane, making angle $\theta$ with the $z$-axis. The unit vector corresponding to the direction of the incoming radiation is thus $\hat{i} = \sin \theta \,\hat{x} + \cos \theta \, \hat{z}$. Since the radiation is incident at an angle $\theta$, the projected area of the surface in the direction of the radiation is $A_\text{proj} = A \cos \theta$.
+
+    The flux density incident on the surface is $F$, and that reflected away is $\alpha F$. The reflected radiation will be in the direction $\hat{r} = -\sin \theta \,\hat{x} + \cos \theta \, \hat{z}$, according to the laws of reflection (the angle between incident ray and the normal is equal to the angle between the reflected ray and the normal, and that the incident ray, reflected ray and normal all lie in a single plane).
+    
+    The force due to incident radiation on the surface is
+
+    $$F_\text{incident} = \frac{F}{c} A_\text{proj} \, \hat{i}$$
+
+    The force due to the reflected radiation is
+
+    $$F_\text{reflected} = \frac{\alpha F}{c} A_\text{proj} \, (-\hat{r})$$
+
+    The direction of the force due to reflected radiation will be opposite to its direction of propagation.
+
+    The net force on the surface is therefore
+
+    $$F_\text{net} = F_\text{incident} + F_\text{reflected} = \frac{F}{c} A_\text{proj} \, \hat{i} + \frac{\alpha F}{c} A_\text{proj} \, (-\hat{r})$$
+    $$= \frac{F}{c} A_\text{proj} \left( \hat{i} - \alpha \hat{r} \right)$$
+    $$= \frac{F}{c} \, A \cos \theta \, \left[ (1 - \alpha) \sin \theta \, \hat{x} + (1 + \alpha) \cos \theta \, \hat{z} \right]$$
+
+    We see that if the surface is perfectly reflecting ($\alpha = 1$), the force is directed opposite to the normal ($z$-axis), having a magnitude of $\frac{F}{c} A \cos^2 \theta$. Whereas if the surface is perfectly absorbing ($\alpha = 0$), the force is directed along the direction of the incoming radiation, having a magnitude of $\frac{F}{c} A \cos \theta$.
+
+    If $\theta = 0$, that is the radiation is falling normal to the surface, the force experienced by the surface will be opposite to the normal or the direction of incident radiation, having a magnitude of $\frac{F}{c} A \, (1 + \alpha)$.
+
     {{< /tab >}}
 {{< /tabs >}}
