@@ -3,11 +3,11 @@ title: Magnitude
 weight: 2
 ---
 
-Magnitude is a measure of the brightness of a star, astronomical object or other celestial objects like artificial satellites. These are denoted by the unit 'mag', or with a superscript $^m$, although it has no dimensions. The scale is reverse logarithmic: the brighter an object is, the lower its magnitude number. A difference of 1.0 mag in magnitude corresponds to the brightness ratio of $\sqrt[5]{100}$, or about 2.512. For example, a magnitude 2.0 star is 2.512 times as bright as a magnitude 3.0 star, 6.31 times as magnitude 4.0, and 100 times magnitude 7.0.
+Magnitude is a measure of the brightness of a star, astronomical object or other celestial objects like artificial satellites. These are denoted by the unit 'mag', or with a superscript $^m$, although it has no dimensions. The scale is reverse logarithmic: the brighter an object is, the lower its magnitude number. A difference of 1.0 mag in magnitude corresponds to the brightness ratio of $\sqrt[5]{100}$, or about 2.512. For example, a magnitude 2.0 star is 2.512 times brighter than a magnitude 3.0 star, 6.31 times brighter than a magnitude 4.0, and 100 times brighter than a magnitude 7.0 star.
 
 Apparent magnitude is a measure of the brightness of an object as seen from Earth. Its value depends on its intrinsic luminosity, its distance, and any extinction of the object's light caused by interstellar dust along the line of sight to the observer.
 
-Absolute magnitude is a measure of the intrinsic brightness of an object, defined as the apparent magnitude it would have if it were located at a distance of 10 parsecs from the observer. The absolute magnitude of a star is directly related to its luminosity.
+Absolute magnitude is a measure of the intrinsic brightness of an object, defined as the apparent magnitude it would have if it were located at a distance of 10 parsecs from the observer, without any extinction. The absolute magnitude of a star is directly related to its luminosity.
 
 ## Pogson's Equation
 
@@ -121,7 +121,7 @@ $$\tag{2.2.6} d\tau = \alpha \, {dr} $$
 
 $$\tag{2.2.7} \therefore dL = -L \, d\tau \implies \boxed{L = L_0 e^{-\tau}} $$
 
-Here $\tau = \int_0^r \alpha \, dr = \langle \alpha \rangle r$ is the optical thickness between the source and the observer. This exponential decay is known as Beer-Lambert law.
+Here $\tau = \int_0^r \alpha \, dr = \langle \alpha \rangle r$ is the optical thickness between the source and the observer. This exponential decay is known as the Beer-Lambert law.
 
 If $F_0$ is the flux density at the star's surface and $F(r)$ is the flux density at a distance $r$,
 

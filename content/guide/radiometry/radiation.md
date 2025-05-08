@@ -45,7 +45,7 @@ $$\tag{2.1.2} F = \frac{\Phi}{A_\text{proj}} \cos \theta$$
 The factor $\cos \theta$ accounts for the fact that the radiation is not perpendicular to the surface. For a given beam, the flux density is maximum when $\theta = 0$, i.e., when the radiation is perpendicular to the surface.
 {{< /callout >}}
 
-The spectral flux density $F_\nu$ is the flux density of the radiation in the frequency range [$\nu$, $\nu + d\nu$]. This tells us how much power carried by radiation is passing through unit area per unit frequency. In radio astronomy, spectral flux densities are often measured in Janskys.
+The spectral flux density $F_\nu$ is the flux density of the radiation in the frequency range [$\nu$, $\nu + d\nu$]. This tells us how much power carried by radiation is passing through unit area per unit frequency. In radio astronomy, spectral flux densities are often measured in Janskys (Jy), where $1 \, \mathrm{Jy} = 10^{-26} \mathrm{\, W \, m^{-2} \, Hz^{-1}}$.
 
 Now we will define some more useful quantities related to the flow of radiation.
 
@@ -117,7 +117,7 @@ The energy of radiation is quantized in packets called photons. The energy of a 
 
 $$\tag{2.1.9} E = h \nu = \frac{h c}{\lambda}$$
 
-where $\nu" is the frequency of the radiation. The momentum carried by a photon is given by
+where $\nu$ is the frequency of the radiation. The momentum carried by a photon is given by
 
 $$\tag{2.1.10} p = \frac{E}{c} = \frac{h \nu}{c} = \frac{h}{\lambda}$$
 
@@ -197,7 +197,7 @@ The Rayleigh-Jeans approximation is used often in radio astronomy, where the wav
 Derive the Rayleigh-Jeans approximation from Planck's law.
 {{% /callout %}}
 
-When $\lambda \approx \lambda_\text{peak}$ or $\nu \approx \nu_\text{peak}$, we can use the Wien approximation
+When $\lambda \lesssim \lambda_\text{peak}$ or $\nu \gtrsim \nu_\text{peak}$, we can use the Wien approximation
 
 $$\tag{2.1.18} B_\nu(T) \approx \frac{2 h \nu^3}{c^2} e^{-h\nu / kT}$$
 $$\tag{2.1.19} B_\lambda(T) \approx \frac{2 h c^2}{\lambda^5} e^{-h c / \lambda k T}$$
@@ -630,7 +630,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     where $A \approx 1.7 \, \mathrm{m^2}$ is the surface area of the human body. The temperature of the body is $T \approx 310 \, \mathrm{K}$. The number of photons emitted per unit time per unit wavelength is thus
 
-    $$\frac{d^2N}{dt \,d\lambda} = \frac{L_\lambda}{h c / \lambda} = \frac{A \pi}{hc} \lambda B_\lambda$$
+    $$\frac{\partial^2 N}{\partial t \,\partial \lambda} = \frac{L_\lambda}{h c / \lambda} = \frac{A \pi}{hc} \lambda B_\lambda$$
 
     Therefore the number of photons emitted by the human body in the given wavelength range in its entire lifetime of $\tau \approx 80 \, \mathrm{yrs}$ is
 

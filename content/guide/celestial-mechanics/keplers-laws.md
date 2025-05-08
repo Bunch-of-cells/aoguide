@@ -6,28 +6,54 @@ weight: 1
 
 Newton's law of universal gravitation describes gravity as a force by stating that every particle attracts every other particle in the universe with a force that is proportional to the product of their masses and inversely proportional to the square of the distance between their centers of mass. Consider two bodies of masses $m_1$ and $m_2$, with position vectors $\mathbf{r_1}$ and $\mathbf{r_2}$. The force exerted on body 2 due to body 1 is
 
-$$ \mathbf{F} = -\frac{G m_1 m_2}{|\mathbf{r_2} - \mathbf{r_1}|^3} (\mathbf{r_2} - \mathbf{r_1}) $$
+$$\tag{3.1.1} \mathbf{F} = -\frac{G m_1 m_2}{|\mathbf{r_2} - \mathbf{r_1}|^3} (\mathbf{r_2} - \mathbf{r_1}) $$
 
-We define the following:
+Here G is the universal gravitational constant, equal to $6.67430 \times 10^{-11} \: \mathrm{m^3\,kg^{-1}\,s^{-2}}$.
 
-- Separation vector: $ \mathbf{r} = \mathbf{r_2} - \mathbf{r_1} $
-- Total mass: $M = m_1 + m_2$
-- Reduced mass: $m = \frac{m_1 m_2}{m_1 + m_2}$
-- Gravitational parameter: $\mu = GM$
+Kepler's two body problem is to calculate and predict the motion of two bodies under the influence of their mutual gravitational attraction. The two bodies are assumed to be point masses, and the force acting on them is given by Newton's law of gravitation.
 
-Here G is the gravitational constant, equal to $6.67430 \times 10^{-11} \: \mathrm{m^3\,kg^{-1}\,s^{-2}}$
-. From hereon, we will study the trajectory of the separation vector $\mathbf{r}$. Using Newton's second law $\mathbf{F} = m \mathbf{a}$, we can write
+To solve for the trajectories of the two bodies, it is most convenient to work in the center of mass frame. The center of mass $\mathbf{R}$ of the two body system is given by
 
-$$ \ddot{\mathbf{r}} = -\mu \frac{\mathbf{r}}{r^3} $$
+$$ \mathbf{R} = \frac{m_1 \mathbf{r_1} + m_2 \mathbf{r_2}}{m_1 + m_2} $$
 
-Working in the center of mass frame, we have
+The position vectors of the two bodies with respect to the center of mass are given by
 
-$$ m_1 \mathbf{r_1} + m_2 \mathbf{r_2} = \mathbf{0} $$
+$$
+\mathbf{r_1} = \frac{-m_2}{M} \mathbf{r} + \mathbf{R} \qquad \qquad
+\mathbf{r_2} = \frac{m_1}{M} \mathbf{r} + \mathbf{R}
+$$
 
-Hence the individual position vectors can be expressed as
+where $M = m_1 + m_2$ is the total mass of the system, and $\mathbf{r} = \mathbf{r_2} - \mathbf{r_1}$ is the vector joining the two bodies, also called the separation vector.
 
-$$ \mathbf{r_1} = \frac{-m_2}{M} \mathbf{r} \,, \qquad \qquad \mathbf{r_2} = \frac{m_1}{M} \mathbf{r} $$
+Working in the center of mass frame, $\mathbf{R} = \dot{\mathbf{R}} = \mathbf{0}$. With this, we now only have to solve for the trajectory of the separation vector $\mathbf{r}$, as a function of time. The center of mass frame is an inertial frame, and hence the motion of the two bodies can be described by Newton's second law.
 
+To simplify the algebra, we define the reduced mass $m$ of the two body system as
+
+$$\tag{3.1.2} m = \frac{m_1 m_2}{m_1 + m_2} $$
+
+such that $Mm = m_1 m_2$. Further, we define the gravitational parameter $\mu$ as
+
+$$\tag{3.1.3} \mu = G M = G (m_1 + m_2) $$
+
+The force acting on the two bodies are
+
+$$
+\mathbf{F_1} = \mu m \frac{\mathbf{r}}{r^3} \qquad \qquad
+\mathbf{F_2} = -\mu m \frac{\mathbf{r}}{r^3}
+$$
+
+Using Newton's second law $\mathbf{F} = m \mathbf{a}$, we can write
+
+$$
+\ddot{\mathbf{r_1}} = \frac{\mu m}{m_1} \frac{\mathbf{r}}{r^3} \qquad \qquad
+\ddot{\mathbf{r_2}} = -\frac{\mu m}{m_2} \frac{\mathbf{r}}{r^3}
+$$
+
+Subtracting the two equations, we get
+
+$$\tag{3.1.4} \boxed{\ddot{\mathbf{r}} = -\mu \frac{\mathbf{r}}{r^3}} $$
+
+{{< callout type="remark" >}}
 In the limit $m_1 \gg m_2$, we get that
 
 - $M = m_1$
@@ -35,7 +61,10 @@ In the limit $m_1 \gg m_2$, we get that
 - $\mathbf{r_1} = \mathbf{0}$
 - $\mathbf{r_2} = \mathbf{r}$
 
-We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest. The separation vector $\mathbf{r}$ also gives the trajectory of one of the bodies when viewed in the frame of the other body.
+We see that the trajectory of the separation vector is simply the trajectory of the smaller mass, $m_2$, in the center of mass frame, while the larger mass $m_1$ is at rest.
+
+The separation vector $\mathbf{r}$ also gives the trajectory of one of the bodies when viewed in the frame of the other body (which is a non-inertial frame).
+{{< /callout >}}
 
 ## Constants of Motion
 
@@ -72,7 +101,7 @@ Since $\mathbf{h} \cdot \mathbf{r} = 0$, $\mathbf{h}$ lies perpendicular to the 
 
 $$\tag{3.1.2} \mathbf{e} = -\frac{\mathbf{h} \times \dot{\mathbf{r}}}{\mu} - \frac{\mathbf{r}}{r} $$
 
-We have
+Taking its time derivative
 
 $$
 \begin{align*}
@@ -85,9 +114,7 @@ $$
 \end{align*}
 $$
 
-<!-- $$ \implies \frac{d}{dt} \left( \mathbf{h} \times \dot{\mathbf{r}} + \mu \frac{\mathbf{r}}{r} \right) = \mathbf{0} $$ -->
-
-Hence the eccentricity vector is also a constant of motion. It lies in the plane of motion, hence $\mathbf{h} \cdot \mathbf{e} = 0$. It points in the direction of the periapsis. The magnitude of the eccentricity vector is
+we find that the eccentricity vector does not change with time, hence is also a constant of motion. It lies in the plane of motion ($\mathbf{h} \cdot \mathbf{e} = 0$) and points in the direction of the periapsis. The magnitude of the eccentricity vector is given by
 
 $$\tag{3.1.3} e = \sqrt{1 + \frac{2 \varepsilon h^2}{\mu^2}} $$
 
