@@ -222,7 +222,7 @@ A universe with $\Lambda = 0$ is called a Minkowski or flat universe. The Minkow
 
 ## Deceleration Parameter
 
-Taylor expandinf the scale factor gives
+Taylor expanding the scale factor gives
 
 $$
 \begin{align*}

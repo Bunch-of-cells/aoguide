@@ -140,7 +140,7 @@ The reason why a factor of $1+z$ comes in the angular diameter distance is becau
 
 The cosmic event horizon is the maximum comoving distance a light beam emitted now can travel
 
-$$ d_\text{H} = \int_{t_0}^{\infty} \frac{c}{a(t)} dt$$
+$$ d_\text{EH} = \int_{t_0}^{\infty} \frac{c}{a(t)} dt$$
 
 The most distant objects one can see are those for which light emitted at $t = 0$ is just reaching us now at $t = t_0$. The proper distance to such an object is called the particle horizon distance
 

@@ -7,7 +7,7 @@ next: N
 
 ## Drawing Graphs
 
-Drawing graphs is one of the most important aspects of data analysis. Questions in astronomy olympiads generally only ask to draw scatter plot graphs, with just a few exceptions. A good graph should be easy to read and interpret, and should clearly convey the information being presented. The key points to remember when drawing graphs are:
+Drawing graphs is one of the most important aspects of data analysis. Questions in astronomy olympiads generally only ask to draw scatter plot graphs or histograms, with just a few exceptions. A good graph should be easy to read and interpret, and should clearly convey the information being presented. The key points to remember when drawing graphs are:
 
 - Use a sharp pencil to draw graphs. Do not use pen on the graph paper.
 - Mark and label the axes clearly with the units of measurement.

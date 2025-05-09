@@ -56,3 +56,27 @@ $$\tag{6.2.3} v = cz = H_0 r$$
 where $H_0 = 70 \pm 7$ km/s/Mpc is the Hubble constant, and $r$ is the distance to the galaxy.
 
 ## Apparent Superluminal Motion
+
+Naivelym an object moving with $\mu = 0.7 \, \mathrm{mas \, yr^{-1}}$ at a distance of $700 \, \mathrm{Mpc}$gives a tangential velocity of $v_t \approx 7c$, which is not possible. However, this apparent superluminal motion results from relativistic motion close to the line of sight. At time $t_1$, a radio source is at $B_1$ and at time $t_2 = t_1 + \delta t$ at $B_2$, then the photons emitted at $B_1$ at time $t_1$ are detected by the observer at
+
+$$\tag{6.2.4} t_1' = t_1 + \frac{d + v \delta t \cos \theta}{c}$$
+
+where $D$ is the distance from the source to the observer. Photons emitted at $B_2$ at time $t_2$ are detected at
+
+$$\tag{6.2.5} t_2' = t_2 + \frac{(d^2 + v^2 \delta t^2 \cos^2 \theta)^{1/2}}{c} \approx t_2 + \frac{d}{c}$$
+
+where $v \delta t \ll d$. Therfore the time difference between the two photons is
+
+$$\tag{6.2.6} \Delta t = t_2' - t_1' = \delta t (1 - \beta \cos \theta)$$
+
+where $\beta = v/c$. The angle $\theta$ is the angle between the line of sight and the direction of motion of the source.
+
+During the time $\Delta t$, the radio source will move by an angle $\Delta \phi$. Hence the proper motion $\mu$ is
+
+$$\tag{6.2.7} \mu = \frac{\Delta \phi}{\Delta t} = \frac{v \sin \theta}{d(1 - \beta \cos \theta)}$$
+
+This gives the transverse velocity
+
+$$\tag{6.2.8} \beta_t = \frac{\mu d}{c} = \frac{\beta \sin \theta}{1 - \beta \cos \theta}$$
+
+The maximum value of $\beta_t$ occurs when $\theta = \cos^{-1} \beta$. As $\beta \to 1$, $\beta_t \to \infty$.

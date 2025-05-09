@@ -55,4 +55,33 @@ The critical mass, called Jean's mass is given by
 
 $$\tag{5.4.2} M_J = \frac{4}{3} \pi \lambda_J^3 \rho = \sqrt{ \frac{375}{4 \pi} \left( \frac{k}{Gm_H} \right)^3 \frac{T^3}{\mu^3 \rho} } $$
 
-## Stromgren Sphere
+## Strömgren Sphere
+
+If a hot star is embedded in a region of uniform density gas, then it will be surrounded by a sphere of almost completely ionized hydrogen. At the surface of the sphere (~1 photon mean free path thick), th ionized fraction of hydrogen frops from nearly 1 to nearly 0. Let the rate of ionization be $Q$. This is the rate at which the central stat is producing photons with $h \nu > 13.6 \, \mathrm{eV}$.
+
+$$\tag{5.4.3} Q_* = \int_{\nu_0}^{\infty} \frac{L_\nu}{h \nu}\, d\nu$$
+
+where $L_\nu$ is the spectral luminosity of the star. The mean free path of an electron is
+
+$$\tag{5.4.4} l_\text{rec} = \frac{1}{n_p \sigma_\text{rec}}$$
+
+where $n_p$ is the number density of protons (ionized H) and $\sigma_\text{rec}$ is the cross section for recombination. Let the velocity of electron be $v_e$, then the initial recombinations per unit volume will be
+
+$$\tag{5.4.5} t_\text{rec} = \frac{l_\text{rec}}{v_e} = \frac{1}{n_p \sigma_\text{rec} v_e}$$
+$$\tag{5.4.6} N_\text{rec} = \frac{n_e}{t_\text{rec}} = n_e n_p \sigma_\text{rec} v_e$$
+
+where $n_e$ is the number density of electrons. The recombination coefficient is defined as
+
+$$\tag{5.4.7} \alpha(T_e) = \langle \sigma_\text{rec} v_e \rangle \propto T_e^{-1/2}$$
+
+$T_e$ is the temperature of the electrons (may or may not be equal to $T_*$). For overall charge neutrality, $n_e = n_p$.
+
+$$ \therefore N_\text{rec} = n_e^2 \alpha (T_e) $$
+
+For ionization fraction of H to be in equillibrium,
+
+$$\tag{5.4.8} Q_* = N_\text{rec} V$$
+
+where $V = \frac{4}{3} \pi R_S^3$ is the volume of the sphere, and $R_S$ is the radius of the Strömgren sphere, called the Strömgren radius. We can solve for $R_S$ as
+
+$$\tag{5.4.9} R_S = \left( \frac{3}{4 \pi} \frac{Q_*}{n_e^2 \, \alpha (T_e)} \right)^{1/3} \propto T_e^{-1/6}$$

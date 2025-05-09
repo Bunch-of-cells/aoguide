@@ -15,3 +15,6 @@ To add:
 - Earth's magnetosphere
 - Other planets
 - Sun
+- Compact stars
+- Appendix
+- Positional Astronomy
