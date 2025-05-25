@@ -87,11 +87,11 @@ $$ 2 \frac{GM_M R_m m'}{d^3} = \frac{GM_m m'}{R_m^2} $$
 
 where $m'$ is a mass closest to the primary body, on the satellite's surface. This gives
 
-$$\tag{3.5.6} \boxed{ d = R_m \left( \frac{2M_m}{M_m} \right)^{1/3} = R_M \left( \frac{2 \rho_m}{\rho_m} \right)^{1/3}} $$
+$$\tag{3.5.6} \boxed{ d = R_m \left( \frac{2M_M}{M_m} \right)^{1/3} = R_M \left( \frac{2 \rho_M}{\rho_m} \right)^{1/3}} $$
 
 The above expression is for a rigid satellite. For a fluid satellite,
 
-$$ d \approx 2.44\, R_M \left( \frac{\rho_m}{\rho_m} \right)^{1/3} $$
+$$ d \approx 2.44\, R_M \left( \frac{\rho_M}{\rho_m} \right)^{1/3} $$
 
 ## Hill Sphere
 

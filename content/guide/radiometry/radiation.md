@@ -135,7 +135,7 @@ For an isotropic source with energy density $u$, the its internal pressure $P$ i
 
 $$\tag{2.1.13} P = \frac{1}{3} u = \frac{4\pi}{3c} B$$
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P1,Solution" >}}
     {{< tab >}}
     What is the pressure of radiation from a flux density $F$ falling on a surface which perfectly absorbs all the radiation falling on it? What is the pressure of radiation on a surface which perfectly reflects all the radiation falling on it? Consider the case when the direction of the incoming radiation is perpendicular to the surface.
     {{< /tab >}}
@@ -270,7 +270,7 @@ If the object is not a perfect blackbody, we can still use the Stefan-Boltzmann 
 
 $$\tag{2.1.26} L = A \epsilon \sigma T^4$$
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P2,Solution" >}}
     {{< tab >}}
     The flux density of a star on Earth is observed to be $F = 10^{-12} \, \mathrm{W \, m^{-2}}$. The star has a parallax of $4 \, \mathrm{mas}$. From spectroscopic measurements, it is found that the star has an effective temperature of $T = 5000 \, \mathrm{K}$. What is the radius of the star?
     {{< /tab >}}
@@ -352,7 +352,7 @@ The reason eq 2.1.28 and 2.1.30 are different is because the peak of the spectru
 
 Equation 2.1.27 and 2.1.29 are together known as Wien's displacement law.
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P3,Solution" >}}
     {{< tab >}}
     Using Wien's displacement law, determine the peak wavelength of radiation emitted by stars with the following temperatures, and indicate what color they would appear to human eyes:
 
@@ -435,7 +435,7 @@ The mean energy of the photons emitted by the blackbody is
 
 $$\tag{2.1.34} \langle E \rangle = \frac{u(T)}{n(T)} = \frac{\pi^4}{30 \zeta(3)} kT \approx 2.70 \, kT$$
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P4,Solution" >}}
     {{< tab >}}
     Find the average energy of the cosmic microwave background (CMB) photons. The CMB is a nearly perfect blackbody radiation from the early universe, with a blackbody temperature of 2.7 K.
     {{< /tab >}}
@@ -467,9 +467,9 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
 ## Problems
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P5,Solution,IOAA 2010" >}}
     {{< tab >}}
-    $\text{(IOAA 2010)}$ Estimate the effective temperature of the photosphere of the Sun using the naked eye colour of the Sun.
+    Estimate the effective temperature of the photosphere of the Sun using the naked eye colour of the Sun.
     {{< /tab >}}
 
     {{< tab >}}
@@ -488,7 +488,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P6,Solution" >}}
     {{< tab >}}
     Find the size of a spherical grain of dust (density $\rho = 5000 \, \mathrm{kg \, m^{-3}}$) which can remain stationary in space due to radiation pressure from the Sun.
     {{< /tab >}}
@@ -522,7 +522,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P7,Solution" >}}
     {{< tab >}}
     Consider a surface of surface area $A$ and reflection coefficient of $\alpha$, that is it reflects a fraction $\alpha$ of the radiation falling on it. The rest of the radiation is absorbed. The surface is illuminated by radiation of flux density $F$, at an angle $\theta$ to the normal. Find the force exerted on the surface by the radiation.
     {{< /tab >}}
@@ -555,9 +555,9 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P8,Solution,NAC 2025" >}}
     {{< tab >}}
-    $\text{(NAC 2025)}$ Consider a hypothetical solar sail that starts its trajectory just outside the surface of the Sun and aims to reach Jupiter’s orbit. This is a square sail with a size length of $l = 50 \, \mathrm{m}$, a mass of $m = 2.0 \, \mathrm{kg}$, and a reflectivity of $\eta = 85\%$. The remaining $15\%$ of the photons are absorbed by the sail. In order to simplify the calculations, only take into account the gravity and radiation pressure from the Sun, and assume that the sail is initially stationary with respect to the Sun. Estimate how long it would take for this sail to reach Jupiter’s orbit. Feel free to make reasonable approximations if needed.
+    Consider a hypothetical solar sail that starts its trajectory just outside the surface of the Sun and aims to reach Jupiter’s orbit. This is a square sail with a size length of $l = 50 \, \mathrm{m}$, a mass of $m = 2.0 \, \mathrm{kg}$, and a reflectivity of $\eta = 85\%$. The remaining $15\%$ of the photons are absorbed by the sail. In order to simplify the calculations, only take into account the gravity and radiation pressure from the Sun, and assume that the sail is initially stationary with respect to the Sun. Estimate how long it would take for this sail to reach Jupiter’s orbit. Feel free to make reasonable approximations if needed.
     {{< /tab >}}
 
     {{< tab >}}
@@ -617,7 +617,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="Problem,Solution" >}}
+{{< tabs items="P9,Solution" >}}
     {{< tab >}}
     Assuming the human body to be a perfect blackbody, estimate the number of photons emitted in a bandwidth 10% wide around wavelength 550 nm (peak emission wavelength of Sun), by a person in their entire life. Make reasonable assumptions.
     {{< /tab >}}
@@ -652,5 +652,85 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     $$\boxed{N \approx 4 \, \mathrm{photons}}$$
     
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P10,Solution,IOAA 2018" >}}
+    {{< tab >}}
+    The Five-hundred-meter Aperture Spherical radio Telescope (FAST) is a single-dish radio telescope located  in Guizhou Province, China. The physical diameter of the dish is 500 m, but during observations, the  effective diameter of the collecting area is 300 m. Consider observations of the thermal radio emission from the photosphere of the Sun at 3.0 GHz with this  telescope and a receiver with bandwidth 0.3 GHz.
+
+    a) Calculate the total energy ($E_\odot$) that the receiver will collect during 1 hour of observation.  <br>
+    b) Estimate the energy needed to turn over one page of your answer sheet ($E'$). Hint: the typical surface  density of paper is $80 \mathrm{\,g \, m^{-2}}$ <br>
+    c) Which one is larger?
+    {{< /tab >}}
+
+    {{< tab >}}
+    Since we are measuring radio frequencies, we can use the Rayleigh-Jeans approximation
+
+    $$ B_\nu(T) = \frac{2 \nu^2 kT}{c^2} $$
+
+    The spectral luminosity of the Sun is
+
+    $$L_\nu = 4 \pi^2 R_\odot^2 B_\nu(T)$$
+
+    The spectral flux density recieved at Earth is
+
+    $$F_\nu = \frac{L_\nu}{4 \pi D^2}$$
+
+    Hence the total energy collected by FAST in 1 hour is
+
+    $$E_\odot = F_\nu \Delta \nu \cdot A \cdot t = \pi \frac{2 \nu^2 kT}{c^2} \frac{R_\odot^2}{D^2} \Delta \nu \cdot \frac{\pi}{4} d^2 \cdot t$$
+
+    This gives $\boxed{E_\odot \approx 8.5 \times 10^{-5} \mathrm{\,J}}$
+    
+    The total mass of an A4 paper is
+
+    $$ m = \rho A = 80 \, \mathrm{g \, m^{-2}} \times 297 \, \mathrm{mm} \times 210 \, \mathrm{mm} \approx 5 \, \mathrm{g} $$
+
+    The energy required to turn the paper is the same as the energy required to lift the center of mass of the paper by $h = \frac{210}{2} , \mathrm{mm} = 105 \, \mathrm{mm}$
+
+    $$E' = mgh \approx \boxed{5 \times 10^{-3} \, \mathrm{J}}$$
+
+    Therefore, $\boxed{E' > E_\odot}$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P11,Solution,IOAA 2019" >}}
+    {{< tab >}}
+    Since the human body is made mostly of water, it is very efficient at absorbing microwave photons.  Assume that an astronaut’s body is a perfect spherical absorber with mass of $m = 60 \,\mathrm{kg}$, and its  average density and heat capacity are the same as for pure water, i.e. $\rho = 1000 \, \mathrm{kg\,m^{-3}}$ and $C = 4200 \mathrm{\,J\,kg^{-1}\,K^{-1}}$.
+
+    a) What is the approximate rate, in watts, at which an astronaut in intergalactic space would absorb  radiative energy from the Cosmic Microwave Background (CMB)? The spectral energy  distribution of CMB can be approximated by blackbody radiation of temperature $T_\text{CMB} = 2.728 \,\mathrm{K}$. </br>
+    b) Approximately how many CMB photons per second would the astronaut absorb? </br>
+    c) Ignoring other energy inputs and outputs, how long would it take for the CMB to raise the  astronaut’s temperature by $\Delta T = 1 \, \mathrm{K}$?
+    {{< /tab >}}
+
+    {{< tab >}}
+    The radius of the spherical astronaut is
+
+    $$\frac{4}{3} \pi r^3 \rho = m \implies r = \left( \frac{3m}{4\pi \rho} \right)^{1/3}$$
+
+    The surface area of the astronaut is
+
+    $$A = 4 \pi r^2 = 4 \pi \left( \frac{3m}{4\pi \rho} \right)^{2/3}$$
+
+    The power thus absorbed by the astronaut is
+
+    $$P = A \sigma T^4 = 4 \pi \left( \frac{3m}{4\pi \rho} \right)^{2/3} \sigma T_\text{CMB}^4 \approx \boxed{2.3 \times 10^{-6} \, \mathrm{W}}$$
+    
+    The number of photons absorbed per second can be approximated by dividing the total energy absorbed by the mean energy of a CMB photon.The mean energy of a photon is given by
+
+    $$E = 2.70 kT_\text{CMB} \approx 1 \times 10^{-22} \, \mathrm{J}$$
+
+    Thus the number of photons absorbed is
+
+    $$n = \frac{P}{E} \approx \boxed{2.3 \times 10^{16} \, \mathrm{s^{-1}}}$$
+
+    If the time taken to raise the temperature of the astronaut by $\Delta T$ is $t$, then
+
+    $$\Delta Q = m C \Delta T = P t$$
+
+    Rearranging gives
+
+    $$t = \frac{m C \Delta T}{P} \approx \boxed{3430 \, \mathrm{yr}}$$
     {{< /tab >}}
 {{< /tabs >}}

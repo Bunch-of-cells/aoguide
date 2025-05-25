@@ -93,6 +93,26 @@ details :not(.math) {
     color: #fff !important;
 }
 
+/* Third tab (problem number) - subtle purple, at the right of the tab box, not the screen */
+.hextra-tabs-toggle:nth-child(3) {
+    background: #6a5acd !important;   /* Slate Blue - more subdued purple */
+    color: #fff !important;
+    margin-left: auto !important;
+    pointer-events: none !important;  /* Not clickable */
+    cursor: default !important;
+    opacity: 1 !important;
+    border: none !important;
+    box-shadow: none !important;
+    z-index: 2;
+    float: none !important;
+    position: static !important;
+}
+
+/* Ensure the tab container is positioned relative for absolute positioning to work */
+.hextra-tabs {
+    position: relative !important;
+}
+
 /* Add spacing between tab buttons */
 .hextra-tabs-toggle {
     margin-right: 6px;

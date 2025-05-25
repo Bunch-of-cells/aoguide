@@ -15,6 +15,6 @@ To add:
 - Earth's magnetosphere
 - Other planets
 - Sun
-- Compact stars
+- Compact stars; stellar evolution (copy camp notes)
 - Appendix
 - Positional Astronomy
