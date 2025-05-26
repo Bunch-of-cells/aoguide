@@ -1,7 +1,6 @@
 ---
 title: Detectors
-weight: 1
-prev: /guide/optics/
+weight: 4
 ---
 
 ## Focal Length and Aperture
@@ -58,13 +57,21 @@ The upper limit to magnification is set by the quality of the optics and quality
 
 $$ m \le \frac{D}{1 \, \mathrm{mm}} $$
 
-Refracting telescopes suffer from many problems
+## Limiting Magnitude
 
-- Large lenses are heavy and difficult to make
-- Both the surfaces of the lens must be polished to a high degree of accuracy
-- Lenses absorb light, propotional to the thickness of the lens
-- In larger lenses, the glass may deform under its own weight and slide out of focus
-- Lenses bend light of different wavelengths by different amounts, causing chromatic abberation
+For starlight, the limit of unaided eye detection is set at about $6^m$. This limit however can be increased by using a detector with a larger aperture size, such as a telescope. Consider a telescope with an aperture diameter D. Since the flux recieved is directly propotional to the recieving area,
+
+$$ \frac{F_t}{F_e} = \frac{D^2}{d^2} $$
+
+where $d$ is the size of the eye pupil, approximately $8 \, \mathrm{mm}$. The limiting magnitude of the telescope is defined as the magnitude of the faintest object that can be detected by the telescope. The limiting magnitude $m_t$ of a telescope with an aperture diameter D is given by
+
+$$\tag{2.2.4} m_t - m_e = -2.5 \log \left( \frac{F_t}{F_e} \right) = -5 \log \frac{D}{d} $$
+
+where $m_e = 6^m$ is the limiting magnitude of the eye.
+
+100% of the light hitting the aperture is not collected by the telescope. The light is scattered, absorbed, and reflected by the telescope optics. The fraction of light that is actually collected is called the transmission efficiency $\eta$. The limiting magnitude of a telescope with an aperture diameter D and trasmission efficiency $\eta$ is given by
+
+$$ m_t = m_e -2.5 \log \left( \eta \frac{D^2}{d^2} \right)$$
 
 ## Field of view
 

@@ -1,7 +1,7 @@
 ---
 title: Galaxies
 weight: 1
-prev: /guide/galactic-astrophysics/
+prev: /guide/galactic-extragalactic-astrophysics/
 ---
 
 ## Star Clusters

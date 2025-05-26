@@ -1,6 +1,6 @@
 ---
 title: Our Universe
-weight: 1
+weight: 2
 prev: /guide/cosmology/
 ---
 

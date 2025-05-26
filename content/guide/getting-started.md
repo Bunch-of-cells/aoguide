@@ -21,12 +21,10 @@ The topics have been listed in the order of recommended order of study.
 
 {{< cards >}}
   {{< card link="../positional-astronomy" title="Positional Astronomy" >}}
-  {{< card link="../radiometry" title="Radiometry" >}}
+  {{< card link="../photometry" title="Photometry" >}}
   {{< card link="../celestial-mechanics" title="Celestial Mechanics" >}}
-  {{< card link="../optics" title="Optics and Instruments" >}}
   {{< card link="../stellar-astrophysics" title="Stellar Astrophysics" >}}
-  {{< card link="../galactic-astrophysics" title="Galactic Astrophysics" >}}
-  {{< card link="../cosmology" title="Cosmology" >}}
+  {{< card link="../galactic-extragalactic-astrophysics" title="Galactic and Extragalactic Astrophysics" >}}
   {{< card link="../obso" title="Observational Astronomy" >}}
   {{< card link="../data" title="Data Analysis" >}}
 {{< /cards >}}

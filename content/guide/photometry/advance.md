@@ -1,6 +1,6 @@
 ---
 title: Advanced Topics
-weight: 4
+weight: 6
 ---
 
 ## Synchrotron Radiation
@@ -81,3 +81,73 @@ $$\tag{5.4.4} I_\nu (\tau_\nu) = I_\nu (0) \, e^{-\tau_\nu} + \int_0^{\tau_\nu} 
 where $I_\nu (0)$ is the intensity of the background radiation.
 
 This equation can be used to model stellar and planetary atmospheres, and the radiation field in the interstellar medium.
+
+## Albedo
+
+The term albedo defines the ability of a body to reflect light.
+
+Consider a planet or radius $R$ at a distance $r$ from the Sun. The total flux incident on the surface of the planet is
+
+$$ L_\text{in} = \pi R^2 \frac{L_\odot}{4 \pi r^2} $$
+
+The bond albedo $A$ is defined as the ratio of the emergent flux to the incident flux
+
+$$ L_\text{out} = A L_\text{in} $$
+
+The radiation is radiated anisotropically and depends on the phase angle $\alpha$. The flux density observed at Earth will be
+
+$$ F = C \, \Phi (\alpha) \, \frac{L_\text{out}}{4\pi d^2} = \frac{CA}{4\pi} \, \Phi(\alpha) \, \frac{1}{d^2} \,L_\text{in} $$
+
+where $d$ is the distance of the planet from Earth, $C$ is a constant and $\Phi(\alpha)$ is called the phase function. It is one when the phase angle is zero, $\Phi(\alpha = 0^\circ) = 1$. The total flux emittied is $L_\text{out}$, therefore
+
+$$ \frac{C}{4 \pi d^2} \int_S \Phi(\alpha) \, dS = 1 $$
+$$ \implies C = \frac{4 \pi d^2}{\int_S \Phi(\alpha) \, dS} = \frac{2}{\int_0^\pi \Phi(\alpha) \sin \alpha \, d\alpha} = \frac{4}{q} $$
+
+The quantity $q = 2 \int_0^\pi \Phi(\alpha) \sin \alpha \, d \alpha$ is the phase integral. We define $\Gamma = \frac{CA}{4\pi}$. The geometric albedo is defined as
+
+$$ p = \pi \Gamma $$
+
+The bond albedo and geometric albedo are related by $A = pq$.
+
+A Lambertian surface is an absolutely white diffuse surface which reflects all radiation. Hence $A = 1$ and
+
+$$ \Phi(\alpha) = \begin{cases} \cos \alpha \qquad &0^\circ \le \alpha \le 90^\circ \\ 0 \qquad &\text{otherwise} \end{cases} $$
+
+From this we get that for a lambertian surface, $p = q = 1$ and $C = 4$. The flux density radiated when $\alpha = 0^\circ$ is
+
+$$ F_L = \frac{1}{\pi} \, \frac{1}{d^2} \, L_\text{in} $$
+
+The flux density when $\alpha = 0^\circ$ for a non-lambertian surface is
+
+$$ F = \frac{CA}{4\pi} \, \frac{1}{d^2} \, L_\text{in} $$
+
+Hence we get that
+
+$$ \frac{F}{F_L} = \frac{CA}{4} = p $$
+
+We can therefore interpret the geometric albedo as the ratio of the flux densities at $\alpha = 0^\circ$ reflected by the planet and a lambertian surface of the same cross-section.
+
+For some surfaces, $p > 1$. For a mirror $p$ is infinite.
+
+The flux density of the reflected light is
+
+$$ F = \frac{p}{\pi} \, \Phi(\alpha) \, \frac{1}{d^2} \, \frac{L_\odot R^2}{4 r^2} $$
+
+The solar flux at Earth is $F_\odot = L_\odot / 4\pi a^2$. Therefore,
+
+$$ m - m_\odot = -2.5 \log \frac{pR^2}{a^2} + 5 \log \frac{dr}{a^2} - 2.5 \log \Phi(\alpha) $$
+
+The absolute magnitude $V(1, 0)$ of a planet is defined as the magnitude of the body if it is at a distance of $1 \, \mathrm{AU}$ from the Earth and Sun at a phase angle of $\alpha = 0^\circ$.
+
+$$ V(1, 0) = m_\odot - 2.5 \log \frac{pR^2}{a^2} $$
+
+Even though this situation is unphysical, it serves as a useful quanitity for computing the apparent magnitudes of planets. The absolute magnitude of a planet can never be observed, and is a property intrinsic to the planet.
+
+$$ m = V(1, 0) + 5 \log \frac{dr}{a^2} - 2.5 \log \Phi(\alpha) $$
+
+The absolute magnitude at a phase angle $\alpha$ is defined as
+
+$$ V(1, \alpha) = V(1, 0) - 2.5 \log \Phi(\alpha) $$
+$$ \implies m = V(1, \alpha) + 5 \log \frac{dr}{a^2} $$
+
+At $\alpha = 0^\circ$, $p = \left( \frac{dr}{aR} \right)^2 10^{-0.4 (m - m_0)}$ where $m_0 = m(\alpha = 0^\circ)$ is the apparent magnitude.

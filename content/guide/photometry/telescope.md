@@ -1,6 +1,6 @@
 ---
 title: Types of Telescopes
-weight: 2
+weight: 5
 ---
 
 ## Refracting Telescopes
@@ -16,6 +16,14 @@ The thin lens equation is given by
 $$\tag{4.2.1} \frac{1}{F} = (n-1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right) $$
 
 where $F$ is the focal length of the lens, $n$ is the refractive index of the lens material, and $R_1$ and $R_2$ are the radii of curvature of the two surfaces of the lens. The term $n - 1$ is called the refractive power of the lens.
+
+Refracting telescopes suffer from many problems
+
+- Large lenses are heavy and difficult to make
+- Both the surfaces of the lens must be polished to a high degree of accuracy
+- Lenses absorb light, propotional to the thickness of the lens
+- In larger lenses, the glass may deform under its own weight and slide out of focus
+- Lenses bend light of different wavelengths by different amounts, causing chromatic abberation
 
 ## Reflecting Telescopes
 
