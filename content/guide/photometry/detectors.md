@@ -118,3 +118,35 @@ $$\tag{4.2.1} \text{SNR} = \frac{N_*}{\sqrt{N_* + N_\text{sky} + p N_d t + p \si
 The dark current is the thermal noise in the CCD. Readout noise, also called bias voltage, leak noise or residual voltage, is the noise introduced while reading out from the CCD. Dynamic range is the maximum SNR of a CCD.
 
 Subtracting the dark frame (image captured with the shutter closed) removes the dark current and readout noise. Dividing by the flat field image removes the pixel-to-pixel variations in the quantum efficiency. Additionally, it is important to calibrate the CCD to ensure accurate measurements.
+
+{{< tabs items="P9,Solution,IOAA 2012" >}}
+    {{< tab >}}
+    An astronomer on Earth observes a globular cluster, which has an angular diameter $\alpha$ and contains $N$ stars, each one with the same absolute magnitude $M_0$, and is at a distance $D$ from the Earth. A biologist is in the center of that cluster.
+
+    a) What is the difference between the combined visual magnitudes of all stars observed by the astronomer and the biologist. Consider that the spatial distribution of stars in the cluster is perfectly homogeneous and the biologist is measuring the combined magnitude of the entire cluster. <br>
+    b) What is the diameter of the astronomer’s telescope, considering he wants to visualize the cluster with the same brightness that the biologist sees? <br>
+    c) What would be the difference between the visual magnitudes observed by the two scientists, if the diameter of the feild of view of the biologist is also $\alpha$.
+    {{< /tab >}}
+
+    {{< tab >}}
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P9,Solution,IOAA 2017" >}}
+    {{< tab >}}
+    Supernova SN 1987A was at its brightest with an apparent magnitude of $+3$ on about 15th May  1987 and then faded, finally becoming invisible to the naked eye by 4$^\text{th}$ February 1988. It is  assumed that brightness $B$ varied with time $t$ as an exponential decline, $B(t) = B_0 e^{-t/\tau}$, where $B_0$ and $\tau$ are constant. The maximum apparent magnitude which can be seen by the naked eye is $+6$.
+
+    a) Determine $\tau$ in days. <br>
+    b) Find the last day that observers could have seen the supernova if they had a 6-inch (15.24cm) telescope with transmission efficiency $T = 0.7$. Assume that the average diameter of the human pupil is 0.6 cm.
+    {{< /tab >}}
+
+    {{< tab >}}
+    **a)** The time difference in days between 15 May 1987 and 4 February 1988 is 265 days. Since the supernova was last visible to naked eye on 4 February 1988, its apparent magnitude on that day was $m = 6$. Since the flux is propotional to the brightness, using Pogson's equation we have
+
+    $$ 6.0 - 3.0 = -2.5 \log \frac{B(t)}{B_0} = 2.5 \frac{t}{\tau} \log e $$
+    $$ \implies \boxed{\tau \approx 96 \, \mathrm{days}} $$
+
+    **b)**
+    
+    {{< /tab >}}
+{{< /tabs >}}

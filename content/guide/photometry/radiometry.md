@@ -364,19 +364,19 @@ Equation 2.1.27 and 2.1.29 are together known as Wien's displacement law.
     {{< tab >}}
     Using Wien's displacement law: $\lambda_\text{peak} = \frac{b_\lambda}{T}$
 
-    a) Red dwarf (3000 K):
+    **a)** Red dwarf (3000 K):
 
     $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{3000} \approx 966 \text{ nm}$$
 
     This is in the near-infrared range, but the visible spectrum tail extends into red wavelengths, making the star appear red.
 
-    b) Sun-like star (5800 K):
+    **b)** Sun-like star (5800 K):
 
     $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{5800} \approx 500 \text{ nm}$$
 
     This is in the green part of the visible spectrum, but the full spectrum makes the star appear yellow-white.
 
-    c) Blue giant (25,000 K):
+    **c)** Blue giant (25,000 K):
 
     $$\lambda_\text{peak} = \frac{2.898 \times 10^{-3}}{25000} \approx 116 \text{ nm}$$
 
@@ -732,5 +732,28 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     Rearranging gives
 
     $$t = \frac{m C \Delta T}{P} \approx \boxed{3430 \, \mathrm{yr}}$$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P12,Solution,IOAA 2023" >}}
+    {{< tab >}}
+    The entrance cavity of a particular bolometer is a cone with an opening angle of $30^\circ$, the surface of which has an energy absorption coefficient of $a = 0.99$. Assume that there is no scattering of the incident radiation on the walls of the cavity, only multiple mirror-like (specular) reflections. The bolometer is connected to a cooler which keeps the bolometer cavity surface at practically $0 \, \mathrm{K}$ temperature. The instrument is orbiting at $r = 2 \, \mathrm{AU}$ from the Sun and is pointed directly at the centre of the Solar disk. Calculate the temperature of a black body which would radiate the same amount of energy as the entire bolometer opening does per unit surface area.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Drawing a diagram, the light entering parallel to the axis of the bolometer reflects six times off of the bolometer walls before escaping back to space. Hence the fraction of energy leaving the bolometer is
+
+    $$ S = (1 - a)^6 = 10^{-12}$$
+
+    The flux density at the bolometer is
+
+    $$ F = \frac{L_\odot}{4 \pi r^2} $$
+
+    The flux density absorbed by the bolometer is thus $F \cdot S$.
+
+    The bolometer must emit the same amount of energy it absorbs to remain in thermal equillibrium. Thus
+
+    $$ F \cdot S = \sigma T^4 $$
+    $$ \implies T = \left( \frac{L_\odot (1-a)^6}{4 \pi \sigma r^2} \right)^{1/4} = \boxed{0.28 \, \mathrm{K}}$$
     {{< /tab >}}
 {{< /tabs >}}

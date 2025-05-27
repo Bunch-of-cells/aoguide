@@ -267,7 +267,7 @@ $$\tag{2.2.10} R = \frac{A_V}{E_{B-V}} \approx 3.1 $$
     {{< /tab >}}
 
     {{< tab >}}
-    a) The distance modulus is given by
+    **a)** The distance modulus is given by
 
     $$m - M = 5 \log \frac{r}{10 \times 10^{-3}} + ar$$
 
@@ -277,7 +277,7 @@ $$\tag{2.2.10} R = \frac{A_V}{E_{B-V}} \approx 3.1 $$
 
     Solving it numerically, we get $\boxed{r \approx 3.28 \, \mathrm{kpc}}$.
 
-    b) The intrinsic color index is given by
+    **b)** The intrinsic color index is given by
 
     $$(B-V)_0 = (B-V) - E_{B-V}$$
 
@@ -293,7 +293,7 @@ $$\tag{2.2.10} R = \frac{A_V}{E_{B-V}} \approx 3.1 $$
 
     $$\boxed{(B-V)_0 = 1.6^m - 1.06^m = 0.54^m}$$
 
-    c) The bolometric magnitude of the star is
+    **c)** The bolometric magnitude of the star is
 
     $$M_\text{bol} = M_V + BC = 1.3^m - 0.6^m = 0.7^m$$
 
@@ -347,5 +347,240 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     Hence the distance to Vega is approximately $\boxed{7.7 \, \mathrm{pc}}$.
 
     Note that since Vega is so close to us, the extinction effects are negligible, and we can ignore them in this case.
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P6,Solution,IOAA 2012" >}}
+    {{< tab >}}
+    An old planetary nebula, with a white dwarf (WD) in its center, is located 50 pc away from Earth. Exactly in the same direction, but behind the nebula, lies another WD, identical to the frist, but located at 150 pc from the Earth. Consider that the two WDs have absolute bolometric magnitude +14.2 and intrinsic color indexes $B - V = 0.300$ and $U - V = 0.330$. Extinction occurs in the interstellar medium and in the planetary nebula.
+
+    When we measure the color indices for the closer WD (the one who lies at the center of the nebula), we find the values $B - V = 0.327$ and $U - B = 0.038$. In this part of the Galaxy, the interstellar extinction rates are 1.50, 1.23 and 1.00 magnitudes per kiloparsec for the filters U, B and V, respectively. Calculate the color indices as they would be measured for the second star.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Let $B_0$, $V_0$, $U_0$ be the intrinsic absolute magnitudes of the white dwarf. Let $a_B$, $a_V$, $a_U$ be the interstellar extinction coefficients per kpc. Let $A_{neb,B}$, $A_{neb,V}$, $A_{neb,U}$ be the total extinction for the planetary nebula around the first WD, for light travelling from the centre of the nebula to the edge.
+
+    $$(U-B)_0 = (U-V)_0 - (B-V)_0 = 0.330 - 0.300 = 0.030$$
+
+    For the closer WD,
+
+    $$(U-V)_1 = (U-B)_1 + (B_V)_1 = 0.038 + 0.327 = 0.365$$
+    $$(B-V)_1 = (B-V)_0 + (a_B - a_V) r + (A_{neb,B} - A_{neb,V})$$
+    $$\begin{align*}
+    \therefore (A_{neb,B} - A_{neb,V}) &= (B-V)_1 - (B-V)_0 - (a_B - a_V) r \\ &= 0.0155
+    \end{align*}$$
+
+    Similarily,
+
+    $$\begin{align*}
+    (A_{neb,U} - A_{neb,V}) &= (U-V)_1 - (U-V)_0 - (a_U - a_V) r \\ &= 0.0100
+    \end{align*}$$
+    $$\begin{align*}
+    (A_{neb,U} - A_{neb,B}) &= (U-B)_1 - (U-B)_0 - (a_U - a_B) r \\ &= -0.0055
+    \end{align*}$$
+
+    For second white dwarf, the extinction in planetary nebula will be doubled as extinction the light from this pulsar has to cross the entire diameter of the nebula. Overall distance of this pulsar is 3 times larger.
+
+    $$(B-V)_2 = (B-V)_0 + 3(a_B-a_V)r + 2(A_{neb,B} - A_{neb,V})$$
+    $$\implies \boxed{(B-V)_2 \approx 0.366}$$
+    $$(U-V)_2 = (U-V)_0 + 3(a_U-a_V)r + 2(A_{neb,U} - A_{neb,V})$$
+    $$\implies \boxed{(U-V)_2 \approx 0.425}$$
+    $$(U-B)_2 = (U-B)_0 + 3(a_U-a_B)r + 2(A_{neb,U} - A_{neb,B})$$
+    $$\implies \boxed{(U-B)_2 \approx 0.060}$$
+
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P7,Solution,IOAA 2008" >}}
+    {{< tab >}}
+    A UBV photometric (UBV Johnson’s) observation of a star gives $U = 8.15$, $B = 8.50$, and $V = 8.14$. Based on the spectral class, one gets the intrinsic colour $(U − B)_0 = −0.45$. If the star is known to have radius of $2.3R_\odot$, absolute bolometric magnitude of $−0.25$, and bolometric correction (BC) of $−0.15$, determine:
+
+    a) the intrinsic magnitudes U, B, and V of the star <br>
+    b) the effective temperature of the star <br>
+    c) the distance to the star
+
+    Note: Take, for the typical interstellar matters, the ratio of total to selective extinction $R_V = 3.2$ and the colour excess in $(B − V)$ to be about 72% of the colour excess in $(U − B)$. 
+    {{< /tab >}}
+
+    {{< tab >}}
+    **a)** Let intrinsic magnitudes of the star be $U_0$, $B_0$, and $V_0$ respectively.
+
+    $$E_{U-B} = (U-B) - (U - B)_0 = (3.15 - 8.50) - (-0.45) = 0.1$$
+
+    Since $E_{U-B} = 0.72 \, E_{B-V}$, $E_{B-V} = \frac{0.1}{0.72} = 0.14$.
+
+    Using the relation $A_V = R_V \, E_{B-V}$, we get
+
+    $$A_V = 3.2 \cdot 0.14 = 0.45$$
+    $$\therefore \boxed{V_0 = V + A_V = 7.69}$$
+
+    The intrinsic $B_0$ and $U_0$ color can be found using
+
+    $$(B-V)_0 = (B-V) - E_{B-V} = (8.50 - 8.14) - 0.14 = 0.22$$
+    $$\begin{align*}
+    \implies &\boxed{B_0 = V_0 + (B-V)_0 = 7.91}
+    \\ &\boxed{U_0 = B_0 + (U-B)_0 = 7.46}
+    \end{align*}$$
+
+    **b)** Comparing the star's bolometric magnitude to that of the Sun,
+
+    $$\begin{align*}
+    &M_\text{bol} - M_{\odot, \text{bol}} = -2.5 \log \frac{L}{L_\odot}
+    \\ \implies &M_{\odot, \text{bol}} - M_\text{bol} = 5 \log \frac{R}{R_\odot} + 10 \log \frac{T}{T_\odot}
+    \end{align*}$$
+
+    Substituting the values, we get
+
+    $$\boxed{T = 2.07 T_\odot = 12000 \, \mathrm{K}}$$
+
+    **c)** The absolute visual magnitude can be found using the bolometric correction
+
+    $$M_V = M_\text{bol} + BC = -0.25 + (-0.15) = -0.40$$
+
+    Hence the distance can be found
+
+    $$m_V - M_V = 5 \log \frac{r}{10 \, \mathrm{pc}}$$
+    $$\implies 7.69 - (-0.40) = 5 \log \frac{r}{10}$$
+    $$\implies \boxed{r \approx 415 \, \mathrm{pc}}$$
+
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P8,Solution,IOAA 2012" >}}
+    {{< tab >}}
+    A pulsar, located 1000 pc far from Earth and 10,000 times more luminous than our Sun, emits radiation only from its two opposite poles, creating a homogeneous emission beam shaped as double cone with opening angle $\alpha = 4^\circ$. Assuming the angle between the rotation axis and the emission axis is $\theta = 30^\circ$, and assuming a random orientation of the pulsar beams in relation to an observer on Earth, what is the probability of detecting the pulses? In case we can see it, what is the apparent bolometric magnitude of the pulsar?
+    {{< /tab >}}
+
+    {{< tab >}}
+    As the pulsar rotates, its beam sweeps out a conical surface. The solid angle into which radiation is emitted (by both poles) in one rotation is
+
+    $$\begin{align*}
+    \Omega &= 2 \cdot \left[ 2 \pi (1 - \cos (\theta + \frac{\alpha}{2})) - 2 \pi (1 - \cos (\theta - \frac{\alpha}{2})) \right]
+    \\ &= 8 \pi \sin \theta \sin \frac{\alpha}{2}
+    \end{align*}$$
+
+    To detect the pulsar, Earth must lie inside this solid angle. Hence the probability is
+
+    $$p = \frac{\Omega}{4 \pi} = 2 \sin \theta \sin \frac{\alpha}{4} \approx \boxed{0.035}$$
+
+    The pulsar emits radiation into a cone having solid angle
+
+    $$\Omega = 2 \cdot 4 \pi \sin^2 \frac{\alpha}{4}$$
+
+    Thus the flux recieved on Earth is
+
+    $$F = \frac{L}{A} = \frac{L}{\omega r^2} = \frac{L}{8 \pi r^2} \frac{1}{\sin^2 \frac{\alpha}{4}}$$
+
+    Comparing the flux with the solar flux gives the apparent magnitude of the pulsar
+
+    $$\begin{align*}
+    m &= M_\odot - 2.5 \log \frac{F}{F_\odot}
+    \\ &= M_\odot - 2.5 \log \frac{L}{8 \pi r^2 \sin^2 \frac{\alpha}{4}} \frac{4 \pi r_0^2}{L_\odot}
+    \\ &= M_\odot -2.5 \log \frac{L}{L_\odot} + 5 \log \frac{r}{10 \, \mathrm{pc}} + 5 \log (\sqrt{2} \sin \frac{\alpha}{4})
+    \\ &= 4.72 - 8.04 = \boxed{-3.32}
+    \end{align*}$$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P9,Solution,IOAA 2018" >}}
+    {{< tab >}}
+    A star has an apparent magnitude $m_U = 15.0$ in the U-band. The U-band filter is ideal, i.e., it has perfect (100%) transmission within the band and is completely opaque (0% transmission) outside the band. The  filter is centered at 360 nm, and has a width of 80 nm. It is assumed that the star also has a flat energy spectrum with respect to frequency. The conversion between magnitude, $m$, in any band and flux density, $f$, of a star in Jansky is given by
+
+    $$f = 3631 \times 10^{-0.4m} \, \mathrm{Jy}$$
+
+    a) Approximately how many U-band photons, $N_0$, from this star will be incident normally on a  $1 \, \mathrm{m^2}$  area at the top of the Earth's atmosphere every second?
+
+    This star is being observed in the U-band using a ground based telescope, whose primary mirror has a  diameter of $2.0 \, \mathrm{m}$. Atmospheric extinction in U-band during the observation is 50%. You may assume that the seeing is diffraction limited. Average surface brightness of night sky in U-band was measured to be $22.0 \, \mathrm{mag/arcsec^2}$.
+
+    b) What is the ratio, $R$, of number of photons received per second from the star to that received from the sky, when measured over a circular aperture of diameter $2''$? <br>
+    c) In practice, only 20% of U-band photons falling on the primary mirror are detected. How many photons, $N_t$, from the star are detected per second?
+    {{< /tab >}}
+
+    {{< tab >}}
+    ****a)**** The U-band is defined as ($360 \pm 40$) nm. Thus, the minimum, maximum and average frequencies of the band are
+
+    $$\begin{align*}
+    \nu_\text{min} &= \frac{c}{\lambda_\text{max}} = 7.495 \times 10^{14} \, \mathrm{Hz} \\
+    \nu_\text{max} &= \frac{c}{\lambda_\text{min}} = 9.369 \times 10^{14} \, \mathrm{Hz} \\
+    \nu_\text{avg} &= \frac{\nu_\text{min} + \nu_\text{max}}{2} = 8.432 \times 10^{14} \, \mathrm{Hz} \\
+    \Delta \nu &= \nu_\text{max} - \nu_\text{min} = 1.874 \times 10^{14} \, \mathrm{Hz}
+    \end{align*}$$
+
+    $$\therefore f = 3631 \times 10^{-0.4 \cdot 15.0} \, \mathrm{Jy} = 3.631 \times 10^{-29} \, \mathrm{W \, Hz^{-1} \, m^{-2}}$$
+
+    Now, $N_0 \times h \nu_\text{avg} = \Delta \nu \cdot f \cdot A \cdot \Delta t$, where $A = 1 \, \mathrm{m^2}$ and $\Delta t = 1 \, \mathrm{s}$.
+
+    $$ \therefore N_0 = \frac{f A \Delta \nu \Delta t}{h \nu_\text{avg}} \approx \boxed{12180}$$
+
+    **b)** Let us call sky flux per square arcsec as $\Phi$ and total sky flux for the given aperture as $\phi_\text{sky}$. Let total star flux be $\phi_\text{st}$.
+
+    $$\phi_\text{sky} = \Phi A = \pi (1'')^2 \Phi$$
+
+    Using the formula for surface brightness, we get that the magnitude corresponding to this flux is
+
+    $$m_{sky} = 22.0 + 2.5 \log \frac{\Phi}{\phi_\text{sky}} = 20.76^m$$
+
+    As extinction is 50%,
+
+    $$R = \frac{0.5 \phi_\text{st}}{\phi_\text{sky}} = 0.5 \times 10^{-0.4(15 - 20.76)} \approx \boxed{100}$$
+
+    **c)** Equating the number of photons,
+    
+    $$N_T \times 1 \, \mathrm{m} = N_0 \times 0.5 \times 0.2 \times A_t$$
+    $$\implies N_T = 12180 \times 0.5 \times 0.2 \times \left( \frac{2.0}{2} \right)^2 \approx \boxed{3813}$$
+
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P10,Solution,IOAA 2018" >}}
+    {{< tab >}}
+    The star $\beta$-Doradus is a Cepheid variable star with a pulsation period of 9.84 days. We make a simplifying assumption that the star is brightest when it is most contracted (radius being $R_1$) and it is faintest when it is most expanded (radius being $R_2$). For simplicity, assume that the star maintains its spherical shape and behaves as a perfect black body at every instant during the entire cycle. The bolometric magnitude of the star varies from $3.46$ to $4.08$. From Doppler measurements, we know that during pulsation the stellar surface expands or contracts at an average radial speed of $12.8 \, \mathrm{km \, s^{-1}}$. Over the period of pulsation, the peak of thermal radiation (intrinsic) of the star varies from 531.0 nm to 649.1 nm.
+
+    a) Find the ratio of radii of the star in its most contracted and most expanded states ($R_1/R_2$). <br>
+    b) Find the radii of the star (in metres) in its most contracted and most expanded states ($R_1$ and $R_2$). <br>
+    c) Calculate the flux of the star, $F_2$, when it is in its most expanded state. <br>
+    d) Find the distance to the star, $D_\text{star}$, in parsecs.
+    {{< /tab >}}
+
+    {{< tab >}}
+    **a)** The ratio of the fluxes is
+
+    $$m_1 - m_2 = -2.5 \log \frac{F_1}{F_2} \implies \frac{F_1}{F_2} = 10^{-0.4(m_1 - m_2)} = 1.77$$
+
+    The flux is given by $F = \frac{4 \pi R^2 \sigma T^4}{4 \pi D^2}$, if the star is at a distance $D$ from the observer.
+    
+    Hence we get that
+
+    $$\frac{F_1}{F_2} = \frac{R_1^2 T_1^4}{R_2^2 T_2^4} = 1.77$$
+
+    Using Wien's displacement law, $\frac{T_1}{T_2} = \frac{\lambda_2}{\lambda_1}$.
+
+    $$\implies \frac{R_1}{R_2} = \sqrt{\frac{F_1}{F_2}} \left( \frac{\lambda_1}{\lambda_2} \right)^2 = \boxed{0.890}$$
+
+    **b)** The radial velocity causes the change in radius of the star
+
+    $$R_2 - R_1 = v \cdot \frac{P}{2} = 5.441 \times 10^9 \, \mathrm{m}$$
+    $$(1-0.890)R_2 = 5.441 \times 10^9 \, \mathrm{m}$$
+    $$\begin{align*}
+    \therefore \: &\boxed{R_2 = 4.95 \times 10^10 \, \mathrm{m}} \\
+    &\boxed{R_1 = 4.40 \times 10^{10} \, \mathrm{m}}
+    \end{align*}$$
+
+    **c)** To get the absolute value of flux ($F_2$) we must compare it with observed flux of the Sun.
+
+    $$m_2 - m_\odot = -2.5 \log \frac{F_2}{F_\odot}$$
+    $$\implies F_2 = F_\odot \cdot 10^{-0.4(m_2 - m_\odot)}$$
+
+    $$F_2 = 1361 \, \mathrm{W \, m^{-2}} \cdot 10^{-0.4(4.08 + 26.72)} = \boxed{6.51 \times 10^{-10} \, \mathrm{W \, m^{-2}}}$$
+
+    **d)** The temperature of the star when it is fully expanded is
+
+    $$T_2 = \frac{b}{\lambda_2} = 4465 \, \mathrm{K}$$
+
+    The distance can be found using the observed flux
+
+    $$F_2 = \frac{4 \pi R_2^2 \sigma T_2^4}{4 \pi D_\text{star}^2}$$
+    $$\implies D_\text{star} = R_2 T_2^2 \sqrt{\frac{\sigma}{F_2}} = \boxed{298 \, \mathrm{pc}}$$
+
     {{< /tab >}}
 {{< /tabs >}}
