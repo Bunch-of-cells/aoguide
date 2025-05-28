@@ -1,5 +1,5 @@
 ---
-title: Magnitude
+title: Magnitude Systems
 weight: 2
 ---
 

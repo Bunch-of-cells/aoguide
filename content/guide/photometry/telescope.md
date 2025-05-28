@@ -5,92 +5,98 @@ weight: 5
 
 ## Refracting Telescopes
 
-The refracting telescope is a telescope that uses a lens to form an image. The lens is called the objective lens, and it is usually a large, heavy piece of glass. The eyepiece lens is used to magnify the image formed by the objective lens.
+A refracting telescope uses a lens to form an image. The main lens, called the objective lens, is typically a large, heavy piece of glass. The eyepiece lens magnifies the image produced by the objective lens.
 
 ### Thin Lens Approximation
 
-The thin lens approximation is used to simplify the analysis of lenses. It assumes that the lens is thin compared to its focal length, and that the rays of light passing through the lens are nearly parallel.
+The thin lens approximation simplifies the analysis of lenses by assuming the lens is thin compared to its focal length and that light rays passing through the lens are nearly parallel.
 
-The thin lens equation is given by
+The thin lens equation is:
 
-$$\tag{4.2.1} \frac{1}{F} = (n-1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right) $$
+$$\tag{2.5.1} \frac{1}{F} = (n-1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right) $$
 
 where $F$ is the focal length of the lens, $n$ is the refractive index of the lens material, and $R_1$ and $R_2$ are the radii of curvature of the two surfaces of the lens. The term $n - 1$ is called the refractive power of the lens.
 
-Refracting telescopes suffer from many problems
+{{< callout type="remark" >}}
+Refracting telescopes have several drawbacks:
 
-- Large lenses are heavy and difficult to make
-- Both the surfaces of the lens must be polished to a high degree of accuracy
-- Lenses absorb light, propotional to the thickness of the lens
-- In larger lenses, the glass may deform under its own weight and slide out of focus
-- Lenses bend light of different wavelengths by different amounts, causing chromatic abberation
+- Large lenses are heavy and difficult to manufacture.
+- Both surfaces of the lens must be polished to a high degree of accuracy.
+- Lenses absorb light in proportion to their thickness.
+- Large lenses may deform under their own weight, causing the image to go out of focus.
+- Lenses bend light of different wavelengths by different amounts, causing chromatic aberration.
+{{< /callout >}}
 
 ## Reflecting Telescopes
 
-Reflecting telescopes use a mirror to form an image. The mirror is usually a large, heavy piece of glass, and it is polished to a high degree of accuracy. The eyepiece lens is used to magnify the image formed by the mirror.
-Reflecting telescopes are less affected by the problems of refracting telescopes, and they can be made much larger. They do not suffer from chromatic abberation, as all wavelengths of light are reflected by the same amount.
+Reflecting telescopes use a mirror to form an image. The mirror is usually a large, heavy piece of glass polished to a high degree of accuracy. The eyepiece lens magnifies the image formed by the mirror.
 
-Reflecting telescopes can be made with a variety of designs, including the Newtonian, Cassegrain, and Ritchey-Chretien designs. Each design has its own advantages and disadvantages, and the choice of design depends on the specific requirements of the telescope.
+Reflecting telescopes avoid many problems of refracting telescopes and can be made much larger. They do not suffer from chromatic aberration, as all wavelengths of light are reflected equally.
 
-## Abberations
+There are several designs for reflecting telescopes, including Newtonian, Cassegrain, and Ritchey-Chrétien. Each design has its own advantages and disadvantages, and the choice depends on the specific requirements of the telescope.
 
-### Chromatic Abberation
+## Aberrations
 
-Refractive index $n$ of a lens is a function of wavelength $\lambda$. Hence different wavelengths have different focal lengths and focus at different planes. This defect is called chromatic abberation.
+### Chromatic Aberration
 
-The plane which contains the smallest possible image (not a point) is called the plane of sharpest focus. The image is known as the circle of least confusion. The spread of the image along the optic axis is known as longitudinal abberation, and the spread of the image in the plane perpendicular to the optic axis in the plane of sharpest focus is known as lateral abberation.
+The refractive index $n$ of a lens depends on the wavelength $\lambda$ of light. As a result, different wavelengths have different focal lengths and focus at different planes. This defect is called chromatic aberration.
 
-Chromatic abberation can be corrected by using a combination of lenses made of different materials, which have different refractive indices. This is known as an achromatic doublet.
+The plane containing the smallest possible image (not a point) is called the plane of sharpest focus. The image is known as the circle of least confusion. The spread of the image along the optical axis is called longitudinal aberration, and the spread in the plane perpendicular to the optical axis at the plane of sharpest focus is called lateral aberration.
 
-### Spherical Abberation
+Chromatic aberration can be corrected by using a combination of lenses made from different materials with different refractive indices. This arrangement is called an achromatic doublet.
 
-The position of the focus of a spherical lens for any incident ray depends on its distance from the optical axis. This leads to a spread of the image along the optic axis, which is known as spherical abberation. The severity of the abberation can be expressed as the ratio $\Delta F / F$, where $\Delta F$ is the spread of the image along the optic axis and $F$ is the focal length of the lens.
+### Spherical Aberration
 
-Spherical abberation can be corrected by using a combination of lenses with different shapes, which have different focal lengths. This is known as a compound lens. It can also be corrected via a process called aspherization, where the lens is shaped to have a non-spherical surface.
+The focus position of a spherical lens for any incident ray depends on its distance from the optical axis. This causes the image to spread along the optical axis, known as spherical aberration. The severity of this aberration can be expressed as the ratio $\Delta F / F$, where $\Delta F$ is the spread of the image along the optical axis and $F$ is the focal length of the lens.
+
+Spherical aberration can be corrected by using a combination of lenses with different shapes, known as a compound lens. It can also be corrected by aspherization, where the lens is shaped to have a non-spherical surface.
 
 ### Coma
 
-An image can have a comet-like appearance when a point object is off the axis of the lens, called coma.
+Coma is an aberration where the image of a point object off the optical axis appears comet-shaped.
 
-Coma can be corrected using an aplantic lens, which is a combination of two lenses with different shapes. The first lens is a positive lens, and the second lens is a negative lens. The two lenses are placed at a distance equal to their focal lengths, and they are aligned so that their optical axes coincide.
+Coma can be corrected using an aplanatic lens, which is a combination of two lenses with different shapes. The first lens is positive, and the second is negative. The two lenses are placed at a distance equal to their focal lengths, with their optical axes aligned.
 
 ### Astigmatism
 
-Astigmatism is a defect in which the image of a point object is not a point, but a line. This occurs when the lens is not perfectly spherical, and it can be corrected by using a combination of lenses with different shapes.
-A parabolic mirror fixes spherical abberation, but worsens astigmatism. A spherical mirror fixes astigmatism, but worsens spherical abberation.
+Astigmatism is a defect where the image of a point object appears as a line rather than a point. This occurs when the lens is not perfectly spherical. It can be corrected by using a combination of lenses with different shapes.
+
+A parabolic mirror corrects spherical aberration but increases astigmatism. A spherical mirror reduces astigmatism but increases spherical aberration.
 
 ### Field Curvature
 
-Field curvature is a defect in which the image of a point object is not a point, but a curved surface. This occurs when the lens is not perfectly spherical, and it can be corrected by using a combination of lenses with different shapes.
-A field flattener is a lens that is used to correct field curvature. It is placed at the focal plane of the telescope, and it is aligned so that its optical axis coincides with the optical axis of the telescope.
+Field curvature is a defect where the image of a point object forms on a curved surface rather than a flat plane. This can be corrected by using a combination of lenses with different shapes.
+
+A field flattener is a lens used to correct field curvature. It is placed at the focal plane of the telescope and aligned with the optical axis.
 
 ### Distortion
 
-Distortion is a defect in which the image of a point object is not a point, but a distorted shape. This occurs when the lens is not perfectly spherical, and it can be corrected by using a combination of lenses with different shapes.
-A distortion corrector is a lens that is used to correct distortion. It is placed at the focal plane of the telescope, and it is aligned so that its optical axis coincides with the optical axis of the telescope.
+Distortion is a defect where the image of a point object appears as a distorted shape. This can be corrected by using a combination of lenses with different shapes.
+
+A distortion corrector is a lens placed at the focal plane of the telescope and aligned with the optical axis to correct distortion.
 
 ## Types of Telescopes
 
 ### Galilean Telescope
 
-A Galilean telescope is a type of refracting telescope that uses a converging lens as the objective and a diverging lens as the eyepiece. Parallel rays of light from a distant object are brought to a focus in the focal plane of the objective lens. The diverging eyepiece lens intercepts these rays and renders them parallel once more. Non-parallel rays of light from the object traveling at an angle to the optical axis travel at a larger angle after they pass through the eyepiece. This leads to an increase in the apparent angular size and is responsible for the perceived magnification. The final image is a virtual image, located at infinity and is the same way up (i.e., non-inverted or upright) as the object.
+A Galilean telescope is a type of refracting telescope that uses a converging lens as the objective and a diverging lens as the eyepiece. Parallel rays of light from a distant object are brought to a focus by the objective lens. The diverging eyepiece lens intercepts these rays and makes them parallel again. Non-parallel rays from the object, traveling at an angle to the optical axis, emerge at a larger angle after passing through the eyepiece. This increases the apparent angular size and produces magnification. The final image is virtual, located at infinity, and is upright (not inverted).
 
 ### Keplerian Telescope
 
-The Keplerian telescope is an improvement on Galileo's design. It uses a convex lens as the eyepiece instead of concave one. The advantage of this arrangement is that the rays of light emerging from the eyepiece are converging. This allows for a much wider field of view and greater eye relief, but the image for the viewer is inverted. Considerably higher magnifications can be reached with this design, but, like the Galilean telescope, it still uses simple single element objective lens so needs to have a very high focal ratio to reduce aberrations.
+The Keplerian telescope improves on Galileo's design by using a convex lens as the eyepiece instead of a concave one. This arrangement causes the rays of light emerging from the eyepiece to be converging, allowing for a wider field of view and greater eye relief. However, the image is inverted. Higher magnifications are possible with this design, but it still uses a simple single-element objective lens, so a high focal ratio is needed to reduce aberrations.
 
 ### Cassegrain Telescope
 
-The Cassegrain reflector is a combination of a primary concave mirror and a secondary convex mirror, the main characteristic being that the optical path folds back onto itself, relative to the optical system's primary mirror entrance aperture. This design puts the focal point at a convenient location behind the primary mirror and the convex secondary adds a telephoto effect creating a much longer focal length in a mechanically short system.
+The Cassegrain reflector uses a primary concave mirror and a secondary convex mirror. The optical path folds back onto itself, placing the focal point behind the primary mirror. The convex secondary mirror creates a telephoto effect, resulting in a much longer focal length in a compact system.
 
-#### Ritchey-Chretien Telescope
+#### Ritchey-Chrétien Telescope
 
-The Ritchey-Chrétien is a specialized Cassegrain reflector which has two hyperbolic mirrors (instead of a parabolic primary). It is free of coma and spherical aberration at a flat focal plane, making it well suited for wide field and photographic observations.
+The Ritchey-Chrétien is a specialized Cassegrain reflector with two hyperbolic mirrors (instead of a parabolic primary). It is free of coma and spherical aberration at a flat focal plane, making it ideal for wide-field and photographic observations.
 
 #### Catadioptric Cassegrains
 
-Catadioptric Cassegrains use two mirrors, often with a spherical primary mirror to reduce cost, combined with refractive corrector elements to correct the resulting aberrations. These include the Schmidt-Cassegrain and Maksutov-Cassegrain designs. The Schmidt-Cassegrain uses a thin corrector plate to correct spherical aberration, while the Maksutov-Cassegrain uses a thick meniscus lens to correct for both spherical aberration and coma.
+Catadioptric Cassegrains use two mirrors, often with a spherical primary mirror to reduce cost, combined with refractive corrector elements to correct aberrations. Examples include the Schmidt-Cassegrain and Maksutov-Cassegrain designs. The Schmidt-Cassegrain uses a thin corrector plate to correct spherical aberration, while the Maksutov-Cassegrain uses a thick meniscus lens to correct both spherical aberration and coma.
 
 ### Newtonian Telescope
 
-A Newtonian telescope is composed of a primary mirror or objective, usually parabolic in shape, and a smaller flat secondary mirror. The primary mirror makes it possible to collect light from the pointed region of the sky, while the secondary mirror redirects the light out of the optical axis at a right angle so it can be viewed with an eyepiece.
+A Newtonian telescope consists of a primary mirror, usually parabolic, and a smaller flat secondary mirror. The primary mirror collects light from the sky, while the secondary mirror redirects the light at a right angle so it can be viewed through an eyepiece.
