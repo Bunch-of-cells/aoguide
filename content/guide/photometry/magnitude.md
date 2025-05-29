@@ -350,7 +350,55 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P6,Solution,IOAA 2012" >}}
+{{< tabs items="P6,Solution" >}}
+    {{< tab >}}
+    What is the optical thickness of a layer of fog, if the Sun seen through the fog seems as bright as a full moon in a cloudless sky?
+    {{< /tab >}}
+
+    {{< tab >}}
+    The apparent magnitudes of the Sun and the Moon are $−26.8$ and $−12.5$, respectively. Thus the total extinction in the cloud must be $A = 14.3$. Since
+
+    $$ A = (2.5 \log e) \tau $$
+
+    where $\tau$ is the optical thickness of the fog, we can rearrange to get
+
+    $$ \tau = \frac{A}{2.5 \log e} = \frac{14.3}{1.086} \approx \boxed{13.2}$$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P7,Solution" >}}
+    {{< tab >}}
+    Assume that all stars have the same absolute magnitude and stars are evenly distributed in space. Let $N(m)$ be the number of stars brighter than m magnitudes. Find the ratio $N(m + 1)/N(m)$.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Let the number density of stars be $n$, and their absolute magnitude be $M$. Let the apparent magnitude of the star at a distance $r$ pc from the observer be $m$. $m$ and $r$ are related by the equation
+
+    $$ m - M = 5 \log r - 5 $$
+
+    Rearranging gives
+
+    $$ r = 10^{0.2(m - M) + 1} $$
+
+    All the stars brighter than magnitude $m$ will lies within $r$ pc distance to the observer. Thus the volume of the sphere upto radius $r$ is
+
+    $$ V = \frac{4}{3} \pi r^3 = \frac{4}{3} \pi \left( 10^{0.2(m - M) + 1} \right)^3 $$
+
+    The number of stars brighter than magnitude $m$ is given by
+
+    $$ N(m) = n V = n \frac{4}{3} \pi \left( 10^{0.2(m - M) + 1} \right)^3 $$
+
+    The number of stars brighter than magnitude $m + 1$ is given by
+
+    $$ N(m + 1) = n \frac{4}{3} \pi \left( 10^{0.2(m + 1 - M) + 1} \right)^3 $$
+
+    The ratio of the two is given by
+
+    $$ \frac{N(m + 1)}{N(m)} = \left( \frac{10^{0.2(m + 1 - M) + 1}}{10^{0.2(m - M) + 1}} \right)^3 = 10^{0.6} \approx \boxed{3.98}$$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P8,Solution,IOAA 2012" >}}
     {{< tab >}}
     An old planetary nebula, with a white dwarf (WD) in its center, is located 50 pc away from Earth. Exactly in the same direction, but behind the nebula, lies another WD, identical to the frist, but located at 150 pc from the Earth. Consider that the two WDs have absolute bolometric magnitude +14.2 and intrinsic color indexes $B - V = 0.300$ and $U - V = 0.330$. Extinction occurs in the interstellar medium and in the planetary nebula.
 
@@ -391,9 +439,9 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P7,Solution,IOAA 2008" >}}
+{{< tabs items="P9,Solution,IOAA 2008" >}}
     {{< tab >}}
-    A UBV photometric (UBV Johnson’s) observation of a star gives $U = 8.15$, $B = 8.50$, and $V = 8.14$. Based on the spectral class, one gets the intrinsic colour $(U − B)_0 = −0.45$. If the star is known to have radius of $2.3R_\odot$, absolute bolometric magnitude of $−0.25$, and bolometric correction (BC) of $−0.15$, determine:
+    A UBV photometric observation of a star gives $U = 8.15$, $B = 8.50$, and $V = 8.14$. Based on the spectral class, one gets the intrinsic colour $(U − B)_0 = −0.45$. If the star is known to have radius of $2.3R_\odot$, absolute bolometric magnitude of $−0.25$, and bolometric correction (BC) of $−0.15$, determine:
 
     a) the intrinsic magnitudes U, B, and V of the star <br>
     b) the effective temperature of the star <br>
@@ -446,7 +494,7 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P8,Solution,IOAA 2012" >}}
+{{< tabs items="P10,Solution,IOAA 2012" >}}
     {{< tab >}}
     A pulsar, located 1000 pc far from Earth and 10,000 times more luminous than our Sun, emits radiation only from its two opposite poles, creating a homogeneous emission beam shaped as double cone with opening angle $\alpha = 4^\circ$. Assuming the angle between the rotation axis and the emission axis is $\theta = 30^\circ$, and assuming a random orientation of the pulsar beams in relation to an observer on Earth, what is the probability of detecting the pulses? In case we can see it, what is the apparent bolometric magnitude of the pulsar?
     {{< /tab >}}
@@ -482,7 +530,7 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P9,Solution,IOAA 2018" >}}
+{{< tabs items="P11,Solution,IOAA 2018" >}}
     {{< tab >}}
     A star has an apparent magnitude $m_U = 15.0$ in the U-band. The U-band filter is ideal, i.e., it has perfect (100%) transmission within the band and is completely opaque (0% transmission) outside the band. The  filter is centered at 360 nm, and has a width of 80 nm. It is assumed that the star also has a flat energy spectrum with respect to frequency. The conversion between magnitude, $m$, in any band and flux density, $f$, of a star in Jansky is given by
 
@@ -532,7 +580,7 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P10,Solution,IOAA 2018" >}}
+{{< tabs items="P12,Solution,IOAA 2018" >}}
     {{< tab >}}
     The star $\beta$-Doradus is a Cepheid variable star with a pulsation period of 9.84 days. We make a simplifying assumption that the star is brightest when it is most contracted (radius being $R_1$) and it is faintest when it is most expanded (radius being $R_2$). For simplicity, assume that the star maintains its spherical shape and behaves as a perfect black body at every instant during the entire cycle. The bolometric magnitude of the star varies from $3.46$ to $4.08$. From Doppler measurements, we know that during pulsation the stellar surface expands or contracts at an average radial speed of $12.8 \, \mathrm{km \, s^{-1}}$. Over the period of pulsation, the peak of thermal radiation (intrinsic) of the star varies from 531.0 nm to 649.1 nm.
 
@@ -582,5 +630,28 @@ Since $k$ depends on the wavelength, the color index is also affected by atmosph
     $$F_2 = \frac{4 \pi R_2^2 \sigma T_2^4}{4 \pi D_\text{star}^2}$$
     $$\implies D_\text{star} = R_2 T_2^2 \sqrt{\frac{\sigma}{F_2}} = \boxed{298 \, \mathrm{pc}}$$
 
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P13,Solution" >}}
+    {{< tab >}}
+    Given the intrinsic $(B-V)$ color index of a star, find its color temperature $T_c$.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Assuming the star to be a blackbody, the spectral flux density in the Wien approximation of the star is propotional to
+
+    $$ F_\lambda \propto \lambda^{-5} e^{-hc/\lambda kT_c} $$
+
+    The color index is defined as
+
+    $$ (B-V) = -2.5 \log \left( \frac{F_B}{F_V} \right) $$
+    $$\implies (B-V) = -2.5 \log \left( \frac{\lambda_B^{-5} e^{-hc/\lambda_B kT_c}}{\lambda_V^{-5} e^{-hc/\lambda_V kT_c}} \right) $$
+    $$\implies (B-V) = 12.5 \log \left( \frac{\lambda_B^5}{\lambda_V^5} \right) + 2.5 \frac{hc}{kT_c} \left( \frac{1}{\lambda_B} - \frac{1}{\lambda_V} \right) $$
+    $$\implies T_c = \frac{hc}{k} \cdot \frac{2.5 \left( \frac{1}{\lambda_B} - \frac{1}{\lambda_V} \right)}{(B-V) + 2.5 \log \left( \frac{\lambda_B^5}{\lambda_V^5} \right)}$$
+
+    Substituting the values $\lambda_B = 440 \, \mathrm{nm}$ and $\lambda_V = 550 \, \mathrm{nm}$, we get
+
+    $$\boxed{T_c \approx \frac{7000 \mathrm{K}}{(B-V) + 0.47}}$$
     {{< /tab >}}
 {{< /tabs >}}

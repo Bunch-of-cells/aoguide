@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 76)  -->
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+  version="1.1"
+  viewBox="0 0 414.997 250"
+  overflow="visible">
+  <title>chromatic aberration</title>
+
+  <g id="Layer_1">
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="0.5" stroke-dasharray="6 3"
+      d="M29.036,125.31h370.326" />
+
+    <path opacity="0.75" fill="#CCE2EF" stroke="#000000" stroke-width="0.75"
+      d="M115.488,123.037
+			c0,29.423,4.329,57.828,12.342,84.645h8.656c7.582-26.147,11.666-53.781,11.666-82.373c0-28.593-4.088-56.225-11.674-82.372
+			h-8.617C120.697,68.412,115.488,95.273,115.488,123.037z">
+      <title>lens</title>
+    </path>
+
+    <path fill="none" stroke="#FF0000" d="M545.961,125.242" />
+    <path fill="none" stroke="#FF0000" d="M262.336,124.953" />
+    <path fill="#FFFFFF" stroke="#000000" stroke-width="0.25" d="M131.958,27.051v199.926" />
+
+    <g>
+      <title>rays</title>
+      <path fill="none" stroke="#FF0000" d="M333.652,89.729L140.179,193.667l-14.333,4.416H60.444" />
+      <path fill="none" stroke="#008837" d="M59.736,197.362h65.213l15.623-5.375L328.861,76.307" />
+      <path fill="none" stroke="#0A55A3" d="M59.736,196.642h65.027l16.195-6.347l181.07-125.821" />
+      <path fill="none" stroke="#FF0000" d="M333.652,160.891L140.179,56.953l-14.333-4.416H60.444" />
+      <path fill="none" stroke="#008837" d="M59.736,53.257h65.213l15.623,5.375l188.289,115.681" />
+      <path fill="none" stroke="#0A55A3" d="M59.736,53.977h65.027l16.195,6.347l181.07,125.821" />
+    </g>
+  </g>
+</svg>

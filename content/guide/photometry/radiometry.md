@@ -64,7 +64,7 @@ $$\tag{2.1.4} B = \int_0^{\infty} B_\nu \, d\nu $$
 {{% /callout %}}
 
 {{< callout type="image" >}}
-{{< svg "images/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: Fundamental Astronomy)" >}}
+{{< svg "images/photometry/radiance.svg" "Radiance" "The radiance B is related to the energy passing through a surface element dA into a solid angle dω, in a direction θ (source: Fundamental Astronomy)" >}}
 {{% /callout %}}
 
 The flux density is related to the spectral radiance as
@@ -88,7 +88,7 @@ $$\tag{2.1.8} B = \frac{F}{\omega}$$
 Surface brightness is independent of distance. It is equal to radiance of the object if the object emits isotropically.
 
 {{< callout type="image" >}}
-{{< svg "images/surfbright.svg" "Surface Brightness" "The surface brightness B is the flux received by the observer, divided by the solid angle the object is spread over as seen by the observer" >}}
+{{< svg "images/photometry/surfbright.svg" "Surface Brightness" "The surface brightness B is the flux received by the observer, divided by the solid angle the object is spread over as seen by the observer" >}}
 {{% /callout %}}
 
 ### A List of Radiometric Quantities
@@ -181,7 +181,7 @@ $$
 These two are connected by the relation $B_\nu(T) \, d\nu = -B_\lambda(T) \, d\lambda$ (the minus sign comes from the fact that as frequency increases, wavelength decreases.).
 
 {{< callout type="image" >}}
-{{< svg "images/blackbody.svg" "Black Body Radiation Curve" "Black Body Radiation Curve (source: Wikipedia)" >}}
+{{< svg "images/photometry/blackbody.svg" "Black Body Radiation Curve" "Black Body Radiation Curve (source: Wikipedia)" >}}
 {{% /callout %}}
 
 These equations for spectral radiance can be simplified when the wavelengths in question are much larger than the peak wavelength of the spectrum or when they are approximately equal to the peak wavelength of the spectrum.
@@ -465,9 +465,35 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
 - The temperature giving the best fit for Planck's law in a wavelength range is the color temperature $T_c$ of the object.
 
+{{< tabs items="P5,Solution" >}}
+    {{< tab >}}
+    Flux densities at the wavelengths $440 \, \mathrm{nm}$ and $550 \, \mathrm{nm}$ are $1.30$ and $1.00 \, \mathrm{W \, m^{-2} \, m^{-1}}$, respectively. Find the colour temperature.
+    {{< /tab >}}
+
+    {{< tab >}}
+    If the flux densities at wavelengths $\lambda_1$ and $\lambda_2$ are $F_1$ and $F_2$ respectively, the color temperature can be solved from the equation
+
+    $$\frac{F_1}{F_2} = \frac{B_\lambda(T_c, \lambda_1)}{B_\lambda(T_c, \lambda_2)} = \left(\frac{\lambda_2}{\lambda_1} \right)^5 \frac{e^{hc/\lambda_2 kT_c} - 1}{e^{hc/\lambda_1 kT_c} - 1}$$
+
+    We define
+
+    $$\begin{align*}
+    A &= \frac{F_1}{F_2} \left( \frac{\lambda_1}{\lambda_2} \right)^5 = 2.348 \\
+    B_1 &= \frac{hc}{\lambda_1 k} = 32700 \, \mathrm{K} \\
+    B_2 &= \frac{hc}{\lambda_2 k} = 26160 \, \mathrm{K}
+    \end{align*}$$
+
+    Thus the equation becomes
+
+    $$ A = \frac{e^{B_2/T_c} - 1}{e^{B_1/T_c} - 1}$$
+
+    Solving the equation numerically, we get $\boxed{T_c = 7545 \, \mathrm{K}}$
+    {{< /tab >}}
+{{< /tabs >}}
+
 ## Problems
 
-{{< tabs items="P5,Solution,IOAA 2010" >}}
+{{< tabs items="P6,Solution,IOAA 2010" >}}
     {{< tab >}}
     Estimate the effective temperature of the photosphere of the Sun using the naked eye colour of the Sun.
     {{< /tab >}}
@@ -488,7 +514,30 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P6,Solution" >}}
+{{< tabs items="P7,Solution,IOAA 2023" >}}
+    {{< tab >}}
+    The entrance cavity of a particular bolometer is a cone with an opening angle of $30^\circ$, the surface of which has an energy absorption coefficient of $a = 0.99$. Assume that there is no scattering of the incident radiation on the walls of the cavity, only multiple mirror-like (specular) reflections. The bolometer is connected to a cooler which keeps the bolometer cavity surface at practically $0 \, \mathrm{K}$ temperature. The instrument is orbiting at $r = 2 \, \mathrm{AU}$ from the Sun and is pointed directly at the centre of the Solar disk. Calculate the temperature of a black body which would radiate the same amount of energy as the entire bolometer opening does per unit surface area.
+    {{< /tab >}}
+
+    {{< tab >}}
+    Drawing a diagram, the light entering parallel to the axis of the bolometer reflects six times off of the bolometer walls before escaping back to space. Hence the fraction of energy leaving the bolometer is
+
+    $$ S = (1 - a)^6 = 10^{-12}$$
+
+    The flux density at the bolometer is
+
+    $$ F = \frac{L_\odot}{4 \pi r^2} $$
+
+    The flux density absorbed by the bolometer is thus $F \cdot S$.
+
+    The bolometer must emit the same amount of energy it absorbs to remain in thermal equillibrium. Thus
+
+    $$ F \cdot S = \sigma T^4 $$
+    $$ \implies T = \left( \frac{L_\odot (1-a)^6}{4 \pi \sigma r^2} \right)^{1/4} = \boxed{0.28 \, \mathrm{K}}$$
+    {{< /tab >}}
+{{< /tabs >}}
+
+{{< tabs items="P8,Solution" >}}
     {{< tab >}}
     Find the size of a spherical grain of dust (density $\rho = 5000 \, \mathrm{kg \, m^{-3}}$) which can remain stationary in space due to radiation pressure from the Sun.
     {{< /tab >}}
@@ -522,7 +571,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P7,Solution" >}}
+{{< tabs items="P9,Solution" >}}
     {{< tab >}}
     Consider a surface of surface area $A$ and reflection coefficient of $\alpha$, that is it reflects a fraction $\alpha$ of the radiation falling on it. The rest of the radiation is absorbed. The surface is illuminated by radiation of flux density $F$, at an angle $\theta$ to the normal. Find the force exerted on the surface by the radiation.
     {{< /tab >}}
@@ -555,7 +604,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P8,Solution,NAC 2025" >}}
+{{< tabs items="P10,Solution,NAC 2025" >}}
     {{< tab >}}
     Consider a hypothetical solar sail that starts its trajectory just outside the surface of the Sun and aims to reach Jupiter’s orbit. This is a square sail with a size length of $l = 50 \, \mathrm{m}$, a mass of $m = 2.0 \, \mathrm{kg}$, and a reflectivity of $\eta = 85\%$. The remaining $15\%$ of the photons are absorbed by the sail. In order to simplify the calculations, only take into account the gravity and radiation pressure from the Sun, and assume that the sail is initially stationary with respect to the Sun. Estimate how long it would take for this sail to reach Jupiter’s orbit. Feel free to make reasonable approximations if needed.
     {{< /tab >}}
@@ -617,7 +666,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P9,Solution" >}}
+{{< tabs items="P11,Solution" >}}
     {{< tab >}}
     Assuming the human body to be a perfect blackbody, estimate the number of photons emitted in a bandwidth 10% wide around wavelength 550 nm (peak emission wavelength of Sun), by a person in their entire life. Make reasonable assumptions.
     {{< /tab >}}
@@ -655,7 +704,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P10,Solution,IOAA 2018" >}}
+{{< tabs items="P12,Solution,IOAA 2018" >}}
     {{< tab >}}
     The Five-hundred-meter Aperture Spherical radio Telescope (FAST) is a single-dish radio telescope located  in Guizhou Province, China. The physical diameter of the dish is 500 m, but during observations, the  effective diameter of the collecting area is 300 m. Consider observations of the thermal radio emission from the photosphere of the Sun at 3.0 GHz with this  telescope and a receiver with bandwidth 0.3 GHz.
 
@@ -665,7 +714,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     {{< /tab >}}
 
     {{< tab >}}
-    Since we are measuring radio frequencies, we can use the Rayleigh-Jeans approximation
+    **a)** Since we are measuring radio frequencies, we can use the Rayleigh-Jeans approximation
 
     $$ B_\nu(T) = \frac{2 \nu^2 kT}{c^2} $$
 
@@ -683,7 +732,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     This gives $\boxed{E_\odot \approx 8.5 \times 10^{-5} \mathrm{\,J}}$
     
-    The total mass of an A4 paper is
+    **b)** The total mass of an A4 paper is
 
     $$ m = \rho A = 80 \, \mathrm{g \, m^{-2}} \times 297 \, \mathrm{mm} \times 210 \, \mathrm{mm} \approx 5 \, \mathrm{g} $$
 
@@ -691,11 +740,11 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     $$E' = mgh \approx \boxed{5 \times 10^{-3} \, \mathrm{J}}$$
 
-    Therefore, $\boxed{E' > E_\odot}$
+    **c)** Therefore, $\boxed{E' > E_\odot}$
     {{< /tab >}}
 {{< /tabs >}}
 
-{{< tabs items="P11,Solution,IOAA 2019" >}}
+{{< tabs items="P13,Solution,IOAA 2019" >}}
     {{< tab >}}
     Since the human body is made mostly of water, it is very efficient at absorbing microwave photons.  Assume that an astronaut’s body is a perfect spherical absorber with mass of $m = 60 \,\mathrm{kg}$, and its  average density and heat capacity are the same as for pure water, i.e. $\rho = 1000 \, \mathrm{kg\,m^{-3}}$ and $C = 4200 \mathrm{\,J\,kg^{-1}\,K^{-1}}$.
 
@@ -732,28 +781,5 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
     Rearranging gives
 
     $$t = \frac{m C \Delta T}{P} \approx \boxed{3430 \, \mathrm{yr}}$$
-    {{< /tab >}}
-{{< /tabs >}}
-
-{{< tabs items="P12,Solution,IOAA 2023" >}}
-    {{< tab >}}
-    The entrance cavity of a particular bolometer is a cone with an opening angle of $30^\circ$, the surface of which has an energy absorption coefficient of $a = 0.99$. Assume that there is no scattering of the incident radiation on the walls of the cavity, only multiple mirror-like (specular) reflections. The bolometer is connected to a cooler which keeps the bolometer cavity surface at practically $0 \, \mathrm{K}$ temperature. The instrument is orbiting at $r = 2 \, \mathrm{AU}$ from the Sun and is pointed directly at the centre of the Solar disk. Calculate the temperature of a black body which would radiate the same amount of energy as the entire bolometer opening does per unit surface area.
-    {{< /tab >}}
-
-    {{< tab >}}
-    Drawing a diagram, the light entering parallel to the axis of the bolometer reflects six times off of the bolometer walls before escaping back to space. Hence the fraction of energy leaving the bolometer is
-
-    $$ S = (1 - a)^6 = 10^{-12}$$
-
-    The flux density at the bolometer is
-
-    $$ F = \frac{L_\odot}{4 \pi r^2} $$
-
-    The flux density absorbed by the bolometer is thus $F \cdot S$.
-
-    The bolometer must emit the same amount of energy it absorbs to remain in thermal equillibrium. Thus
-
-    $$ F \cdot S = \sigma T^4 $$
-    $$ \implies T = \left( \frac{L_\odot (1-a)^6}{4 \pi \sigma r^2} \right)^{1/4} = \boxed{0.28 \, \mathrm{K}}$$
     {{< /tab >}}
 {{< /tabs >}}

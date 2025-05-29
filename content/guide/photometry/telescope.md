@@ -35,27 +35,45 @@ Reflecting telescopes avoid many problems of refracting telescopes and can be ma
 
 There are several designs for reflecting telescopes, including Newtonian, Cassegrain, and Ritchey-Chrétien. Each design has its own advantages and disadvantages, and the choice depends on the specific requirements of the telescope.
 
+The focal length of a concave mirror is given by:
+
+$$\tag{2.5.2} F = \frac{R}{2} $$
+
+where $R$ is the radius of curvature of the mirror.
+
 ## Aberrations
 
 ### Chromatic Aberration
 
-The refractive index $n$ of a lens depends on the wavelength $\lambda$ of light. As a result, different wavelengths have different focal lengths and focus at different planes. This defect is called chromatic aberration.
+The refractive index $n$ of a lens depends on the wavelength $\lambda$ of light. As a result, different wavelengths have different focal lengths and focus at different planes. This defect is called chromatic aberration. Reflecting telescopes do not suffer from chromatic aberration, as they use mirrors that reflect all wavelengths equally.
 
 The plane containing the smallest possible image (not a point) is called the plane of sharpest focus. The image is known as the circle of least confusion. The spread of the image along the optical axis is called longitudinal aberration, and the spread in the plane perpendicular to the optical axis at the plane of sharpest focus is called lateral aberration.
 
 Chromatic aberration can be corrected by using a combination of lenses made from different materials with different refractive indices. This arrangement is called an achromatic doublet.
 
+{{< callout type="image" >}}
+{{< svg "images/photometry/chromatic_aberration.svg" "Chromatic Aberration" "Chromatic Aberration in a lens (source: Wikipedia)" >}}
+{{% /callout %}}
+
 ### Spherical Aberration
 
 The focus position of a spherical lens for any incident ray depends on its distance from the optical axis. This causes the image to spread along the optical axis, known as spherical aberration. The severity of this aberration can be expressed as the ratio $\Delta F / F$, where $\Delta F$ is the spread of the image along the optical axis and $F$ is the focal length of the lens.
 
-Spherical aberration can be corrected by using a combination of lenses with different shapes, known as a compound lens. It can also be corrected by aspherization, where the lens is shaped to have a non-spherical surface.
+Spherical aberration can be corrected by using a combination of lenses with different shapes, known as a compound lens. It can also be corrected by aspherization, where the lens is shaped to have a non-spherical surface. In case of reflecting telescopes, spherical aberration can be corrected by using a parabolic mirror instead of a spherical one.
+
+{{< callout type="image" >}}
+{{< svg "images/photometry/spherical_aberration.svg" "Spherical Aberration" "Spherical Aberration in a lens (source: Wikipedia)" >}}
+{{% /callout %}}
 
 ### Coma
 
 Coma is an aberration where the image of a point object off the optical axis appears comet-shaped.
 
 Coma can be corrected using an aplanatic lens, which is a combination of two lenses with different shapes. The first lens is positive, and the second is negative. The two lenses are placed at a distance equal to their focal lengths, with their optical axes aligned.
+
+{{< callout type="image" >}}
+{{< svg "images/photometry/coma.svg" "Coma" "Coma in a lens (source: Wikipedia)" >}}
+{{% /callout %}}
 
 ### Astigmatism
 
@@ -100,3 +118,11 @@ Catadioptric Cassegrains use two mirrors, often with a spherical primary mirror 
 ### Newtonian Telescope
 
 A Newtonian telescope consists of a primary mirror, usually parabolic, and a smaller flat secondary mirror. The primary mirror collects light from the sky, while the secondary mirror redirects the light at a right angle so it can be viewed through an eyepiece.
+
+## Interferometry
+
+Interferometry is a technique that combines the light from two or more telescopes to create an interference pattern. This allows astronomers to achieve higher resolution than a single telescope can provide. The technique is based on the principle of superposition, where the light waves from different telescopes combine to produce a new wave pattern.
+
+Interferometry can be used with both radio and optical telescopes. In radio interferometry, the signals from multiple radio antennas are combined to create a virtual telescope with a much larger effective aperture. In optical interferometry, the light from multiple telescopes is combined using beamsplitters and mirrors to create interference patterns that can be analyzed to determine the properties of astronomical objects.
+
+The resolution of an interferometer is determined by the distance between the telescopes, known as the baseline. The longer the baseline, the higher the resolution.

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 10.0, SVG Export Plug-In . SVG Version: 3.0.0 Build 76)  -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1"
+	   viewBox="0 0 414.997 250"
+     overflow="visible"
+     enable-background="new 0 0 414.997 250"
+     font-family="Times New Roman, serif"
+	   xml:space="preserve">
+  
+  <title>Lens-coma</title>
+  
+	<g id="Layer_1">
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="0.5" stroke-dasharray="6 3" d="M29.036,125.31h370.326"/>
+    
+		<path opacity="0.75" fill="#CCE2EF" stroke="#000000" stroke-width="0.75" d="M145.488,123.037
+			c0,29.423,4.329,57.828,12.342,84.645h8.656c7.582-26.147,11.666-53.781,11.666-82.373c0-28.593-4.088-56.225-11.674-82.372H156.5
+			C149.335,68.412,145.488,95.273,145.488,123.037z">
+      <title>Lens</title>
+    </path>    
+    
+    <!-- lens plane -->
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="0.25" d="M161.958,27.051v199.926"/>
+    <!-- image plane -->
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="0.5" d="M326.861,27.051v199.926"/>
+    <!-- image centerline -->
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="0.25" d="M368.361,65.226v41.333"/>
+    
+    <g>
+      <title>test rays</title>
+		  <path fill="none" stroke="#FF0000" d="M52.706,159.807l109.253-34.497"/>
+    
+		  <path fill="none" stroke="#FF0000" d="M161.958,125.31l164.902-52.069"/>
+		  <path fill="none" stroke="#FF0000" d="M46.963,141.62l98.792-31.194l31.533-7.812L326.861,76.31"/>
+		  <path fill="none" stroke="#FF0000" d="M41.221,123.433l106.111-33.505l28.079-4.924l151.449-3.444"/>
+		  <path fill="none" stroke="#FF0000" d="M35.479,105.247l114.969-36.302l21.893-2.108l154.52,22.723"/>
+		  <path fill="none" stroke="#FF0000" d="M29.736,87.06l125.542-39.641l12.441-0.074l159.141,56.215"/>
+		  <path fill="none" stroke="#FF0000" d="M58.448,177.994l88.274-27.873l31.132-11.462L326.861,76.31"/>
+		  <path fill="none" stroke="#FF0000" d="M64.191,196.18l84.928-26.816l27.237-11.366L326.861,81.56"/>
+		  <path fill="none" stroke="#FF0000" d="M69.933,214.367l82.801-26.145l20.585-9.509L326.861,89.56"/>
+		  <path fill="none" stroke="#FF0000" d="M75.676,232.554l81.866-25.849l10.679-5.259l158.641-97.886"/>
+    </g>
+    
+		<path fill="#FF0000" d="M369.081,73.241c0,0.397-0.322,0.72-0.72,0.72c-0.398,0-0.721-0.322-0.721-0.72
+			c0-0.398,0.322-0.72,0.721-0.72C368.758,72.521,369.081,72.843,369.081,73.241z"/>    
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M378.467,93.453c0-5.582-4.525-10.106-10.106-10.106
+			s-10.106,4.524-10.106,10.106s4.525,10.106,10.106,10.106S378.467,99.035,378.467,93.453z"/>
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M373.8,84.12c0-3.004-2.436-5.439-5.439-5.439
+			s-5.439,2.435-5.439,5.439c0,3.004,2.436,5.439,5.439,5.439S373.8,87.124,373.8,84.12z"/>
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M369.383,75.287c0-0.565-0.457-1.023-1.022-1.023
+			s-1.022,0.458-1.022,1.023s0.457,1.023,1.022,1.023S369.383,75.852,369.383,75.287z"/>
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M368.361,73.241l-9.412,16.538L368.361,73.241z"/>
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M377.39,88.92l-9.029-15.679"/>
+		<path fill="none" stroke="#FF0000" stroke-width="0.75" d="M371.133,78.787c0-1.532-1.24-2.773-2.772-2.773
+			c-1.531,0-2.772,1.241-2.772,2.773c0,1.531,1.241,2.773,2.772,2.773C369.893,81.56,371.133,80.318,371.133,78.787z"/>
+
+  <text class="Q478798" transform="translate(369, 59)" font-size="14px" font-style="italic" text-anchor="middle" fill="#EAEAEA">Image</text>
+    
+    <g transform="translate(119, 136.5)" font-size="12px" font-style="italic" text-anchor="end" fill="#EAEAEA">
+      <text>θ</text>
+    </g>
+    
+		<path fill="none" stroke="#EAEAEA" stroke-width="0.5" d="M121.361,125.31c0,4.259,0.656,8.364,1.872,12.221">
+      <title>angle arc</title>
+    </path>
+	</g>
+</svg>

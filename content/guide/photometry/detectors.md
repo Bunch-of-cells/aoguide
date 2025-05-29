@@ -39,8 +39,45 @@ For a slit aperture, $\theta = \frac{\lambda}{D}$. These relations are derived f
 
 The resolving power of the eye is ~$1'$.
 
+{{< callout type="math" >}}
+{{% details title="Diffraction by a Circular Aperture" closed="true" %}}
+
+Consider a circular hole of radius $R$ in the $xy$ plane. Coherent light enters the hole from the direction of the negative $z$ axis. We consider light rays leaving the hole parallel to the $xz$ plane forming an angle $\theta$ with the $z$ axis. The light waves interfere on a screen far away. The phase difference between a wave through a point $(x,y)$ and a wave going through the centre of the hole can be calculated from the different path lengths $s = x \sin \theta$:
+
+$$ \delta = \frac{s}{\lambda} 2\pi = \frac{2 \pi \sin \theta}{\lambda} x \equiv kx $$
+
+Thus, the phase difference $\delta$ depends on the $x$ coordinate only. The sum of the amplitudes of the waves from a small surface element is proportional to the area of the element $dx \, dy$. Let the amplitude coming through the centre of the hole be $d\vec{a_0} = dx \, dy \, \hat{i}$. The amplitude coming from the point $(x,y)$ is then
+
+$$ d\vec{a} = dx \, dy \, (\cos \delta \hat{i} + \sin \delta \hat{j})$$
+
+We sum up the amplitudes coming from different points of the hole
+
+$$\begin{align*}
+\vec{a} &= \int_\text{Aperture} d\vec{a} \\
+&= \int_{x = -R}^{R} \int_{y = -\sqrt{R^2 - x^2}}^{\sqrt{R^2 - x^2}} dx \, dy \, (\cos kx \hat{i} + \sin kx \hat{j}) \\
+&= 2 \int_{-R}^R \sqrt{R^2 - x^2} \cos kx \, dx \, \hat{i} + 2 \int_{-R}^R \sqrt{R^2 - x^2} \sin kx \, dx \, \hat{j} \\
+&= 4 \int_{0}^R \sqrt{R^2 - x^2} \cos kx \, dx \, \hat{i}
+\end{align*}$$
+
+The second integral vanishes because the integrand is an odd function. The first integral can be solved using integration by parts, or by using the formula for the Bessel function of the first kind of order one $J_1(x)$:
+
+$$\int_0^R \sqrt{R^2 - x^2} \cos kx \, dx = R^2 J_1(kR)$$
+
+The first zero of the Bessel function $J_1(x)$ is at $x \approx 3.8317$. The first zero of the diffraction pattern is at
+
+$$ kR = 3.8317 \implies \theta = \frac{3.8317 \lambda}{2\pi R} $$
+
+The first zero of the diffraction pattern is at
+
+$$\theta \approx 1.22 \frac{\lambda}{D} $$
+
+where $D = 2R$ is the diameter of the aperture. This is the theoretical resolving power of a telescope with a circular aperture.
+
+{{% /details %}}
+{{< /callout >}}
+
 {{< callout type="remark" >}}
-Telescopes whose resolving power is limited by the theoretical resolving power are called diffraction limited. Usually Earth based telescopes are not diffraction limited, by seeing limited, which is a phenomenon caused by the atmosphere.
+Telescopes whose resolving power is limited by the theoretical resolving power are called diffraction limited. Usually Earth based telescopes are not diffraction limited, but seeing limited, which is a phenomenon caused by the atmosphere.
 
 Seeing is the degradation of images caused by the turbulence in the Earth's atmosphere, that may be visible as blurring, twinkling or variable distortion of images. The diameter of the seeing disk is defined as the FWHM (full width at half maximum) of its optical intensity. A seeing of 1'' means that the smallest resolvable detail in an image are blurred out to a disk of 1 arcsecond in diameter. The seeing disk is the image of a point source, such as a star, as seen through the atmosphere. The seeing disk is typically about 1-2'' in diameter for good observing conditions.
 

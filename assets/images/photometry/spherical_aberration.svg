@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     xmlns:odm="http://product.corel.com/CGS/11/cddns/"
+     xmlns:corel-charset="http://product.corel.com/CGS/11/cddns/"
+     xml:space="preserve"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd"
+     viewBox="0 0 2362 1121.95"
+     font-family="Arial, sans-serif">
+  
+  <title>Spherical aberration 3</title>
+  
+  <defs>
+    <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#000000;stroke-width:2.362}
+    .str3 {stroke:#7F7F7F;stroke-width:3.543}
+    .str2 {stroke:#FF0000;stroke-width:4.724}
+    .str1 {stroke:#7F7F7F;stroke-width:4.724;stroke-dasharray:37.792 37.792}
+    .fil1 {fill:none}
+    .fil2 {fill:#000000}
+    .fil0 {fill:#D0FFFF}
+   ]]>
+    </style>
+  </defs>
+  
+  <g id="Positive_x0020_lens">
+    
+    <path class="fil0 str0" d="M619.869 77.7252c151.19,294.488 139.887,683.821 -0.394454,983.482l-79.4612 -0.128729c-157.445,-306.67 -157.444,-676.682 0,-983.353l79.8557 -0.001181z">
+      <title>lens</title>
+    </path>
+    
+    <path class="fil1 str1" d="M96.0767 569.301l2116.04 0"/>
+    
+    <g font-size="80px" font-style="italic">
+      <title>test rays</title>
+      <text x="92" y="175" fill="#EAEAEA">A</text>
+      <path class="fil1 str2" d="M160.648 148.233l358.332 0 137.401 13.2969 1608.56 669.668"/>
+      
+      <text x="92" y="1025" fill="#EAEAEA">A</text>
+      <path class="fil1 str2" d="M168.709 994.143l345.478 0 137.401 -13.2969 1608.56 -669.668"/>
+      
+      <text x="92" y="325" fill="#EAEAEA">B</text>
+      <path class="fil1 str2" d="M162.338 300.351l289.546 0 257.214 22.8819 1546.26 353.363"/>
+      
+      <text x="92" y="875" fill="#EAEAEA">B</text>
+      <path class="fil1 str2" d="M168.765 846.818l283.119 0 257.214 -22.8819 1546.26 -377.327"/>
+      
+      <text x="92" y="495" fill="#EAEAEA">C</text>
+      <path class="fil1 str2" d="M173.557 468.088l259.156 0 295.554 18.0882 1527.09 99.3623"/>
+      
+      <text x="92" y="700" fill="#EAEAEA">C</text>
+      <path class="fil1 str2" d="M171.978 674.288l255.943 0 295.554 -18.0882 1527.09 -99.3623"/>
+    </g>
+    
+    <g font-size="80px" text-anchor="middle">
+      <title>focal points</title>
+
+      <path class="fil1 str3" d="M1632.02 465 l0 355"/>
+      <text x="1632.02" y="908" fill="#EAEAEA">F<tspan dx="-20" baseline-shift="sub" font-size="50px" font-style="italic">A</tspan></text>
+
+      <path class="fil1 str3" d="M1766.21 465 l0 355"/>
+      <text x="1766.21" y="908" fill="#EAEAEA">F<tspan dx="-20" baseline-shift="sub" font-size="50px" font-style="italic">B</tspan></text>
+
+      <path class="fil1 str3" d="M2041.78 465 l0 355"/>
+      <text x="2041.78" y="908" fill="#EAEAEA">F<tspan dx="-20" baseline-shift="sub" font-size="50px" font-style="italic">C</tspan></text>
+    </g>
+    
+  </g>
+</svg>
