@@ -248,13 +248,13 @@ $$\int_0^{\infty} B_\nu(T) \, d\nu = \frac{2 h}{c^2} \left( \frac{kT}{h} \right)
 {{% /details %}}
 {{< /callout >}}
 
-The flux density for an isotropic source is given by (using eq 2.1.7)
+The flux density for an isotropic source is given by (using eq 2.1.7):
 
 $$\tag{2.1.22} \boxed{F(T) = \pi B(T) = \sigma T^4}$$
 
 This is known as the Stefan-Boltzmann law.
 
-If the radius of a star is $R$ and its temperature is $T$, then its luminosity is given by (assuming the star emits isotropically)
+If the radius of a star is $R$ and its temperature is $T$, then its luminosity is given by (assuming the star emits isotropically):
 
 $$\tag{2.1.23} L = 4 \pi R^2 F = 4 \pi^2 R^2 B = 4 \pi R^2 \sigma T^4$$
 
@@ -750,7 +750,7 @@ $$ T_e = \left( \frac{L}{4 \pi \sigma R^2} \right)^{1/4} \approx 5778 \mathrm{\,
 
     a) What is the approximate rate, in watts, at which an astronaut in intergalactic space would absorb  radiative energy from the Cosmic Microwave Background (CMB)? The spectral energy  distribution of CMB can be approximated by blackbody radiation of temperature $T_\text{CMB} = 2.728 \,\mathrm{K}$. </br>
     b) Approximately how many CMB photons per second would the astronaut absorb? </br>
-    c) Ignoring other energy inputs and outputs, how long would it take for the CMB to raise the  astronaut’s temperature by $\Delta T = 1 \, \mathrm{K}$?
+    c) Ignoring other energy inputs and outputs, how long would it take for the CMB to raise the astronaut’s temperature by $\Delta T = 1 \, \mathrm{K}$?
     {{< /tab >}}
 
     {{< tab >}}

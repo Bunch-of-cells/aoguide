@@ -35,9 +35,29 @@ The resolving power of a telescope is its ability to separate objects with small
 
 $$\tag{2.4.4} \theta \approx 1.22 \frac{\lambda}{D} $$
 
-For a slit aperture, $\theta = \frac{\lambda}{D}$. These relations are derived from the diffraction limit of the aperture, which is a consequence of the wave nature of light. The rayleigh criterion states that two point sources are considered resolved when the first minimum of the diffraction pattern of one source coincides with the central maximum of the diffraction pattern of the other source.
+For a slit aperture,
 
-The resolving power of the eye is ~$1'$.
+$$\tag{2.4.5} \theta = \frac{\lambda}{D}$$
+
+These relations are derived from the diffraction limit of the aperture, which is a consequence of the wave nature of light. The Rayleigh criterion states that two point sources are considered resolved when the first minimum of the diffraction pattern of one source coincides with the central maximum of the diffraction pattern of the other source.
+
+The resolving power of the eye is ~$1'$
+
+{{< callout type="math" >}}
+{{% details title="Diffraction by a Slit Aperture" closed="true" %}}
+
+Consider a slit of width $D$. When monochromatic light of wavelength $\lambda$ passes through the slit, it diffracts and forms an interference pattern on a distant screen. The condition for the first minimum in the diffraction pattern is
+
+$$ D \sin \theta = \lambda $$
+
+For small angles, $\sin \theta \approx \theta$, so
+
+$$ \theta = \frac{\lambda}{D} $$
+
+This gives the angular resolution limit for a slit aperture.
+
+{{% /details %}}
+{{< /callout >}}
 
 {{< callout type="math" >}}
 {{% details title="Diffraction by a Circular Aperture" closed="true" %}}
@@ -88,11 +108,11 @@ To overcome seeing, telescopes are built at high altitudes, where the atmosphere
 
 The magnifying power of a telescope is the ratio of the angle subtended by the virtual image at the eye to the angle subtended by the object at the collector
 
-$$\tag{2.4.5} m = \frac{\alpha_e}{\alpha_c}$$
+$$\tag{2.4.6} m = \frac{\alpha_e}{\alpha_c}$$
 
 Usually, position of the eyepiece is adjusted to give a virtual image at infinity. The collector aperture acts as the entrance pupil and image of it formed by the eyepiece acts as the exit pupil. The eye relief is the distance between the eyepiece and the eye. In such a configuration, the magnifying power is given by
 
-$$\tag{2.4.6} m = \frac{\alpha_e}{\alpha_c} = \frac{F_c}{F_e} = \frac{D}{d} $$
+$$\tag{2.4.7} m = \frac{\alpha_e}{\alpha_c} = \frac{F_c}{F_e} = \frac{D}{d} $$
 
 where $F_c$ and $F_e$ are the focal lengths of the collector and eyepiece respectively, and $D$ and $d$ are the diameters of the collector and eyepiece respectively.
 
@@ -120,13 +140,13 @@ $$ \frac{F_t}{F_e} = \frac{D^2}{d^2} $$
 
 where $d$ is the size of the eye pupil, approximately $8 \, \mathrm{mm}$. The limiting magnitude of the telescope is defined as the magnitude of the faintest object that can be detected by the telescope. The limiting magnitude $m_t$ of a telescope with an aperture diameter D is given by
 
-$$\tag{2.4.7} m_t - m_e = -2.5 \log \left( \frac{F_t}{F_e} \right) = -5 \log \frac{D}{d} $$
+$$\tag{2.4.8} m_t - m_e = -2.5 \log \left( \frac{F_t}{F_e} \right) = -5 \log \frac{D}{d} $$
 
 where $m_e = 6^m$ is the limiting magnitude of the eye.
 
 100% of the light hitting the aperture is not collected by the telescope. The light is scattered, absorbed, and reflected by the telescope optics. The fraction of light that is actually collected is called the transmission efficiency $\eta$. The limiting magnitude of a telescope with an aperture diameter D and trasmission efficiency $\eta$ is given by
 
-$$\tag{2.4.8} m_t = m_e -2.5 \log \left( \eta \frac{D^2}{d^2} \right)$$
+$$\tag{2.4.9} m_t = m_e -2.5 \log \left( \eta \frac{D^2}{d^2} \right)$$
 
 ## Field of view
 
@@ -134,7 +154,7 @@ The field of view of the eyepiece or the apparent field of view is the angular e
 
 The true field of view or the field of view of the telescope is the angular extent of the sky that can be seen through the telescope. The true field of view is given by
 
-$$\tag{2.4.9} \text{FOV} = \frac{\text{AFOV}}{m} $$
+$$\tag{2.4.10} \text{FOV} = \frac{\text{AFOV}}{m} $$
 
 where AFOV is the apparent field of view and $m$ is the magnification.
 
@@ -156,11 +176,11 @@ All of the star's light falling on a single pixel is undesirable, since it makes
 
 Noise are the unpredicatable variations in data that obscure or distort the true characteristics of the system under study. Noise encompasses all factors that contribute to measurement uncertainities $\sigma_i$. If all noise sources are independent, the total noise is given by
 
-$$\tag{2.4.10} \sigma^2 = \sum_i \sigma_i^2 $$
+$$\tag{2.4.11} \sigma^2 = \sum_i \sigma_i^2 $$
 
 The number of photons from a star of spectral flux density $F_\lambda$ hitting the aperture of the detector are
 
-$$\tag{2.4.11} N_T = \frac{\pi}{4} D^2 \cdot \Delta t \cdot \int_{\lambda_2}^{\lambda_1} \frac{F_\lambda}{hc / \lambda} \, d\lambda $$
+$$\tag{2.4.12} N_T = \frac{\pi}{4} D^2 \cdot \Delta t \cdot \int_{\lambda_2}^{\lambda_1} \frac{F_\lambda}{hc / \lambda} \, d\lambda $$
 
 where $\lambda_1$ and $\lambda_2$ are the limit for the spectral range of the measurement and $\Delta t$ is the integration time of measurement.
 
@@ -168,7 +188,7 @@ When the arriving flux is low, fluctuations are seen in any recorded signal, ter
 
 The signal to noise ratio (SNR) is a measure of the quality of the signal relative to the noise. A higher SNR indicates a better quality signal, while a lower SNR indicates a poorer quality signal. The SNR is an important factor in determining the sensitivity of a detector and its ability to detect faint objects. If the only noise source is the photon shot noise, the SNR is given by
 
-$$\tag{2.4.12} \text{SNR} = \frac{N_T}{\sqrt{N_T}} = \sqrt{N_T} $$
+$$\tag{2.4.13} \text{SNR} = \frac{N_T}{\sqrt{N_T}} = \sqrt{N_T} $$
 
 The dynamic range of a CCD is the ratio of the maximum signal that can be detected (the full-well capacity of the CCD) to the camera noise. It's essentially the ability of the camera to capture both bright and dim areas simultaneously. The dynamic range is typically around $10^4$ for CCDs.
 
@@ -184,13 +204,13 @@ The quantum efficiency of the human eye is approximately 1%.
 
 Suppose over an exposure a star provides $N_*$ photons spread over $p$ pixels, and the background sky signal provides $N_\text{sky}$ photons to the same pixels. For an exposure time $t$ with a dark current of $N_d \mathrm{\,s^{-1}}$ per pixel and with a readout noise of $\pm \sigma$ per pixel, the SNR is given by
 
-$$\tag{2.4.13} \text{SNR} = \frac{N_*}{\sqrt{N_* + N_\text{sky} + p N_d t + p \sigma^2}} $$
+$$\tag{2.4.14} \text{SNR} = \frac{N_*}{\sqrt{N_* + N_\text{sky} + p N_d t + p \sigma^2}} $$
 
 ### Intrumental Magnitude
 
 The intrumental magnitude is a measure of the brightness of an object as seen by a detector, such as a CCD. Instrumental magnitudes are usually measured relative to the sky background in each CCD frame. Prior to measuring the instrumental magnitudes the various instrumental effects should be removed from the CCD frames. It is defined as
 
-$$\tag{2.4.14} m_\text{inst} = A -2.5 \log \left[ \frac{\left(\sum_{i=1}^{n} C_{i}\right) - nC_\text{sky}}{\Delta t} \right]$$
+$$\tag{2.4.15} m_\text{inst} = A -2.5 \log \left[ \frac{\left(\sum_{i=1}^{n} C_{i}\right) - nC_\text{sky}}{\Delta t} \right]$$
 
 where
 
@@ -202,7 +222,7 @@ where
 
 The instrumental magnitude then has to be calibrated to the standard magnitude system, such as the Johnson-Cousins system, to obtain the standard magnitude of the object. When calibrating without color correction, the instrumental magnitude is related to the calibrated magnitude by
 
-$$\tag{2.4.15} m_\text{calib} = m_\text{inst} - A + Z + \kappa X $$
+$$\tag{2.4.16} m_\text{calib} = m_\text{inst} - A + Z + \kappa X $$
 
 where $Z$ is a photometric zero point between the standard and instrumental systems (determined using a standard star), $\kappa$ is the atmospheric extinction coefficient, and $X$ is the airmass of the observation.
 
@@ -236,6 +256,5 @@ where $Z$ is a photometric zero point between the standard and instrumental syst
     $$ \implies \boxed{\tau \approx 96 \, \mathrm{days}} $$
 
     **b)**
-    
     {{< /tab >}}
 {{< /tabs >}}

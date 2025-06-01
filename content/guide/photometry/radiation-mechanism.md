@@ -160,3 +160,45 @@ The Stark effect is the splitting of spectral lines in the presence of an electr
 
 - **Linear Stark Effect**: This occurs when the electric field is weak and the splitting is linear. The spectral lines split into two components, one on each side of the unshifted line.
 - **Quadratic Stark Effect**: This occurs when the electric field is strong and the splitting is non-linear. The spectral lines can split into multiple components, depending on the strength of the electric field and the quantum numbers of the energy levels involved.
+
+## Cyclotron and Synchrotron Radiation
+
+When charged particles like electrons move through a magnetic field, they experience a force that causes them to spiral. This motion causes them to emit radiation, which is important in many astrophysical environments.
+
+An electron in a magnetic field $\mathbf{B}$ feels a Lorentz force:
+
+$$ \mathbf{F} = e \left( \mathbf{v} \times \mathbf{B} \right) $$
+
+where $e$ is the electron charge. For a non-relativistic electron, the acceleration is:
+
+$$ \mathbf{a} = \frac{\mathbf{F}}{m} = \frac{e}{m} \left( \mathbf{v} \times \mathbf{B} \right) $$
+
+where $m$ is the electron mass. The electron moves in a helical path with radius:
+
+$$\tag{2.6.20} r_c = \frac{mv_\perp}{eB} $$
+
+The pitch angle is $\tan \alpha_c = v_\perp / v_\parallel$, where $v_\perp$ is the velocity perpendicular to the field and $v_\parallel$ is parallel to the field.
+
+The angular frequency of this motion (cyclotron frequency) is:
+
+$$\tag{2.6.21} \omega = \frac{v_\perp}{r_c} = \frac{eB}{m} $$
+
+The electron emits energy (cyclotron radiation) according to the Larmor formula:
+
+$$\tag{2.6.22} P = \frac{2}{3} \frac{e^2}{4\pi \varepsilon_0 c^3} a^2 $$
+
+The spectrum is narrow and peaks at:
+
+$$\tag{2.6.23} \nu_\text{max} \approx \frac{\omega_c}{2 \pi} \approx 280 \, \mathrm{GHz} \, \left( \frac{B}{1 \, \mathrm{T}} \right) $$
+
+{{< callout type="remark" >}}
+If the electron is moving close to the speed of light (relativistic), it spirals at the electron gyrofrequency:
+
+$$\tag{2.6.24} \omega_s = \frac{eB}{\gamma m} = \frac{\omega_c}{\gamma} < \omega_c $$
+
+Here, $\gamma$ is the Lorentz factor. The radiation emitted is called synchrotron radiation. The maximum frequency is:
+
+$$\tag{2.6.25} \nu_\text{max} \approx 12 \, \mathrm{GHz} \, \gamma^2 \left( \frac{B}{1 \, \mathrm{T}} \right) \sin \alpha_c $$
+{{< /callout >}}
+
+For reference, the magnetic field at Earth's surface is $B_\oplus \approx 3.1 \times 10^{-5} \, \mathrm{T}$ and at Jupiter's surface is $B_J \approx 5 \times 10^{-4} \, \mathrm{T}$.

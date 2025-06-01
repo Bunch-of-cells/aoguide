@@ -9,7 +9,7 @@ menu:
       pageRef: /guide
       weight: 1
     - name: About
-      pageRef: /about
+      url: https://bunchofcellulose.github.io/
       weight: 3
     - name: Constants
       pageRef: /constants
